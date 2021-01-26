@@ -3,7 +3,7 @@ import { PlanetView } from "../planetview";
 
 export const Earth = () => {
   return (
-    <div className="planetWrapper">
+    <div className="planetWrapper container-fluid">
       <PlanetView Name="Earth" Population="Many" />
       <div className="planet">
         <div className="wrap">
