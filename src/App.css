@@ -54,3 +54,8 @@ body {
     background-position-x:-600px;
   }
 }
+/* planet info view */ 
+.planetView {
+  border: 2px solid white;
+  text-align: center;
+}
