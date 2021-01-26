@@ -1,14 +1,11 @@
 
 import './App.css';
-import { Earth } from './components/planets/Earf';
+import { Menu } from './components/menu';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <Earth />
-        
-      </header>
+      <Menu />
     </div>
   );
 }
