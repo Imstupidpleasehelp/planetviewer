@@ -62,8 +62,25 @@ body {
 .planetWrapper {
   text-align: center;
 }
-
+.sun {
+  background-color: yellow;
+  
+ 
+  height: 25%; /* Set your own height: percents, ems, whatever! */
+  width: 25%; /* Set your own width: percents, ems, whatever! */
+  overflow: auto; /* Recommended in case content is larger than the container */
+  margin: auto; /* Center the item vertically & horizontally */
+  position: absolute; /* Break it out of the regular flow */
+  top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
+  
+    border-radius: 50%;
+}
 /* mini planets */
 .earthMini {
-  background-color: red;
+ background-image: url(./components/planetTextures/earth.jpg);
+ width:30vw;
+ height:30vh;
+ border-radius:50%;
+ animation: translateBackground 40s infinite linear;  
+  background:url("https://web.cortland.edu/flteach/civ/DavidWeb/images/fullmapb.jpg") repeat-x;
 }

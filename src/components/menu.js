@@ -6,9 +6,11 @@ import { PlanetView } from './planetview'
 
 export const Menu = () => {
     return (
-        <div className="menuMaster">
-            
-          <MiniPlanet name="EARF" className="earthMini"  />
+        <div className="container">
+            <div className="sun">
+
+            </div>
+          <MiniPlanet  className="earthMini"  />
         </div>
     )
 }
