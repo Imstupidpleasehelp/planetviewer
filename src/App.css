@@ -62,3 +62,8 @@ body {
 .planetWrapper {
   text-align: center;
 }
+
+/* mini planets */
+.earthMini {
+  background-color: red;
+}

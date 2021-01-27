@@ -3,6 +3,8 @@ import React from 'react'
 
 export const MiniPlanet = (props) => {
 return(
-    <div></div>
+    <div className={props.className}>
+{props.name}
+    </div>
 )
 }
