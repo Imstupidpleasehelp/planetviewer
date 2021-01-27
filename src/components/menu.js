@@ -10,7 +10,7 @@ export const Menu = () => {
             <div className="sun">
 
             </div>
-          <MiniPlanet  className="earthMini"  />
+          <MiniPlanet  className="earthMini" name="earth"  />
         </div>
     )
 }
