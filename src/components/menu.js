@@ -11,6 +11,8 @@ export const Menu = () => {
 
             </div>
           <MiniPlanet  className="earthMini" name="earth"  />
+          <MiniPlanet className="marsMini" name="mars" />
+          
         </div>
     )
 }
