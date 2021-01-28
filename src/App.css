@@ -91,13 +91,18 @@ body {
   
 }
 /* mini planets */
-
+.miniPlanet {
+  background-color: red;
+}
+.miniPlanet:hover {
+  color: green;
+}
 .earthMini {
  
  width:3em;
  height:3em;
  border-radius:50%;
- animation: translateBackground 60s infinite linear;  
+ animation: translateBackground 80s infinite linear;  
   background:url("./components/planetTextures/earth.jpg") repeat-x;
   background-size: 100% 100%;
   
@@ -107,7 +112,7 @@ body {
   width:2em;
   height:2em;
   border-radius:50%;
-  animation: translateBackground 60s infinite linear;  
+  animation: translateBackground 70s infinite linear;  
    background:url("./components/planetTextures/mars.jpeg") repeat-x;
    background-size: 100% 100%;
  }
@@ -116,7 +121,7 @@ body {
   width:1.5em;
   height:1.5em;
   border-radius:50%;
-  animation: translateBackground 60s infinite linear;  
+  animation: translateBackground 50s infinite linear;  
    background:url("./components/planetTextures/mercury.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -124,7 +129,7 @@ body {
   width:2em;
   height:2em;
   border-radius:50%;
-  animation: translateBackground 60s infinite linear;  
+  animation: translateBackground 65s infinite linear;  
    background:url("./components/planetTextures/venus.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -132,7 +137,7 @@ body {
   width:6em;
   height:6em;
   border-radius:50%;
-  animation: translateBackground 60s infinite linear;  
+  animation: translateBackground 120s infinite linear;  
    background:url("./components/planetTextures/juipter.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -140,7 +145,7 @@ body {
   width:5em;
   height:5em;
   border-radius:50%;
-  animation: translateBackground 60s infinite linear;  
+  animation: translateBackground 90s infinite linear;  
    background:url("./components/planetTextures/saturn.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -149,7 +154,7 @@ body {
   height:4.5em;
   border-radius:50%;
   rotate:(45deg);
-  animation: translateBackground 60s infinite linear;  
+  animation: translateBackground 80s infinite linear;  
    background:url("./components/planetTextures/uranus.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -157,7 +162,7 @@ body {
   width:4.5em;
   height:4.5em;
   border-radius:50%;
-  animation: translateBackground 60s infinite linear;  
+  animation: translateBackground 80s infinite linear;  
    background:url("./components/planetTextures/neptune.jpg") repeat-x;
    background-size: 100% 100%;
  }
