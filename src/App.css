@@ -71,7 +71,7 @@ body {
   text-align: center;
 }
 .sun {
-  background-color: yellow;
+  
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 25 60px rgba(255, 160, 60, 0.4); 
@@ -85,6 +85,10 @@ body {
   top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
   
     border-radius: 50%;
+    animation: translateBackground 60s infinite linear;  
+  background:url("./components/planetTextures/sun.jpg") repeat-x;
+  background-size: 75% 100%;
+  
 }
 /* mini planets */
 .earthMini {
@@ -104,5 +108,55 @@ body {
   border-radius:50%;
   animation: translateBackground 60s infinite linear;  
    background:url("./components/planetTextures/mars.jpeg") repeat-x;
+   background-size: 100% 100%;
+ }
+ .mercuryMini {
+  
+  width:1.5em;
+  height:1.5em;
+  border-radius:50%;
+  animation: translateBackground 60s infinite linear;  
+   background:url("./components/planetTextures/mercury.jpg") repeat-x;
+   background-size: 100% 100%;
+ }
+ .venusMini {
+  width:2em;
+  height:2em;
+  border-radius:50%;
+  animation: translateBackground 60s infinite linear;  
+   background:url("./components/planetTextures/venus.jpg") repeat-x;
+   background-size: 100% 100%;
+ }
+ .juipterMini {
+  width:6em;
+  height:6em;
+  border-radius:50%;
+  animation: translateBackground 60s infinite linear;  
+   background:url("./components/planetTextures/juipter.jpg") repeat-x;
+   background-size: 100% 100%;
+ }
+ .saturnMini {
+  width:5em;
+  height:5em;
+  border-radius:50%;
+  animation: translateBackground 60s infinite linear;  
+   background:url("./components/planetTextures/saturn.jpg") repeat-x;
+   background-size: 100% 100%;
+ }
+ .uranusMini {
+  width:4.5em;
+  height:4.5em;
+  border-radius:50%;
+  rotate:(45deg);
+  animation: translateBackground 60s infinite linear;  
+   background:url("./components/planetTextures/uranus.jpg") repeat-x;
+   background-size: 100% 100%;
+ }
+ .neptuneMini {
+  width:4.5em;
+  height:4.5em;
+  border-radius:50%;
+  animation: translateBackground 60s infinite linear;  
+   background:url("./components/planetTextures/neptune.jpg") repeat-x;
    background-size: 100% 100%;
  }
