@@ -1,22 +1,15 @@
 import React from "react";
 import { PlanetView } from "../planetview";
 import { NavLink } from "react-router-dom";
+import {PlanetZoom} from './planetZoom'
 export const Earth = () => {
   return (
     <div className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
           <PlanetView Name="Earth" Population="Many" /></div>
-          <div className="col-sm-8">
-            <div className="planet">
-              <div className="wrap">
-                <div className="background"></div>
-                <div className="clouds"></div>
-              </div>
-            </div>
-            
-          </div>
-        
+         <div class="col-sm-8">
+        <PlanetZoom /></div>
       </div>
       <NavLink to="/">
         <div className="back">Back</div>
