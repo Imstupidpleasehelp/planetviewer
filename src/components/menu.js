@@ -3,13 +3,29 @@ import { MiniPlanet } from "./miniplanet";
 import { Earth } from "./planets/Earf";
 import { PlanetView } from "./planetview";
 import { AnimatePresence, motion } from "framer-motion";
+import useMouse from '@react-hook/mouse-position'
 
 export const Menu = () => {
   const orbit = {
-    duration: 2,
-    x: 500,
+    in: {
+      y: 0
+    },
+    out: {
+      y: '200vh'
+    },
   };
-/* const thumbnailVariants = {
+  const floatIn1 = {
+    in: {
+      y: 0
+    },
+    out: {
+      y: '200vh'
+    },
+  }
+  const floatTransition = {
+    duration: 1.5
+  }
+  /* const thumbnailVariants = {
   initial: { scale: 0.9, opacity: 0 },
   enter: { scale: 1, opacity: 1, transition },
   exit: {
@@ -18,18 +34,22 @@ export const Menu = () => {
     transition: { duration: 1.5, ...transition },
   },
 };
-*/ 
-  const imageVariants = {
-    exit: { y: "50%", opacity: 0 },
-    enter: {
-      y: "0%",
-      opacity: 1,
-    },
-  };
+ <motion.div initial="out"
+      animate="in"
+      exit="out"
+      variants={floatIn1}
+      transition={floatTransition}
+*/
+
   return (
     <div className="container">
       <div className="sun"></div>
-      <motion.div  animate={orbit} >
+      <motion.div 
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={floatIn1}
+      transition={floatTransition}>
         <MiniPlanet className="mercuryMini" name="mercury" />
       </motion.div>
       <MiniPlanet className="venusMini" name="venus" />
