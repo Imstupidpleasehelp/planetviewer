@@ -26,7 +26,7 @@ function App() {
   };
   return (
     <Router>
-      <ParticlesBg color="#FFF" className="background" type="custom" config={config} bg={true} />
+     {/* <ParticlesBg color="#FFF" className="backgroundMaster" type="custom" config={config} bg={true} /> */}
     <div className="App">
       <Route exact path="/" component={Menu} />
     </div>
