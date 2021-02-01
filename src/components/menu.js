@@ -29,14 +29,10 @@ export const Menu = () => {
   return (
     <div className="container">
       <div className="sun"></div>
-      <motion.div 
-      initial="out"
-      animate="in"
-      exit="out"
-      variants={orbit}
-      transition={floatTransition}>
+      <div 
+      >
         <MiniPlanet className="mercuryMini" name="mercury" />
-      </motion.div>
+      </div>
       <MiniPlanet className="venusMini" name="venus" />
       <MiniPlanet className="earthMini" name="earth" />
       <MiniPlanet className="marsMini" name="mars" />

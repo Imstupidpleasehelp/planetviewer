@@ -70,6 +70,7 @@ left: 0;
     background-position-x:-600px;
   }
 }
+/* planet end */ 
 /* planet info view */ 
 .planetView {
   border: 2px solid white;
@@ -122,10 +123,10 @@ left: 0;
  width:3em;
  height:3em;
  border-radius:50%;
- animation: translateBackground 80s infinite linear;  
+ 
   background:url("./components/planetTextures/earth.jpg") repeat-x;
   background-size: 100% 100%;
-  
+animation: orbit 5s infinite;
 }
 .marsMini {
   
@@ -186,3 +187,17 @@ left: 0;
    background:url("./components/planetTextures/neptune.jpg") repeat-x;
    background-size: 100% 100%;
  }
+/* end of miniplanets */ 
+
+/* orbit animations on homepage */ 
+
+@keyframes orbit {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  } 
+}
+
+/* end of orbit animations */ 
