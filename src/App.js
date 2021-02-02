@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import { Menu } from './components/menu';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Earth } from './components/planets/Earf';
@@ -15,7 +15,7 @@ function App() {
     // body: "./img/icon.png", // Whether to render pictures
     // rotate: [0, 20],
     alpha: [0.6, 0],
-    scale: [1, 0.1],
+    scale: [1, 0.1],  
     position: "all", // all or center or {x:1,y:1,width:100,height:100}
     color: ["#FFFFFF"],
     cross: "dead", // cross or bround

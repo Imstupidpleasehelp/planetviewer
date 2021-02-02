@@ -2,7 +2,6 @@ import React from "react";
 import { MiniPlanet } from "./miniplanet";
 import { Earth } from "./planets/Earf";
 import { PlanetView } from "./planetview";
-import { AnimatePresence, motion } from "framer-motion";
 import useMouse from '@react-hook/mouse-position'
 
 export const Menu = () => {
