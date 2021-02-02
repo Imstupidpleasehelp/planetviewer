@@ -28,6 +28,8 @@ export const Menu = () => {
   return (
     <div className="container">
       <div className="sun"></div>
+
+
       <div 
       >
         <MiniPlanet className="mercuryMini" name="mercury" />

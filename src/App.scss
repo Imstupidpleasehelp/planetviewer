@@ -109,12 +109,12 @@ left: 0;
 	transition: transform 0.7s linear;
 }
 /* orbits of miniplanets */
-$orbit-time: 0.88, 2.25, 3.6525, 6.87, 43.46475, 107.74875, 306.81, 602.6625;
-//days devided by 100
-/* mini planets */
-.miniPlanet {
-  background-color: red;
+@keyframes circle { 
+	to { transform: rotate(500turn); } 
 }
+
+/* mini planets */
+
 .miniPlanet:hover {
   color: green;
 }
@@ -128,9 +128,10 @@ $orbit-time: 0.88, 2.25, 3.6525, 6.87, 43.46475, 107.74875, 306.81, 602.6625;
  height:3em;
  border-radius:50%;
  margin: 0 auto;
+ animation: translateBackground 75s infinite linear, circle 5s infinite;  
   background:url("./components/planetTextures/earth.jpg") repeat-x;
   background-size: 100% 100%;
-  animation: circle 2s infinite; 
+
 }
 .marsMini {
   
@@ -194,19 +195,9 @@ $orbit-time: 0.88, 2.25, 3.6525, 6.87, 43.46475, 107.74875, 306.81, 602.6625;
 /* end of miniplanets */ 
 
 /* orbit animations on homepage */ 
-@keyframes circle { 
-	to { transform: rotate(1turn); } 
-}
+
 
 	
 
-@keyframes orbit {
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  } 
-}
 
 /* end of orbit animations */ 
