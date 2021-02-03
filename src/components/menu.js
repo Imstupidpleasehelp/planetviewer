@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { MiniPlanet } from "./miniplanet";
 import { Earth } from "./planets/Earf";
 import { PlanetView } from "./planetview";
@@ -13,7 +13,11 @@ export const Menu = () => {
       y: '200vh'
     },
   };
-  
+  const ref = React.useRef(null)
+  const mouse = useMouse(ref, {
+    enterDelay: 100,
+    leaveDelay: 100,
+  })
   const floatTransition = {
     duration: 1.5
   }
@@ -28,7 +32,11 @@ export const Menu = () => {
   return (
     <div className="container">
       <div className="sun"></div>
-
+      <div ref={ref}>
+      
+      x: ${mouse.x}
+      y: ${mouse.y}
+   
 
       <div 
       >
@@ -42,6 +50,6 @@ export const Menu = () => {
       <MiniPlanet className="saturnMini" name="saturn" />
       <MiniPlanet className="uranusMini" name="uranus" />
       <MiniPlanet className="neptuneMini" name="neptune" />
-    </div>
+     </div></div>
   );
 };
