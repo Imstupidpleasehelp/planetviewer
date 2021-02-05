@@ -5,6 +5,7 @@ import { PlanetView } from "./planetview";
 import useMouse from '@react-hook/mouse-position'
 
 export const Menu = () => {
+  const {cords, setCords} = useState('')
   const orbit = {
     in: {
       y: 0
@@ -38,10 +39,9 @@ export const Menu = () => {
       y: ${mouse.y}
    
 
-      <div 
-      >
+     
         <MiniPlanet className="mercuryMini" name="mercury" />
-      </div>
+      
       <MiniPlanet className="venusMini" name="venus" />
       <MiniPlanet className="earthMini" name="earth" />
       <MiniPlanet className="marsMini" name="mars" />
