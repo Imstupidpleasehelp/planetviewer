@@ -40,6 +40,8 @@ export const Menu = () => {
    
 
      
+
+     
         <MiniPlanet className="mercuryMini" name="mercury" />
       
       <MiniPlanet className="venusMini" name="venus" />
