@@ -110,7 +110,8 @@ left: 0;
 }
 /* orbits of miniplanets */
 @keyframes circle { 
-	to { transform: rotate(1turn); } 
+	to { transform: rotate(0deg);
+    transition: transform 0.7s linear; } 
 }
 
 /* mini planets */
