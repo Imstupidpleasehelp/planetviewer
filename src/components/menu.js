@@ -42,16 +42,16 @@ export const Menu = () => {
      
 
      
-        <MiniPlanet className="mercuryMini" name="mercury" />
+        <div className="orbitContainer mercuryOrbit"><MiniPlanet className="mercuryMini inner" name="mercury" /></div>
       
-      <MiniPlanet className="venusMini" name="venus" />
-      <div className="orbitContainer obj1"><MiniPlanet className="earthMini inner" name="earth" /></div>
-      <MiniPlanet className="marsMini" name="mars" />
+      <div className="orbitContainer venusOrbit"><MiniPlanet className="venusMini inner" name="venus" /></div>
+      <div className="orbitContainer earthOrbit"><MiniPlanet className="earthMini inner" name="earth" /></div>
+      <div className="orbitContainer marsOrbit"><MiniPlanet className="marsMini inner" name="mars" /></div>
 
-      <MiniPlanet className="juipterMini" name="juipter" />
-      <MiniPlanet className="saturnMini" name="saturn" />
-      <MiniPlanet className="uranusMini" name="uranus" />
-      <MiniPlanet className="neptuneMini" name="neptune" />
+     <div className="orbitContainer juipterOrbit"> <MiniPlanet className="juipterMini inner" name="juipter" /></div>
+      <MiniPlanet className="saturnMini inner" name="saturn" />
+      <MiniPlanet className="uranusMini inner" name="uranus" />
+      <MiniPlanet className="neptuneMini inner" name="neptune" />
      </div></div>
   );
 };

@@ -110,18 +110,32 @@ left: 0;
 	transition: transform 0.7s linear;
 }
 /* orbits of miniplanets */
-.obj1 {
-  --time: 0.5;
-  --dist: 1;
-  --size: 0.4;
+.mercuryOrbit {
+  --time: 4; /* time to get around the sun, not in seconds */
+  --dist: .5; /* distance from sun */
+  --size: 0.3; /* size of planet*/
+}
+.venusOrbit {
+  --time: 5; /* time to get around the sun, not in seconds */
+  --dist: .7; /* distance from sun */
+  --size: 0.4; /* size of planet*/
+}
+.earthOrbit {
+  --time: 7; /* time to get around the sun, not in seconds */
+  --dist: .95; /* distance from sun */
+  --size: 0.59; /* size of planet*/
 }
 
-.obj2 {
-  --time: 1;
-  --dist: 1;
-  --size: 1;
+.marsOrbit {
+  --time: 8;
+  --dist: 1.2;
+  --size: .5;
 }
-
+.juipterOrbit {
+  --time: 14;
+  --dist: 2;
+  --size: 1.1;
+}
 .orbitContainer {
 
   --timeunit: 10s;
@@ -165,7 +179,7 @@ left: 0;
  height:3em;
  border-radius:50%;
 
- animation: translateBackground 75s infinite linear, circle 15s infinite;  
+ animation: translateBackground 75s infinite linear, ;  
   background:url("./components/planetTextures/earth.jpg") repeat-x;
   background-size: 100% 100%;
 
