@@ -112,7 +112,7 @@ left: 0;
 /* orbits of miniplanets */
 .obj1 {
   --time: 0.5;
-  --dist: 0.6;
+  --dist: 1;
   --size: 0.4;
 }
 
@@ -122,7 +122,7 @@ left: 0;
   --size: 1;
 }
 
-.obj {
+.orbitContainer {
 
   --timeunit: 10s;
   --offsetunit: 30vmin;
@@ -135,14 +135,14 @@ left: 0;
   width: calc(2 * var(--offset));
   animation: circleRound calc(var(--time) * var(--timeunit)) linear infinite;
 }
-.obj .inner {
-  position: absolute;
+.orbitContainer .inner {
+  
   position: relative;
   width: calc(calc(2 * var(--size)) * var(--sizeunit));
   height: calc(calc(2 * var(--size)) * var(--sizeunit)); 
   border-radius: 50%;
   border-style: none;
-  background-color: blue;
+ 
 }
 
 @keyframes circleRound {

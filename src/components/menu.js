@@ -45,7 +45,7 @@ export const Menu = () => {
         <MiniPlanet className="mercuryMini" name="mercury" />
       
       <MiniPlanet className="venusMini" name="venus" />
-      <MiniPlanet className="earthMini obj" name="earth" />
+      <div className="orbitContainer obj1"><MiniPlanet className="earthMini inner" name="earth" /></div>
       <MiniPlanet className="marsMini" name="mars" />
 
       <MiniPlanet className="juipterMini" name="juipter" />
