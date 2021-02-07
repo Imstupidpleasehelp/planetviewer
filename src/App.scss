@@ -94,13 +94,14 @@ left: 0;
   box-shadow: 1px 1px 105px firebrick; 
   box-shadow: 1px 1px 85px goldenrod; 
  
-  height: 16em; /* Set your own height: percents, ems, whatever! */
-  width: 16em; /* Set your own width: percents, ems, whatever! */
-  overflow: auto; /* Recommended in case content is larger than the container */
-  margin: auto; /* Center the item vertically & horizontally */
-  position: absolute; /* Break it out of the regular flow */
-  top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
   
+ 
+  position: absolute;
+  --radius: 10vmin;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
     border-radius: 50%;
     animation: translateBackground 120s infinite linear;  
   background:url("./components/planetTextures/sun.jpg") repeat-x;
@@ -109,24 +110,45 @@ left: 0;
 	transition: transform 0.7s linear;
 }
 /* orbits of miniplanets */
-@keyframes circle { 
-	to { transform: rotate(0deg);
-    transition: transform 0.7s linear; } 
+.obj1 {
+  --time: 0.5;
+  --dist: 0.6;
+  --size: 0.4;
 }
-$year-in-second : 30; // 1 Earth year = 30 sec
 
-@function revolution($pl-year-in-days){
-  @return $pl-year-in-days * $year-in-second / 365.2563 + s  //Earth reference
+.obj2 {
+  --time: 1;
+  --dist: 1;
+  --size: 1;
 }
-@function alphaRandom(){
-  @return random(1000)*.001;
+
+.obj {
+
+  --timeunit: 10s;
+  --offsetunit: 30vmin;
+  --sizeunit: 5vmin;
+
+  position: absolute;
+  top: calc(50% - calc(var(--size) * var(--sizeunit)));
+  --offset: calc(var(--dist) * var(--offsetunit));/* distance from the center */
+  left: calc(50% - var(--offset)); 
+  width: calc(2 * var(--offset));
+  animation: circleRound calc(var(--time) * var(--timeunit)) linear infinite;
 }
-@function stars($s, $max-area, $min-area : 0, $star-size : 0){
-  $stars : #{$min-area + random($max-area)}px #{$min-area + random($max-area)}px 0 #{$star-size}px rgba(255,255,255, alphaRandom()); 
-  @for $i from 1 to $s{
-    $stars: '#{$stars} , #{$min-area + random($max-area)}px #{$min-area + random($max-area)}px 0 #{$star-size}px rgba(255,255,255, #{alphaRandom()})'
+.obj .inner {
+  position: absolute;
+  position: relative;
+  width: calc(calc(2 * var(--size)) * var(--sizeunit));
+  height: calc(calc(2 * var(--size)) * var(--sizeunit)); 
+  border-radius: 50%;
+  border-style: none;
+  background-color: blue;
+}
+
+@keyframes circleRound {
+  100% {
+    transform: rotate(360deg);
   }
-  @return unquote($stars);
 }
 /* mini planets */
 
@@ -142,8 +164,8 @@ $year-in-second : 30; // 1 Earth year = 30 sec
  width:3em;
  height:3em;
  border-radius:50%;
- margin: 0 auto;
- animation: translateBackground 75s infinite linear, circle 5s infinite;  
+
+ animation: translateBackground 75s infinite linear, circle 15s infinite;  
   background:url("./components/planetTextures/earth.jpg") repeat-x;
   background-size: 100% 100%;
 

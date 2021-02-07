@@ -32,7 +32,7 @@ export const Menu = () => {
 
   return (
     <div className="container">
-      <div className="sun"></div>
+      <div className="sun middle"></div>
       <div ref={ref}>
       
       x: ${mouse.x}
@@ -45,7 +45,7 @@ export const Menu = () => {
         <MiniPlanet className="mercuryMini" name="mercury" />
       
       <MiniPlanet className="venusMini" name="venus" />
-      <MiniPlanet className="earthMini" name="earth" />
+      <MiniPlanet className="earthMini obj" name="earth" />
       <MiniPlanet className="marsMini" name="mars" />
 
       <MiniPlanet className="juipterMini" name="juipter" />
