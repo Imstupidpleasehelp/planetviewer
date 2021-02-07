@@ -132,9 +132,24 @@ left: 0;
   --size: .5;
 }
 .juipterOrbit {
-  --time: 14;
-  --dist: 2;
-  --size: 1.1;
+  --time: 11;
+  --dist: 1.7;
+  --size: 1.15;
+}
+.saturnOrbit {
+  --time: 12;
+  --dist: 1.8;
+  --size: 1;
+}
+.uranusOrbit {
+  --time: 17;
+  --dist: 2.45;
+  --size: .9;
+}
+.neptuneOrbit {
+  --time: 19;
+  --dist: 2.76;
+  --size: .85;
 }
 .orbitContainer {
 

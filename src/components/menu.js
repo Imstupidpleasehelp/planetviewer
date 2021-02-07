@@ -49,9 +49,9 @@ export const Menu = () => {
       <div className="orbitContainer marsOrbit"><MiniPlanet className="marsMini inner" name="mars" /></div>
 
      <div className="orbitContainer juipterOrbit"> <MiniPlanet className="juipterMini inner" name="juipter" /></div>
-      <MiniPlanet className="saturnMini inner" name="saturn" />
-      <MiniPlanet className="uranusMini inner" name="uranus" />
-      <MiniPlanet className="neptuneMini inner" name="neptune" />
+     <div className="orbitContainer saturnOrbit"> <MiniPlanet className="saturnMini inner" name="saturn" /></div>
+      <div className="orbitContainer uranusOrbit"><MiniPlanet className="uranusMini inner" name="uranus" /></div>
+     <div className="orbitContainer neptuneOrbit"> <MiniPlanet className="neptuneMini inner" name="neptune" /></div>
      </div></div>
   );
 };
