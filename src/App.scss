@@ -137,7 +137,7 @@ left: 0;
   --size: 1.15;
 }
 .saturnOrbit {
-  --time: 12;
+  --time: 13;
   --dist: 2.14;
   --size: 1;
 }
@@ -162,7 +162,7 @@ left: 0;
   --offset: calc(var(--dist) * var(--offsetunit));/* distance from the center */
   left: calc(50% - var(--offset)); 
   width: calc(2 * var(--offset));
-  animation: circleRound calc(var(--time) * var(--timeunit)) linear infinite;
+  animation: circleRound calc(var(--time) * var(--timeunit))   infinite;
 }
 .orbitContainer .inner {
   
@@ -179,10 +179,11 @@ left: 0;
     transform: rotate(360deg);
   }
 }
+/* end of orbit animation */ 
 /* mini planets */
 
 .miniPlanet:hover {
-  color: green;
+  background-color: green;
 }
 .planetLink {
   width: inherit;
@@ -260,10 +261,3 @@ left: 0;
  }
 /* end of miniplanets */ 
 
-/* orbit animations on homepage */ 
-
-
-	
-
-
-/* end of orbit animations */ 
