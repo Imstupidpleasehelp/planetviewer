@@ -32,7 +32,7 @@ export const Menu = () => {
 
   return (
     <div className="container">
-      <div className="sun middle"></div>
+      <div className="sun "></div>
       <div ref={ref}>
       
       x: ${mouse.x}
