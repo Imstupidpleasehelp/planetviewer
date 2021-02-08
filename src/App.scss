@@ -95,9 +95,9 @@ left: 0;
   box-shadow: 1px 1px 85px goldenrod; 
  
   
- 
+
   position: absolute;
-  --radius: 10vmin;
+  --radius: 7rem;
   top: calc(50% - var(--radius));
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
@@ -106,13 +106,14 @@ left: 0;
     animation: translateBackground 120s infinite linear;  
   background:url("./components/planetTextures/sun.jpg") repeat-x;
   background-size: 200% 100%;
-  transform: rotate(0deg);
+ 
 	transition: transform 0.7s linear;
 }
+
 /* orbits of miniplanets */
 .mercuryOrbit {
   --time: 4; /* time to get around the sun, not in seconds */
-  --dist: .5; /* distance from sun */
+  --dist: .55; /* distance from sun */
   --size: 0.3; /* size of planet*/
 }
 .venusOrbit {
@@ -156,13 +157,13 @@ left: 0;
   --timeunit: 10s;
   --offsetunit: 30vmin;
   --sizeunit: 5vmin;
-
+max-width: 10rem; /* THE PROBLEM IS HERE, the orbit container is too big */ 
   position: absolute;
   top: calc(50% - calc(var(--size) * var(--sizeunit)));
   --offset: calc(var(--dist) * var(--offsetunit));/* distance from the center */
   left: calc(50% - var(--offset)); 
   width: calc(2 * var(--offset));
-  animation: circleRound calc(var(--time) * var(--timeunit))   infinite;
+  animation: circleRound calc(var(--time) * var(--timeunit)) linear   infinite;
 }
 .orbitContainer .inner {
   
@@ -181,14 +182,14 @@ left: 0;
 }
 /* end of orbit animation */ 
 /* mini planets */
-
+.miniPlanet {
+  max-width: 6rem;
+  
+}
 .miniPlanet:hover {
   background-color: green;
 }
-.planetLink {
-  width: inherit;
-  height: inherit;
-}
+
 .earthMini {
  
  width:3em;
