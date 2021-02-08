@@ -115,49 +115,57 @@ left: 0;
   --time: 4; /* time to get around the sun, not in seconds */
   --dist: .55; /* distance from sun */
   --size: 0.3; /* size of planet*/
+  z-index: 9;
 }
 .venusOrbit {
   --time: 5; /* time to get around the sun, not in seconds */
   --dist: .7; /* distance from sun */
   --size: 0.4; /* size of planet*/
+  z-index: 8;
 }
 .earthOrbit {
   --time: 7; /* time to get around the sun, not in seconds */
   --dist: .95; /* distance from sun */
   --size: 0.59; /* size of planet*/
+  z-index: 7;
 }
 
 .marsOrbit {
   --time: 8;
   --dist: 1.2;
   --size: .5;
+  z-index: 6;
 }
 .juipterOrbit {
   --time: 11;
   --dist: 1.7;
   --size: 1.15;
+  z-index: 5;
 }
 .saturnOrbit {
   --time: 13;
   --dist: 2.14;
   --size: 1;
+  z-index: 4;
 }
 .uranusOrbit {
   --time: 17;
   --dist: 2.45;
   --size: .9;
+  z-index: 3;
 }
 .neptuneOrbit {
   --time: 19;
   --dist: 2.76;
   --size: .85;
+  z-index: 2;
 }
 .orbitContainer {
-
+width: 10rem;
   --timeunit: 10s;
   --offsetunit: 30vmin;
   --sizeunit: 5vmin;
-max-width: 10rem; /* THE PROBLEM IS HERE, the orbit container is too big */ 
+ /* THE PROBLEM IS HERE, the orbit container is too big */ 
   position: absolute;
   top: calc(50% - calc(var(--size) * var(--sizeunit)));
   --offset: calc(var(--dist) * var(--offsetunit));/* distance from the center */
@@ -186,9 +194,7 @@ max-width: 10rem; /* THE PROBLEM IS HERE, the orbit container is too big */
   max-width: 6rem;
   
 }
-.miniPlanet:hover {
-  background-color: green;
-}
+
 
 .earthMini {
  
