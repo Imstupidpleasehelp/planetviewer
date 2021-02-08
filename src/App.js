@@ -7,8 +7,8 @@ import ParticlesBg from 'particles-bg'
 import { Mars } from './components/planets/mars';
 function App() {
   let config = {
-    num: [15, 20],
-    rps: 0.5,
+    num: [25, 20],
+    rps: 14,
     radius: [1, 1.5],
     life: [6, 3],
     v: [2, 3],
@@ -27,7 +27,7 @@ function App() {
   };
   return (
     <Router>
-     {/* <ParticlesBg color="#FFF" className="backgroundMaster" type="custom" config={config} bg={true} /> */}
+      <ParticlesBg color="#FFF" className="backgroundMaster" type="custom" config={config} bg={true} /> 
     <div className="App">
       <Route exact path="/" component={Menu} />
     </div>
