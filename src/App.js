@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Earth } from './components/planets/Earf';
 import ParticlesBg from 'particles-bg'
 import { Mars } from './components/planets/mars';
+import { Mercury } from './components/planets/mercury';
+import { Venus } from './components/planets/venus';
 function App() {
   let config = {
     num: [25, 20],
@@ -31,6 +33,8 @@ function App() {
     <div className="App">
       <Route exact path="/" component={Menu} />
     </div>
+    <Route path="/mercury" component={Mercury} />
+    <Route path="/venus" component={Venus} />
     <Route path="/earth" component={Earth} />
     <Route path="/mars" component={Mars} />
     </Router>
