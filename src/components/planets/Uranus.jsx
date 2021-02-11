@@ -7,7 +7,7 @@ export const Uranus = () => {
     <div className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
-          <PlanetView Name="Uranus" Population="Many" temperture="hot" /></div>
+          <PlanetView Name="Uranus" Population="0" temperture="-224°C" /></div>
          <div class="col-sm-8">
         <PlanetZoom background="Uranus" /></div>
       </div>

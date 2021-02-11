@@ -7,7 +7,7 @@ export const Earth = () => {
     <div className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
-          <PlanetView Name="Earth" Population="Many" temperture="hot" /></div>
+          <PlanetView Name="Earth" Population="7,878,904,012 (estimate)" temperture="1.02 °C" /></div>
          <div class="col-sm-8">
         <PlanetZoom background="background" /></div>
       </div>

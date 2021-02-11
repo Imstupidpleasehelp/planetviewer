@@ -183,13 +183,13 @@ left: 0;
 /* orbits of miniplanets */
 .mercuryOrbit {
   --time: 4; /* time to get around the sun, not in seconds */
-  --dist: .55; /* distance from sun */
+  --dist: .6; /* distance from sun */
   --size: 0.3; /* size of planet*/
   z-index: 9;
 }
 .venusOrbit {
   --time: 5; /* time to get around the sun, not in seconds */
-  --dist: .7; /* distance from sun */
+  --dist: .75; /* distance from sun */
   --size: 0.4; /* size of planet*/
   z-index: 8;
 }
