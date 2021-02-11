@@ -7,6 +7,10 @@ import ParticlesBg from "particles-bg";
 import { Mars } from "./components/planets/mars";
 import { Mercury } from "./components/planets/mercury";
 import { Venus } from "./components/planets/venus";
+import { Juipter } from "./components/planets/juipter";
+import { Saturn } from "./components/planets/saturn";
+import { Uranus } from "./components/planets/Uranus";
+import { Neptune } from "./components/planets/Neptune";
 function App() {
   let config = {
     num: [25, 20],
@@ -46,6 +50,10 @@ function App() {
           <Route path="/venus" component={Venus} />
           <Route path="/earth" component={Earth} />
           <Route path="/mars" component={Mars} />
+          <Route path="/juipter" component={Juipter} />
+          <Route path="/saturn" component={Saturn} />
+          <Route path="/uranus" component={Uranus} />
+          <Route path="/neptune" component={Neptune} />
      </Switch>
       </Router>
    

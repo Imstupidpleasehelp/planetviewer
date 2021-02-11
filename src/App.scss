@@ -36,7 +36,8 @@ left: 0;
 }
 .planet .background{
   animation: translateBackground 40s infinite linear;  
-  background:url("https://web.cortland.edu/flteach/civ/DavidWeb/images/fullmapb.jpg") repeat-x;
+  background:url("./components/planetTextures//earth.jpg") repeat-x;
+ 
   width:300px;
   height:300px;
   position:absolute;
@@ -44,10 +45,74 @@ left: 0;
 }
 .planet .mercury{
   animation: translateBackground 40s infinite linear;  
-  background:url(./components/planetTextures/mercury.jpg) repeat-x;
+  background:url(./components/planetTextures/mercury.jpg) repeat-x ;
+  background-size: 300px 300px;
   width:300px;
   height:300px;
-  position:absolute;
+ 
+  border-radius:50%;
+}
+.planet .mercury{
+  animation: translateBackground 40s infinite linear;  
+  background:url(./components/planetTextures/mercury.jpg) repeat-x ;
+  background-size: 300px 300px;
+  width:300px;
+  height:300px;
+ 
+  border-radius:50%;
+}
+.planet .venus{
+  animation: translateBackground 40s infinite linear;  
+  background:url(./components/planetTextures/venus.jpg) repeat-x ;
+  background-size: 300px 300px;
+  width:300px;
+  height:300px;
+ 
+  border-radius:50%;
+}
+.planet .mars{
+  animation: translateBackground 40s infinite linear;  
+  background:url(./components/planetTextures/mars.jpeg) repeat-x ;
+  background-size: 300px 300px;
+  width:300px;
+  height:300px;
+ 
+  border-radius:50%;
+}
+.planet .juipter{
+  animation: translateBackground 40s infinite linear;  
+  background:url(./components/planetTextures/juipter.jpg) repeat-x ;
+  background-size: 300px 300px;
+  width:300px;
+  height:300px;
+ 
+  border-radius:50%;
+}
+.planet .Saturn{
+  animation: translateBackground 40s infinite linear;  
+  background:url(./components/planetTextures/saturn.jpg) repeat-x ;
+  background-size: 300px 300px;
+  width:300px;
+  height:300px;
+ 
+  border-radius:50%;
+}
+.planet .Uranus{
+  animation: translateBackground 40s infinite linear;  
+  background:url(./components/planetTextures/uranus.jpg) repeat-x ;
+  background-size: 300px 300px;
+  width:300px;
+  height:300px;
+ 
+  border-radius:50%;
+}
+.planet .Neptune{
+  animation: translateBackground 40s infinite linear;  
+  background:url(./components/planetTextures/neptune.jpg) repeat-x ;
+  background-size: 300px 300px;
+  width:300px;
+  height:300px;
+ 
   border-radius:50%;
 }
 .planet .clouds{

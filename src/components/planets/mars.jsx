@@ -9,7 +9,7 @@ export const Mars = () => {
         <div className="col-sm-4">
           <PlanetView Name="Mars" Population="Elon musk" temperture="Cooold" /></div>
          <div class="col-sm-8">
-        mars goes here</div>
+        <PlanetZoom background="mars"></PlanetZoom></div>
       </div>
       <NavLink to="/">
         <div className="back">Back</div>

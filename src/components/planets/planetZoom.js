@@ -5,7 +5,7 @@ export const PlanetZoom = (props) => {
   return (
     <div className="container">
      
-          <div className="">
+          <div className="text-center">
             <div className="planet">
               <div className="wrap">
                 <div className={props.background}></div>
