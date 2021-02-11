@@ -3,6 +3,7 @@ import './App.scss';
 import { Menu } from './components/menu';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Earth } from './components/planets/Earf';
+
 import ParticlesBg from 'particles-bg'
 import { Mars } from './components/planets/mars';
 import { Mercury } from './components/planets/mercury';

@@ -3,7 +3,7 @@ import { MiniPlanet } from "./miniplanet";
 import { Earth } from "./planets/Earf";
 import { PlanetView } from "./planetview";
 import useMouse from '@react-hook/mouse-position'
-
+import { motion } from "framer-motion"
 export const Menu = () => {
   const {cords, setCords} = useState('')
   const orbit = {
