@@ -9,7 +9,7 @@ export const Mercury = () => {
         <div className="col-sm-4">
           <PlanetView Name="Mercury" Population="0" temperture="hot/cold" /></div>
          <div class="col-sm-8">
-        merc goes here</div>
+       <PlanetZoom background="mercury"></PlanetZoom></div>
       </div>
       <NavLink to="/">
         <div className="back">Back</div>

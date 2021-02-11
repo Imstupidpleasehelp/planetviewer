@@ -9,7 +9,7 @@ export const Earth = () => {
         <div className="col-sm-4">
           <PlanetView Name="Earth" Population="Many" temperture="hot" /></div>
          <div class="col-sm-8">
-        <PlanetZoom /></div>
+        <PlanetZoom background="background" /></div>
       </div>
       <NavLink to="/">
         <div className="back">Back</div>

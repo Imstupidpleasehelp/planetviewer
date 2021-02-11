@@ -42,7 +42,14 @@ left: 0;
   position:absolute;
   border-radius:50%;
 }
-
+.planet .mercury{
+  animation: translateBackground 40s infinite linear;  
+  background:url(./components/planetTextures/mercury.jpg) repeat-x;
+  width:300px;
+  height:300px;
+  position:absolute;
+  border-radius:50%;
+}
 .planet .clouds{
   background:url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
   width:300px;
