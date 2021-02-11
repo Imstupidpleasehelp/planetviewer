@@ -6,22 +6,13 @@ import useMouse from '@react-hook/mouse-position'
 
 export const Menu = () => {
   const {cords, setCords} = useState('')
-  const orbit = {
-    in: {
-      y: 0
-    },
-    out: {
-      y: '200vh'
-    },
-  };
+  
   const ref = React.useRef(null)
   const mouse = useMouse(ref, {
     enterDelay: 100,
     leaveDelay: 100,
   })
-  const floatTransition = {
-    duration: 1.5
-  }
+  
 /*
  <motion.div initial="out"
       animate="in"
