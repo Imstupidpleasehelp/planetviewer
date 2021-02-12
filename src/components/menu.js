@@ -15,11 +15,11 @@ export const Menu = () => {
  
   const enterSystem = {
     in: {
-     scale: 1,
+     scale: 1.3,
      y: 370
     },
     out: {
-      scale: 0,
+      scale: 1,
     },
   };
   const pagetransition = {
@@ -27,7 +27,8 @@ export const Menu = () => {
   };
 
   return (
-    <motion.div  className="container">
+    <motion.div  animate={{scale: 1, y: 370}}
+      className="container">
       <div className="sun "></div>
       
    

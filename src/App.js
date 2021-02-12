@@ -49,7 +49,7 @@ function App() {
     exit="out"
     variants={changepage}
       transition={pagetransition} */}
-          <AnimatePresence>
+          <AnimatePresence exitBeforeEnter>
 <Route exact path="/" component={Loading} />
             <Route exact path="/sol" component={Menu} />
          
