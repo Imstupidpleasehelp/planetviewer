@@ -182,9 +182,7 @@ left: 0;
  
 	transition: transform 0.7s linear;
 }
-.earth {
-  --d:3s;--o:165px;--s:40px;
-}
+
 .orbitContainer {
   
   width:var(--s);
@@ -192,7 +190,7 @@ left: 0;
   margin:auto;
   text-align: center;
   border-radius: 50%;
-  background: #f00;
+  
   overflow: auto; /* Recommended in case content is larger than the container */
   margin: auto; /* Center the item vertically & horizontally */
   position: absolute; /* Break it out of the regular flow */
@@ -206,7 +204,12 @@ left: 0;
     transform:rotate(1turn) translate(var(--o)) rotate(-1turn);
   }
 }
-
+.earth {
+  --d:13s;
+  --o:165px;
+  
+ 
+}
 /* end of orbit animation */ 
 /* mini planets */
 .miniPlanet {
@@ -216,12 +219,11 @@ left: 0;
 
 
 .earthMini {
- 
- width:3em;
+  width:3em;
  height:3em;
  border-radius:50%;
 
- animation: translateBackground 75s infinite linear, ;  
+ /* animation: translateBackground 75s infinite linear, ;   */
   background:url("./components/planetTextures/earth.jpg") repeat-x;
   background-size: 100% 100%;
 

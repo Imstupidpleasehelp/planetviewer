@@ -30,7 +30,7 @@ export const Menu = () => {
      
 
      
-      <div class="orbitContainer earth" >1</div>
+      <div class="orbitContainer earth" ><MiniPlanet name="earth" className="orbitContainer earthMini " /></div>
   
      </div>
   );
