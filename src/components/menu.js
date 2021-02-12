@@ -22,29 +22,18 @@ export const Menu = () => {
 */
 
   return (
-    <div className="container">
+    <div className="container menu">
       <div className="sun "></div>
-      <div ref={ref}>
       
-      x: ${mouse.x}
-      y: ${mouse.y}
    
 
      
 
      
-        <div 
-        
-           className="orbitContainer mercuryOrbit"><MiniPlanet className="mercuryMini inner" name="mercury" /></div>
-      
-      <div className="orbitContainer venusOrbit"><MiniPlanet className="venusMini inner" name="venus" /></div>
-      <div className="orbitContainer earthOrbit"><MiniPlanet className="earthMini inner" name="earth" /></div>
-      <div className="orbitContainer marsOrbit"><MiniPlanet className="marsMini inner" name="mars" /></div>
-
-     <div className="orbitContainer juipterOrbit"> <MiniPlanet className="juipterMini inner" name="juipter" /></div>
-     <div className="orbitContainer saturnOrbit"> <MiniPlanet className="saturnMini inner" name="saturn" /></div>
-      <div className="orbitContainer uranusOrbit"><MiniPlanet className="uranusMini inner" name="uranus" /></div>
-     <div className="orbitContainer neptuneOrbit"> <MiniPlanet className="neptuneMini inner" name="neptune" /></div>
-     </div></div>
+      <div class="item" style="--d:5s;--o:65px;--s:40px;">1</div>
+  <div class="item" style="--d:6s;--o:150px;--s:20px;">2</div>
+  <div class="item" style="--d:10s;--o:90px;--s:10px;">3</div>
+  <div class="item" style="--d:2s;--o:30px;--s:30px;">4</div>
+     </div>
   );
 };

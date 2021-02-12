@@ -181,83 +181,33 @@ left: 0;
 }
 
 /* orbits of miniplanets */
-.mercuryOrbit {
-  --time: 4; /* time to get around the sun, not in seconds */
-  --dist: .6; /* distance from sun */
-  --size: 0.3; /* size of planet*/
-  z-index: 9;
-}
-.venusOrbit {
-  --time: 5; /* time to get around the sun, not in seconds */
-  --dist: .75; /* distance from sun */
-  --size: 0.4; /* size of planet*/
-  z-index: 8;
-}
-.earthOrbit {
-  --time: 7; /* time to get around the sun, not in seconds */
-  --dist: .95; /* distance from sun */
-  --size: 0.59; /* size of planet*/
-  z-index: 7;
+.menu {
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+  display:grid;
+  place-content: center;
 }
 
-.marsOrbit {
-  --time: 8;
-  --dist: 1.2;
-  --size: .5;
-  z-index: 6;
-}
-.juipterOrbit {
-  --time: 11;
-  --dist: 1.7;
-  --size: 1.15;
-  z-index: 5;
-}
-.saturnOrbit {
-  --time: 13;
-  --dist: 2.14;
-  --size: 1;
-  z-index: 4;
-}
-.uranusOrbit {
-  --time: 17;
-  --dist: 2.45;
-  --size: .9;
-  z-index: 3;
-}
-.neptuneOrbit {
-  --time: 19;
-  --dist: 2.76;
-  --size: .85;
-  z-index: 2;
-}
-.orbitContainer {
-width: 10rem;
-  --timeunit: 10s;
-  --offsetunit: 30vmin;
-  --sizeunit: 5vmin;
-  
-  position: absolute;
-  top: calc(50% - calc(var(--size) * var(--sizeunit)));
-  --offset: calc(var(--dist) * var(--offsetunit));/* distance from the center */
-  left: calc(50% - var(--offset)); 
-  width: calc(2 * var(--offset));
-  animation: circleRound calc(var(--time) * var(--timeunit)) linear   infinite;
-}
-.orbitContainer .inner {
-  
-  position: relative;
-  width: calc(calc(2 * var(--size)) * var(--sizeunit));
-  height: calc(calc(2 * var(--size)) * var(--sizeunit)); 
+.item {
+  grid-area:1/1;
+  width:var(--s);
+  height:var(--s);
+  margin:auto;
+  text-align: center;
   border-radius: 50%;
-  border-style: none;
- 
+  background: #f00;
+  color:#fff;
+  font-weight:bold;
+  animation: spin var(--d) linear infinite; 
+  transform:rotate(0) translate(var(--o)) rotate(0);
 }
-
-@keyframes circleRound {
+@keyframes spin {
   100% {
-    transform: rotate(360deg);
+    transform:rotate(1turn) translate(var(--o)) rotate(-1turn);
   }
 }
+
 /* end of orbit animation */ 
 /* mini planets */
 .miniPlanet {
