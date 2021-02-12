@@ -196,7 +196,7 @@ left: 0;
   position: absolute; /* Break it out of the regular flow */
   top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
   font-weight:bold;
-  animation: spin var(--d) linear infinite; 
+  animation: spin var(--d) linear infinite, translateBackground 100s infinite linear; 
   transform:rotate(0) translate(var(--o)) rotate(0);
 }
 @keyframes spin {
@@ -204,11 +204,35 @@ left: 0;
     transform:rotate(1turn) translate(var(--o)) rotate(-1turn);
   }
 }
-.earth {
+.mercuryPath {
+  --d:12s; 
+  --o:4.5rem;
+  --s: 12rem;
+  z-index: 9;
+}
+.venusPath {
+  --d:13.5s;
+  --o:5.8rem;
+  --s: 18rem;
+  z-index: 8;
+}
+.earthPath {
   --d:13s;
-  --o:165px;
-  
- 
+  --o:7.4rem;
+  --s: 20rem;
+  z-index: 7;
+}
+.marsPath {
+  --d:16s;
+  --o:9rem;
+  --s: 22rem;
+  z-index: 6;
+}
+.juipterPath {
+  --d:25s;
+  --o:13rem;
+  --s: 35rem;
+  z-index: 5;
 }
 /* end of orbit animation */ 
 /* mini planets */
@@ -233,7 +257,7 @@ left: 0;
   width:2em;
   height:2em;
   border-radius:50%;
-  animation: translateBackground 70s infinite linear;  
+ 
    background:url("./components/planetTextures/mars.jpeg") repeat-x;
    background-size: 100% 100%;
  }
@@ -242,7 +266,7 @@ left: 0;
   width:1.5em;
   height:1.5em;
   border-radius:50%;
-  animation: translateBackground 50s infinite linear;  
+  z-index: 9;
    background:url("./components/planetTextures/mercury.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -250,7 +274,7 @@ left: 0;
   width:2em;
   height:2em;
   border-radius:50%;
-  animation: translateBackground 65s infinite linear;  
+  z-index: 8;
    background:url("./components/planetTextures/venus.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -258,7 +282,7 @@ left: 0;
   width:6em;
   height:6em;
   border-radius:50%;
-  animation: translateBackground 120s infinite linear;  
+   
    background:url("./components/planetTextures/juipter.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -266,7 +290,7 @@ left: 0;
   width:5em;
   height:5em;
   border-radius:50%;
-  animation: translateBackground 90s infinite linear;  
+   
    background:url("./components/planetTextures/saturn.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -275,7 +299,7 @@ left: 0;
   height:4.5em;
   border-radius:50%;
   rotate:(45deg);
-  animation: translateBackground 80s infinite linear;  
+   
    background:url("./components/planetTextures/uranus.jpg") repeat-x;
    background-size: 100% 100%;
  }
@@ -283,7 +307,7 @@ left: 0;
   width:4.5em;
   height:4.5em;
   border-radius:50%;
-  animation: translateBackground 80s infinite linear;  
+  
    background:url("./components/planetTextures/neptune.jpg") repeat-x;
    background-size: 100% 100%;
  }

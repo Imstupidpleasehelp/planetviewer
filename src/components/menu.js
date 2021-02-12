@@ -29,9 +29,11 @@ export const Menu = () => {
 
      
 
-     
-      <div class="orbitContainer earth" ><MiniPlanet name="earth" className="orbitContainer earthMini " /></div>
-  
+      <div class="orbitContainer mercuryPath" ><MiniPlanet name="mercury" className="orbitContainer mercuryMini " /></div>
+      <div class="orbitContainer venusPath" ><MiniPlanet name="venus" className="orbitContainer venusMini " /></div>
+      <div class="orbitContainer earthPath" ><MiniPlanet name="earth" className="orbitContainer earthMini " /></div>
+      <div class="orbitContainer marsPath" ><MiniPlanet name="mars" className="orbitContainer marsMini " /></div>
+      <div class="orbitContainer juipterPath" ><MiniPlanet name="juipter" className="orbitContainer juipterMini " /></div>
      </div>
   );
 };
