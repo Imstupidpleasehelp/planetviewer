@@ -3,7 +3,7 @@ import { MiniPlanet } from "./miniplanet";
 import { Earth } from "./planets/Earf";
 import { PlanetView } from "./planetview";
 import useMouse from '@react-hook/mouse-position'
-
+import { motion } from "framer-motion";
 export const Menu = () => {
   const {cords, setCords} = useState('')
   
@@ -13,16 +13,21 @@ export const Menu = () => {
     leaveDelay: 100,
   })
  
-/*
- <motion.div initial="out"
-      animate="in"
-      exit="out"
-      variants={floatIn1}
-      transition={floatTransition}
-*/
+  const enterSystem = {
+    in: {
+     scale: 1,
+     y: 370
+    },
+    out: {
+      scale: 0,
+    },
+  };
+  const pagetransition = {
+    duration: 5,
+  };
 
   return (
-    <div className="container">
+    <motion.div  className="container">
       <div className="sun "></div>
       
    
@@ -37,6 +42,6 @@ export const Menu = () => {
       <div class="orbitContainer saturnPath" ><MiniPlanet name="saturn" className="orbitContainer saturnMini " /></div>
       <div class="orbitContainer uranusPath" ><MiniPlanet name="uranus" className="orbitContainer uranusMini " /></div>
       <div class="orbitContainer neptunePath" ><MiniPlanet name="neptune" className="orbitContainer neptuneMini " /></div>
-     </div>
+     </motion.div>
   );
 };

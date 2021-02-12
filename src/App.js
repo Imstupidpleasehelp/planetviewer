@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { Earth } from "./components/planets/Earf";
 import ParticlesBg from "particles-bg";
+import { NavLink } from "react-router-dom";
 import { Mars } from "./components/planets/mars";
 import { Mercury } from "./components/planets/mercury";
 import { Venus } from "./components/planets/venus";
@@ -11,6 +12,7 @@ import { Juipter } from "./components/planets/juipter";
 import { Saturn } from "./components/planets/saturn";
 import { Uranus } from "./components/planets/Uranus";
 import { Neptune } from "./components/planets/Neptune";
+import { Loading } from "./components/loading";
 function App() {
   let config = {
     num: [25, 20],
@@ -42,9 +44,14 @@ function App() {
           bg={true}
         />
        {*/}
-      
-          
-            <Route exact path="/" component={Menu} />
+      {/* initial="out"
+    animate="in"
+    exit="out"
+    variants={changepage}
+      transition={pagetransition} */}
+          <AnimatePresence>
+<Route exact path="/" component={Loading} />
+            <Route exact path="/sol" component={Menu} />
          
           <Route path="/mercury" component={Mercury} />
           <Route path="/venus" component={Venus} />
@@ -54,7 +61,7 @@ function App() {
           <Route path="/saturn" component={Saturn} />
           <Route path="/uranus" component={Uranus} />
           <Route path="/neptune" component={Neptune} />
-     </Switch>
+     </AnimatePresence></Switch>
       </Router>
    
   );

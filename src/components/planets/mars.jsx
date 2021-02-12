@@ -11,7 +11,7 @@ export const Mars = () => {
          <div class="col-sm-8">
         <PlanetZoom background="mars"></PlanetZoom></div>
       </div>
-      <NavLink to="/">
+      <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
     </div>

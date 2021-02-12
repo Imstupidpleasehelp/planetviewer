@@ -11,7 +11,7 @@ export const Uranus = () => {
          <div class="col-sm-8">
         <PlanetZoom background="Uranus" /></div>
       </div>
-      <NavLink to="/">
+      <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
     </div>
