@@ -157,6 +157,9 @@ left: 0;
 .back {
   text-align: right;
 }
+
+
+/* orbits of miniplanets */
 .sun {
   
   background-repeat: no-repeat;
@@ -179,25 +182,21 @@ left: 0;
  
 	transition: transform 0.7s linear;
 }
-
-/* orbits of miniplanets */
-.menu {
-  width: 200px;
-  height: 200px;
-  margin: 40px auto;
-  display:grid;
-  place-content: center;
+.earth {
+  --d:3s;--o:165px;--s:40px;
 }
-
-.item {
-  grid-area:1/1;
+.orbitContainer {
+  
   width:var(--s);
   height:var(--s);
   margin:auto;
   text-align: center;
   border-radius: 50%;
   background: #f00;
-  color:#fff;
+  overflow: auto; /* Recommended in case content is larger than the container */
+  margin: auto; /* Center the item vertically & horizontally */
+  position: absolute; /* Break it out of the regular flow */
+  top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
   font-weight:bold;
   animation: spin var(--d) linear infinite; 
   transform:rotate(0) translate(var(--o)) rotate(0);

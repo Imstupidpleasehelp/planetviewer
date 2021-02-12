@@ -12,7 +12,7 @@ export const Menu = () => {
     enterDelay: 100,
     leaveDelay: 100,
   })
-  
+ 
 /*
  <motion.div initial="out"
       animate="in"
@@ -22,7 +22,7 @@ export const Menu = () => {
 */
 
   return (
-    <div className="container menu">
+    <div className="container">
       <div className="sun "></div>
       
    
@@ -30,10 +30,8 @@ export const Menu = () => {
      
 
      
-      <div class="item" style="--d:5s;--o:65px;--s:40px;">1</div>
-  <div class="item" style="--d:6s;--o:150px;--s:20px;">2</div>
-  <div class="item" style="--d:10s;--o:90px;--s:10px;">3</div>
-  <div class="item" style="--d:2s;--o:30px;--s:30px;">4</div>
+      <div class="orbitContainer earth" >1</div>
+  
      </div>
   );
 };
