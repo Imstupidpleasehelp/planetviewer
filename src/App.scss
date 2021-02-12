@@ -217,22 +217,40 @@ left: 0;
   z-index: 8;
 }
 .earthPath {
-  --d:13s;
+  --d:16s;
   --o:7.4rem;
   --s: 20rem;
   z-index: 7;
 }
 .marsPath {
-  --d:16s;
+  --d:20s;
   --o:9rem;
   --s: 22rem;
   z-index: 6;
 }
 .juipterPath {
-  --d:25s;
+  --d:35s;
   --o:13rem;
   --s: 35rem;
   z-index: 5;
+}
+.saturnPath {
+  --d:40s;
+  --o:16rem;
+  --s: 40rem;
+  z-index: 4;
+}
+.uranusPath {
+  --d:55s;
+  --o:21rem;
+  --s: 55rem;
+  z-index: 3;
+}
+.neptunePath {
+  --d:75s;
+  --o:25rem;
+  --s: 55rem;
+  z-index: 2;
 }
 /* end of orbit animation */ 
 /* mini planets */
