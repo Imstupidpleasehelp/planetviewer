@@ -16,12 +16,9 @@ export const Loading = () => {
         duration: 5,
       };
     return(
-    <motion.div
-    animate="in"
-    exit="out"
-    variants={enterSystem}
-      transition={pagetransition}>
-<NavLink to="/sol"><p>Click meh</p></NavLink>
+    <motion.div className="loadingScreen"
+    >
+<NavLink to="/sol"><p className="loadingScreen">Enter System</p></NavLink>
     </motion.div>
     )
 }

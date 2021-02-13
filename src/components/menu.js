@@ -15,19 +15,23 @@ export const Menu = () => {
  
   const enterSystem = {
     in: {
-     scale: 1.3,
+     scale: 1,
      y: 370
     },
-    out: {
-      scale: 1,
-    },
+    start: {
+      scale: .1
+    }
   };
   const pagetransition = {
     duration: 5,
   };
 
   return (
-    <motion.div  animate={{scale: 1, y: 370}}
+    <motion.div initial="start"
+    animate="in"
+   
+    variants={enterSystem}
+    transition={pagetransition}  
       className="container">
       <div className="sun "></div>
       
