@@ -4,22 +4,28 @@ import { Earth } from "./planets/Earf";
 import { PlanetView } from "./planetview";
 import useMouse from '@react-hook/mouse-position'
 import { motion } from "framer-motion";
-export const Menu = () => {
-  const {cords, setCords} = useState('')
+export const Menu = (props) => {
+  {/* const {cords, setCords} = useState('') */}
   
-  const ref = React.useRef(null)
+  /* const ref = React.useRef(null)
   const mouse = useMouse(ref, {
     enterDelay: 100,
     leaveDelay: 100,
   })
- 
+ */
+const {inSystem, setIn} = props.passMeDown
   const enterSystem = {
     in: {
      scale: 1,
      y: 370
     },
     start: {
-      scale: .1
+      scale: .05,
+      y: -20
+    },
+    zoomOut: {
+      scale: 10,
+      y: 370
     }
   };
   const pagetransition = {
@@ -28,7 +34,7 @@ export const Menu = () => {
 
   return (
     <motion.div initial="start"
-    animate="in"
+    animate={inSystem ? "in" : "zoomOut"}
    
     variants={enterSystem}
     transition={pagetransition}  

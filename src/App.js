@@ -1,4 +1,5 @@
 import "./App.scss";
+import react, {useState} from 'react';
 import { Menu } from "./components/menu";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
@@ -14,6 +15,7 @@ import { Uranus } from "./components/planets/Uranus";
 import { Neptune } from "./components/planets/Neptune";
 import { Loading } from "./components/loading";
 function App() {
+  const [inSystem, setIn] = useState(false);
   let config = {
     num: [25, 20],
     rps: 14,
@@ -50,8 +52,8 @@ function App() {
     variants={changepage}
       transition={pagetransition} */}
           <AnimatePresence exitBeforeEnter>
-<Route exact path="/" component={Loading} />
-            <Route exact path="/sol" component={Menu} />
+<Route exact path="/" passMeDown={[inSystem, setIn]} component={Loading} />
+            <Route exact path="/sol" passMeDown={[inSystem, setIn]} component={Menu} />
          
           <Route path="/mercury" component={Mercury} />
           <Route path="/venus" component={Venus} />

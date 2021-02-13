@@ -1,24 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-export const Loading = () => {
-    const enterSystem = {
-        in: {
-         scale: 1,
-         y: 370
+export const Loading = (props) => {
+  const {inSystem, setIn} = props.passMeDown
+    const loading = {
+        start: {
+         scale: 2,
+         y: 350
         },
         out: {
-          scale: 1,
-          x: 100
+          scale: .1,
+         
         },
       };
       const pagetransition = {
-        duration: 5,
+        duration: 2,
       };
     return(
-    <motion.div className="loadingScreen"
+    <motion.div initial="start"
+    animate="in"
+   exit="out"
+    variants={loading}
+    transition={pagetransition}    className="loadingScreen"
     >
-<NavLink to="/sol"><p className="loadingScreen">Enter System</p></NavLink>
+<NavLink to="/sol"><button onClick={setIn(true)}><p >Enter System</p></button></NavLink>
     </motion.div>
     )
 }
