@@ -13,7 +13,7 @@ export const Menu = (props) => {
     leaveDelay: 100,
   })
  */
-const {inSystem, setIn} = props.passMeDown
+
   const enterSystem = {
     in: {
      scale: 1,
@@ -34,7 +34,7 @@ const {inSystem, setIn} = props.passMeDown
 
   return (
     <motion.div initial="start"
-    animate={inSystem ? "in" : "zoomOut"}
+    animate={"in"}
    
     variants={enterSystem}
     transition={pagetransition}  

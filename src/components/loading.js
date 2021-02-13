@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 export const Loading = (props) => {
-  const {inSystem, setIn} = props.passMeDown
+ 
     const loading = {
         start: {
          scale: 2,
@@ -23,7 +23,7 @@ export const Loading = (props) => {
     variants={loading}
     transition={pagetransition}    className="loadingScreen"
     >
-<NavLink to="/sol"><button onClick={setIn(true)}><p >Enter System</p></button></NavLink>
+<NavLink to="/sol"><button ><p >Enter System</p></button></NavLink>
     </motion.div>
     )
 }
