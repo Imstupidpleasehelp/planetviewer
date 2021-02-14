@@ -35,7 +35,7 @@ export const Menu = (props) => {
   return (
     <motion.div initial="start"
     animate={"in"}
-   
+   exit={"zoomOut"}
     variants={enterSystem}
     transition={pagetransition}  
       className="container">

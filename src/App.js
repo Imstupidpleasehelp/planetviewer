@@ -23,18 +23,18 @@ function App() {
        <Switch>
        
       
-          <AnimatePresence exitBeforeEnter initial={false}>
-<Route exact path="/"  component={Loading} />
-            <Route  path="/sol"  component={Menu} />
+          <AnimatePresence >
+<Route exact path="/" key="loading"  component={Loading} />
+            <Route  path="/sol" key="menu"  component={Menu} />
          
-          <Route path="/mercury" component={Mercury} />
-          <Route path="/venus" component={Venus} />
-          <Route path="/earth" component={Earth} />
-          <Route path="/mars" component={Mars} />
-          <Route path="/juipter" component={Juipter} />
-          <Route path="/saturn" component={Saturn} />
-          <Route path="/uranus" component={Uranus} />
-          <Route path="/neptune" component={Neptune} />
+          <Route path="/mercury" key="mercury" component={Mercury} />
+          <Route path="/venus" key="venus" component={Venus} />
+          <Route path="/earth" key="earth" component={Earth} />
+          <Route path="/mars" key="mars" component={Mars} />
+          <Route path="/juipter" key="juipter" component={Juipter} />
+          <Route path="/saturn" key="saturn" component={Saturn} />
+          <Route path="/uranus" key="uranus" component={Uranus} />
+          <Route path="/neptune" key="neptune" component={Neptune} />
      </AnimatePresence></Switch>
       </Router>
    

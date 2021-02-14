@@ -6,11 +6,11 @@ export const Loading = (props) => {
     const loading = {
         start: {
          scale: 2,
-         y: 350
+       
         },
         out: {
           scale: .1,
-         y: 500
+        
         },
       };
       const pagetransition = {
