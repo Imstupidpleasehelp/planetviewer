@@ -16,44 +16,16 @@ import { Neptune } from "./components/planets/Neptune";
 import { Loading } from "./components/loading";
 function App() {
  
-  let config = {
-    num: [25, 20],
-    rps: 14,
-    radius: [1, 1.5],
-    life: [6, 3],
-    v: [2, 3],
-
-    // body: "./img/icon.png", // Whether to render pictures
-    // rotate: [0, 20],
-    alpha: [0.6, 0],
-    scale: [1, 0.1],
-    position: "all", // all or center or {x:1,y:1,width:100,height:100}
-    color: ["#FFFFFF"],
-    cross: "dead", // cross or bround
-    random: 2, // or null,
-    g: 1, // gravity
-    // f: [2, -1], // force
-  };
+  
   return (
     
       <Router>
        <Switch>
-       {/* <ParticlesBg
-          color="#FFF"
-          className="backgroundMaster"
-          type="custom"
-          config={config}
-          bg={true}
-        />
-       {*/}
-      {/* initial="out"
-    animate="in"
-    exit="out"
-    variants={changepage}
-      transition={pagetransition} */}
-          <AnimatePresence exitBeforeEnter>
+       
+      
+          <AnimatePresence exitBeforeEnter initial={false}>
 <Route exact path="/"  component={Loading} />
-            <Route exact path="/sol"  component={Menu} />
+            <Route  path="/sol"  component={Menu} />
          
           <Route path="/mercury" component={Mercury} />
           <Route path="/venus" component={Venus} />

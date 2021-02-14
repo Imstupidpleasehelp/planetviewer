@@ -10,7 +10,7 @@ export const Loading = (props) => {
         },
         out: {
           scale: .1,
-         
+         y: 500
         },
       };
       const pagetransition = {

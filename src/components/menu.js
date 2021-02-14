@@ -39,6 +39,7 @@ export const Menu = (props) => {
     variants={enterSystem}
     transition={pagetransition}  
       className="container">
+        
       <div className="sun "></div>
       
    
@@ -53,6 +54,7 @@ export const Menu = (props) => {
       <div class="orbitContainer saturnPath" ><MiniPlanet name="saturn" className="orbitContainer saturnMini " /></div>
       <div class="orbitContainer uranusPath" ><MiniPlanet name="uranus" className="orbitContainer uranusMini " /></div>
       <div class="orbitContainer neptunePath" ><MiniPlanet name="neptune" className="orbitContainer neptuneMini " /></div>
+     
      </motion.div>
   );
 };
