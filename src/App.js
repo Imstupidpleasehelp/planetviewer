@@ -1,7 +1,7 @@
 import "./App.scss";
 import react, {useState} from 'react';
 import { Menu } from "./components/menu";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { Earth } from "./components/planets/Earf";
 import ParticlesBg from "particles-bg";
@@ -15,12 +15,12 @@ import { Uranus } from "./components/planets/Uranus";
 import { Neptune } from "./components/planets/Neptune";
 import { Loading } from "./components/loading";
 function App() {
- 
+  const location = useLocation();
   
   return (
     
-      <Router>
-       <Switch>
+      
+       <Switch  location={location} key={location.pathname}>
        
       
           <AnimatePresence >
@@ -36,7 +36,7 @@ function App() {
           <Route path="/uranus" key="uranus" component={Uranus} />
           <Route path="/neptune" key="neptune" component={Neptune} />
      </AnimatePresence></Switch>
-      </Router>
+     
    
   );
 }
