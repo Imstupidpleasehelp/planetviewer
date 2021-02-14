@@ -24,7 +24,7 @@ export const Menu = (props) => {
       y: -20
     },
     zoomOut: {
-      scale: 10,
+      scale: 2,
       y: 370
     }
   };

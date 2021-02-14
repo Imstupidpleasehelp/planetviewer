@@ -19,11 +19,11 @@ function App() {
   
   return (
     
-      
+       <AnimatePresence exitBeforeEnter={true}>
        <Switch  location={location} key={location.pathname}>
        
       
-          <AnimatePresence >
+         
 <Route exact path="/" key="loading"  component={Loading} />
             <Route  path="/sol" key="menu"  component={Menu} />
          
@@ -35,7 +35,7 @@ function App() {
           <Route path="/saturn" key="saturn" component={Saturn} />
           <Route path="/uranus" key="uranus" component={Uranus} />
           <Route path="/neptune" key="neptune" component={Neptune} />
-     </AnimatePresence></Switch>
+    </Switch> </AnimatePresence>
      
    
   );

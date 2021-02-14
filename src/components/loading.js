@@ -19,6 +19,7 @@ export const Loading = (props) => {
 
     exit: {
       x: "-100vw",
+      scale: .1,
       transition: {
         duration: 0.75
       }
@@ -34,9 +35,7 @@ return (
       exit="exit"
     > 
       <motion.div // this div will only animate the button
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        
         
         className="loadingScreen"
       >
