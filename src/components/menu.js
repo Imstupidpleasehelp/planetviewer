@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import { MiniPlanet } from "./miniplanet";
-import { Earth } from "./planets/Earf";
-import { PlanetView } from "./planetview";
+
 import useMouse from '@react-hook/mouse-position'
 import { motion } from "framer-motion";
 export const Menu = (props) => {
@@ -31,11 +30,23 @@ export const Menu = (props) => {
   const pagetransition = {
     duration: 5,
   };
+  const enterOrbit = {
+    orbit: {
+      scale: 1
+    },
+    enterOrbit: {
+      scale: 2
+    }
+    
+  }
+  const orbitTransition = {
+duration: 2
+  }
 
   return (
     <motion.div initial="start"
     animate={"in"}
-   exit={"zoomOut"}
+  /*  exit={"zoomOut"} */
     variants={enterSystem}
     transition={pagetransition}  
       className="container">
@@ -46,14 +57,14 @@ export const Menu = (props) => {
 
      
 
-      <div class="orbitContainer mercuryPath" ><MiniPlanet name="mercury" className="orbitContainer mercuryMini " /></div>
-      <div class="orbitContainer venusPath" ><MiniPlanet name="venus" className="orbitContainer venusMini " /></div>
-      <div class="orbitContainer earthPath" ><MiniPlanet name="earth" className="orbitContainer earthMini " /></div>
-      <div class="orbitContainer marsPath" ><MiniPlanet name="mars" className="orbitContainer marsMini " /></div>
-      <div class="orbitContainer juipterPath" ><MiniPlanet name="juipter" className="orbitContainer juipterMini " /></div>
-      <div class="orbitContainer saturnPath" ><MiniPlanet name="saturn" className="orbitContainer saturnMini " /></div>
-      <div class="orbitContainer uranusPath" ><MiniPlanet name="uranus" className="orbitContainer uranusMini " /></div>
-      <div class="orbitContainer neptunePath" ><MiniPlanet name="neptune" className="orbitContainer neptuneMini " /></div>
+      <motion.div   className="orbitContainer mercuryPath" ><MiniPlanet name="mercury" className="orbitContainer mercuryMini " /></motion.div>
+      <div className="orbitContainer venusPath" ><MiniPlanet name="venus" className="orbitContainer venusMini " /></div>
+      <div className="orbitContainer earthPath" ><MiniPlanet name="earth" className="orbitContainer earthMini " /></div>
+      <div className="orbitContainer marsPath" ><MiniPlanet name="mars" className="orbitContainer marsMini " /></div>
+      <div className="orbitContainer juipterPath" ><MiniPlanet name="juipter" className="orbitContainer juipterMini " /></div>
+      <div className="orbitContainer saturnPath" ><MiniPlanet name="saturn" className="orbitContainer saturnMini " /></div>
+      <div className="orbitContainer uranusPath" ><MiniPlanet name="uranus" className="orbitContainer uranusMini " /></div>
+      <div className="orbitContainer neptunePath" ><MiniPlanet name="neptune" className="orbitContainer neptuneMini " /></div>
      
      </motion.div>
   );

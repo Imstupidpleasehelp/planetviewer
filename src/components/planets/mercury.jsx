@@ -17,11 +17,7 @@ export const Mercury = () => {
     duration: 1.5,
   };
   return (
-    <motion.div initial="out"
-    animate="in"
-    exit="out"
-    variants={changepage}
-    transition={pagetransition} className="planetWrapper container">
+    <motion.div  className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
           <PlanetView Name="Mercury" Population="0" temperture="477°C" /></div>
