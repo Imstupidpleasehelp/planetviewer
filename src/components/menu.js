@@ -15,6 +15,7 @@ export const Menu = (props) => {
 
   const enterSystem = {
     in: {
+     
      scale: 1,
      y: 370
     },
@@ -28,7 +29,7 @@ export const Menu = (props) => {
     }
   };
   const pagetransition = {
-    duration: 5,
+    duration: 7.5,
   };
   const enterOrbit = {
     orbit: {
@@ -46,7 +47,7 @@ duration: 2
   return (
     <motion.div initial="start"
     animate={"in"}
-  /*  exit={"zoomOut"} */
+    /* exit={"zoomOut"}  */ 
     variants={enterSystem}
     transition={pagetransition}  
       className="container">

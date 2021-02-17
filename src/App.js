@@ -16,7 +16,7 @@ import { Neptune } from "./components/planets/Neptune";
 import { Loading } from "./components/loading";
 function App() {
   const location = useLocation();
-  
+  const [inSystem, setIn] = useState(false);
   return (
     
        <AnimatePresence exitBeforeEnter={true}>
@@ -35,7 +35,7 @@ function App() {
           <Route path="/saturn" key="saturn" component={Saturn} />
           <Route path="/uranus" key="uranus" component={Uranus} />
           <Route path="/neptune" key="neptune" component={Neptune} />
-    </Switch> </AnimatePresence>
+     </Switch></AnimatePresence>
      
    
   );
