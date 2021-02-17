@@ -4,7 +4,7 @@ import { MiniPlanet } from "./miniplanet";
 import useMouse from '@react-hook/mouse-position'
 import { motion } from "framer-motion";
 export const Menu = (props) => {
-  {/* const {cords, setCords} = useState('') */}
+  /* const {cords, setCords} = useState('') */
   
   /* const ref = React.useRef(null)
   const mouse = useMouse(ref, {
@@ -58,7 +58,7 @@ duration: 2
 
      
 
-      <motion.div   className="orbitContainer mercuryPath" ><MiniPlanet name="mercury" className="orbitContainer mercuryMini " /></motion.div>
+      <motion.div animate={enterOrbit} inital={"orbit"} in={"enterOrbit"} transition={orbitTransition}  className="orbitContainer mercuryPath" ><MiniPlanet name="mercury" className="orbitContainer mercuryMini " /></motion.div>
       <div className="orbitContainer venusPath" ><MiniPlanet name="venus" className="orbitContainer venusMini " /></div>
       <div className="orbitContainer earthPath" ><MiniPlanet name="earth" className="orbitContainer earthMini " /></div>
       <div className="orbitContainer marsPath" ><MiniPlanet name="mars" className="orbitContainer marsMini " /></div>

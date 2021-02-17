@@ -18,26 +18,26 @@ function App() {
   const location = useLocation();
   const [inSystem, setIn] = useState(false);
   return (
-    
+    <div className="backgroundclass">
        <AnimatePresence exitBeforeEnter={true}>
        <Switch  location={location} key={location.pathname}>
        
       
          
-<Route exact path="/" key="loading"  component={Loading} />
-            <Route  path="/sol" key="menu"  component={Menu} />
+<Route exact path="/"  component={Loading} />
+            <Route  path="/sol"   component={Menu} />
          
-          <Route path="/mercury" key="mercury" component={Mercury} />
-          <Route path="/venus" key="venus" component={Venus} />
-          <Route path="/earth" key="earth" component={Earth} />
-          <Route path="/mars" key="mars" component={Mars} />
-          <Route path="/juipter" key="juipter" component={Juipter} />
-          <Route path="/saturn" key="saturn" component={Saturn} />
-          <Route path="/uranus" key="uranus" component={Uranus} />
-          <Route path="/neptune" key="neptune" component={Neptune} />
+          <Route path="/mercury"  component={Mercury} />
+          <Route path="/venus"  component={Venus} />
+          <Route path="/earth"  component={Earth} />
+          <Route path="/mars"  component={Mars} />
+          <Route path="/juipter"  component={Juipter} />
+          <Route path="/saturn"  component={Saturn} />
+          <Route path="/uranus"  component={Uranus} />
+          <Route path="/neptune"  component={Neptune} />
      </Switch></AnimatePresence>
      
-   
+   </div>
   );
 }
 
