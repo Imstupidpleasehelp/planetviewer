@@ -2,9 +2,33 @@ import React from "react";
 import { PlanetView } from "../planetview";
 import { NavLink } from "react-router-dom";
 import {PlanetZoom} from './planetZoom'
+import { motion } from "framer-motion";
 export const Earth = () => {
+  const routeTransition = {
+    start: {
+      scale: .2
+    },
+
+    animate: {
+      scale: 1,
+      transition: {
+        duration: 3
+      }
+    },
+
+    exit: {
+      
+      scale: .05,
+      transition: {
+        duration: 2
+      }
+    }
+  };
   return (
-    <div className="planetWrapper container">
+    <motion.div variants={routeTransition}
+    initial="start"
+    animate="animate"
+    exit="exit" className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
           <PlanetView Name="Earth" Population="7,878,904,012 (estimate)" temperture="1.02 °C" /></div>
@@ -14,6 +38,6 @@ export const Earth = () => {
       <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-    </div>
+    </motion.div>
   );
 };

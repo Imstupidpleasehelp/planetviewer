@@ -25,7 +25,10 @@ export const Menu = (props) => {
     },
     zoomOut: {
       scale: 2,
-      y: 370
+      y: 370,
+      transition: {
+        duration: 2
+      }
     }
   };
   const pagetransition = {
