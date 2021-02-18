@@ -4,8 +4,31 @@ import { NavLink } from "react-router-dom";
 import {PlanetZoom} from './planetZoom'
 import { motion } from "framer-motion";
 export const Juipter = () => {
+  const routeTransition = {
+    start: {
+      scale: .2
+    },
+
+    animate: {
+      scale: 1,
+      transition: {
+        duration: 3
+      }
+    },
+
+    exit: {
+      
+      scale: .05,
+      transition: {
+        duration: 2
+      }
+    }
+  };
   return (
-    <div className="planetWrapper container">
+    <motion.div variants={routeTransition}
+    initial="start"
+    animate="animate"
+    exit="exit" className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
           <PlanetView Name="Juipter" Population="Many" temperture="-145°C" /></div>
@@ -15,6 +38,6 @@ export const Juipter = () => {
       <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-    </div>
+    </motion.div>
   );
 };
