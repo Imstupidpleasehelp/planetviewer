@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 export const Loading = (props) => {
-  const [inSystem, setIn] = props
+  const [inSystem, setIn] = props.functions
   const routeTransition = {
     hide: {
       x: "100vw"
