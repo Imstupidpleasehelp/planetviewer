@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 export const Loading = (props) => {
+  const [inSystem, setIn] = props
   const routeTransition = {
     hide: {
       x: "100vw"
@@ -41,8 +42,8 @@ return (
         className="loadingScreen"
       >
         <NavLink to="/sol">
-          <button>
-            <p>Enter System</p>
+          <button onClick={() => {setIn(true)}}>
+            <p >Enter System</p>
             
           </button>
 

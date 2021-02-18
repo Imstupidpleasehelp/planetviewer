@@ -24,7 +24,7 @@ function App() {
        
       
          
-<Route exact path="/"  component={Loading} />
+<Route exact path="/" setIn={setIn} inSystem={inSystem}  component={Loading} />
             <Route  path="/sol"   component={Menu} />
          
           <Route path="/mercury"  component={Mercury} />
