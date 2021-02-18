@@ -252,8 +252,8 @@ body {
 }
 .saturnPath {
   --d:79s;
-  --o:17rem;
-  --s: 40rem;
+  --o:18rem;
+  --s: 45rem;
   z-index: 4;
 }
 .uranusPath {
@@ -327,6 +327,12 @@ body {
    
    background:url("./components/planetTextures/saturn.jpg") repeat-x;
    background-size: 100% 100%;
+ }
+ .rings {
+  background:url("./components/planetTextures/rongs.png") ;
+  background-size: 100% 100%;
+  z-index: 99; 
+  
  }
  .uranusMini {
   width:4.5em;

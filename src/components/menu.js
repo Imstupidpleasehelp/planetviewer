@@ -66,7 +66,7 @@ duration: 2
       <div className="orbitContainer earthPath" ><MiniPlanet name="earth" className="orbitContainer earthMini " /></div>
       <div className="orbitContainer marsPath" ><MiniPlanet name="mars" className="orbitContainer marsMini " /></div>
       <div className="orbitContainer juipterPath" ><MiniPlanet name="juipter" className="orbitContainer juipterMini " /></div>
-      <div className="orbitContainer saturnPath" ><MiniPlanet name="saturn" className="orbitContainer saturnMini " /></div>
+      <div className="orbitContainer saturnPath" ><MiniPlanet name="saturn" className="orbitContainer saturnMini " /><img src="./components/planetTextures/rongs.png" alt="rings"></img></div>
       <div className="orbitContainer uranusPath" ><MiniPlanet name="uranus" className="orbitContainer uranusMini " /></div>
       <div className="orbitContainer neptunePath" ><MiniPlanet name="neptune" className="orbitContainer neptuneMini " /></div>
      
