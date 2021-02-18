@@ -24,8 +24,22 @@ function App() {
        
       
          
-<Route exact path="/" functions={[inSystem, setIn]}  component={Loading} />
-            <Route  path="/sol"   component={Menu} />
+       <Route
+  exact path="/"
+  render={(props) => {
+    return (
+      <Loading {...props} functions={[inSystem, setIn]} />
+    );
+  }}
+/>
+<Route
+  exact path="/sol"
+  render={(props) => {
+    return (
+      <Menu {...props} functions={[inSystem, setIn]} />
+    );
+  }}
+/>
          
           <Route path="/mercury"  component={Mercury} />
           <Route path="/venus"  component={Venus} />
