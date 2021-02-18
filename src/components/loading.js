@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+
 export const Loading = (props) => {
   const routeTransition = {
     hide: {
@@ -42,7 +43,9 @@ return (
         <NavLink to="/sol">
           <button>
             <p>Enter System</p>
+            
           </button>
+
         </NavLink>
       </motion.div>
     </motion.div>

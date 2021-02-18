@@ -47,7 +47,7 @@ duration: 2
   return (
     <motion.div initial="start"
     animate={"in"}
-    /* exit={"zoomOut"}  */ 
+     exit={"zoomOut"}  
     variants={enterSystem}
     transition={pagetransition}  
       className="container">
