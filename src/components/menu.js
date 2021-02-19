@@ -4,6 +4,7 @@ import { MiniPlanet } from "./miniplanet";
 import useMouse from '@react-hook/mouse-position'
 import { motion } from "framer-motion";
 export const Menu = (props) => {
+  const [inSystem, setIn] = props.functions
   /* const {cords, setCords} = useState('') */
   
   /* const ref = React.useRef(null)
@@ -31,6 +32,17 @@ export const Menu = (props) => {
       }
     }
   };
+  const comeBack = {
+    in: {
+     
+      opacity: 1,
+      
+     },
+     start: {
+       opacity: .2,
+       
+     },
+  }
   const pagetransition = {
     duration: 7.5,
   };
@@ -51,7 +63,7 @@ duration: 2
     <motion.div initial="start"
     animate={"in"}
      exit={"zoomOut"}  
-    variants={enterSystem}
+    variants={inSystem ? enterSystem : comeBack}
     transition={pagetransition}  
       className="container">
         
@@ -66,7 +78,7 @@ duration: 2
       <div className="orbitContainer earthPath" ><MiniPlanet name="earth" className="orbitContainer earthMini " /></div>
       <div className="orbitContainer marsPath" ><MiniPlanet name="mars" className="orbitContainer marsMini " /></div>
       <div className="orbitContainer juipterPath" ><MiniPlanet name="juipter" className="orbitContainer juipterMini " /></div>
-      <div className="orbitContainer saturnPath" ><MiniPlanet name="saturn" className="orbitContainer saturnMini " /><img src="./components/planetTextures/rongs.png" alt="rings"></img></div>
+      <div className="orbitContainer saturnPath" ><MiniPlanet name="saturn" className="orbitContainer2 saturnMini " /></div>
       <div className="orbitContainer uranusPath" ><MiniPlanet name="uranus" className="orbitContainer uranusMini " /></div>
       <div className="orbitContainer neptunePath" ><MiniPlanet name="neptune" className="orbitContainer neptuneMini " /></div>
      

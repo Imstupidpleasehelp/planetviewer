@@ -215,6 +215,22 @@ body {
   animation: spin var(--d) linear infinite, translateBackground 100s infinite linear; 
   transform:rotate(0) translate(var(--o)) rotate(0);
 }
+.orbitContainer2 {
+  
+  width:var(--s);
+  height:var(--s);
+  margin:auto;
+  text-align: center;
+  border-radius: 50%;
+  
+  overflow: auto; /* Recommended in case content is larger than the container */
+  margin: auto; /* Center the item vertically & horizontally */
+  position: absolute; /* Break it out of the regular flow */
+  top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
+  font-weight:bold;
+  animation: spin var(--d) linear infinite; 
+  transform:rotate(0) translate(var(--o)) rotate(0);
+}
 @keyframes spin {
   100% {
     transform:rotate(1turn) translate(var(--o)) rotate(-1turn);
@@ -252,7 +268,7 @@ body {
 }
 .saturnPath {
   --d:79s;
-  --o:18rem;
+  --o:17rem;
   --s: 45rem;
   z-index: 4;
 }
@@ -321,11 +337,11 @@ body {
    background-size: 100% 100%;
  }
  .saturnMini {
-  width:5em;
-  height:5em;
+  width:8.5em;
+  height:8.5em;
   border-radius:50%;
    
-   background:url("./components/planetTextures/saturn.jpg") repeat-x;
+   background:url("./components/planetTextures/saturnstatic.png") ;
    background-size: 100% 100%;
  }
  .rings {
