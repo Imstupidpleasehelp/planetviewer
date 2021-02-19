@@ -7,7 +7,8 @@ export const Loading = (props) => {
   const [inSystem, setIn] = props.functions
   const routeTransition = {
     hide: {
-      x: "100vw"
+      scale: 1,
+
     },
 
     animate: {
@@ -21,10 +22,10 @@ export const Loading = (props) => {
     },
 
     exit: {
-      x: "-100vw",
+      
       scale: .1,
       transition: {
-        duration: 0.75
+        duration: 1.4
       }
     }
   };
@@ -42,11 +43,9 @@ return (
         
         className="loadingScreen"
       > 
-        <NavLink to="/sol">
-          <button onClick={() => {setIn(true)}}>
-            <p >Enter System</p>
-            
-          </button>
+        <NavLink to="/sol" onClick={() => {setIn(true)}} >
+          Enter System
+          
 
         </NavLink>
        

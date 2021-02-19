@@ -14,11 +14,13 @@ body {
 
 .loadingScreen {
  
-    -webkit-flex-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    justify-content: center;
+  display: inline-block;
+  transform: translate(calc(-50% + 50vw),  calc(-50% + 50vh));
+  filter: contrast(3);
+  background: #191919;
+  box-shadow: 0px 0px 15px 2px #7Cbdbd inset;
+  border: 2px solid #3acaec;
+  border-radius: 5px;
 }
 .backgroundclass {
   background-color: black;
@@ -248,7 +250,7 @@ animation:move-clouds-back 500s linear infinite;
 /* orbits of miniplanets */
 .sun {
   
-  background-repeat: no-repeat;
+  
   background-size: cover;
   box-shadow: 1px 1px 105px firebrick; 
   box-shadow: 1px 1px 85px goldenrod; 

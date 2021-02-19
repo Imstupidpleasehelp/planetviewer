@@ -17,7 +17,7 @@ export const Menu = (props) => {
   const enterSystem = {
     in: {
      
-     scale: 1,
+     scale: .95,
      y: 420
     },
     start: {
