@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { Stars } from './stars';
 
 export const Loading = (props) => {
   const [inSystem, setIn] = props.functions
@@ -40,7 +41,7 @@ return (
         
         
         className="loadingScreen"
-      >
+      > 
         <NavLink to="/sol">
           <button onClick={() => {setIn(true)}}>
             <p >Enter System</p>
@@ -48,6 +49,7 @@ return (
           </button>
 
         </NavLink>
+       
       </motion.div>
     </motion.div>
   );
