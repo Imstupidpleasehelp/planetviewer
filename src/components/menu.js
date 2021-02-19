@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { MiniPlanet } from "./miniplanet";
 
 import useMouse from '@react-hook/mouse-position'
@@ -18,7 +18,7 @@ export const Menu = (props) => {
     in: {
      
      scale: 1,
-     y: 370
+     y: 420
     },
     start: {
       scale: .05,
@@ -26,7 +26,7 @@ export const Menu = (props) => {
     },
     zoomOut: {
       scale: 1.5,
-      y: 370,
+      y: 420,
       transition: {
         duration: 2
       }
@@ -43,7 +43,7 @@ export const Menu = (props) => {
      },
      start: {
        scale: .02,
-       y: 420
+       y: 520
      },
      exit: {
        scale: 1

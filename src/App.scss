@@ -11,9 +11,7 @@ body {
 /* star background */ 
 
 /* end background */ 
-.wrapper {
- 
-}
+
 .loadingScreen {
  
     -webkit-flex-align: center;
@@ -87,22 +85,22 @@ z-index:0;
 background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
 z-index:1;
 
--moz-animation:move-twink-back 200s linear infinite;
--ms-animation:move-twink-back 200s linear infinite;
--o-animation:move-twink-back 200s linear infinite;
--webkit-animation:move-twink-back 200s linear infinite;
-animation:move-twink-back 200s linear infinite;
+-moz-animation:move-twink-back 500s linear infinite;
+-ms-animation:move-twink-back 500s linear infinite;
+-o-animation:move-twink-back 500s linear infinite;
+-webkit-animation:move-twink-back 500s linear infinite;
+animation:move-twink-back 500s linear infinite;
 }
 
 .clouds{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  background:transparent url(./components/planetTextures/cloudsblue.png) repeat top center;
   z-index:3;
 
--moz-animation:move-clouds-back 200s linear infinite;
--ms-animation:move-clouds-back 200s linear infinite;
--o-animation:move-clouds-back 200s linear infinite;
--webkit-animation:move-clouds-back 200s linear infinite;
-animation:move-clouds-back 200s linear infinite;
+-moz-animation:move-clouds-back 500s linear infinite;
+-ms-animation:move-clouds-back 500s linear infinite;
+-o-animation:move-clouds-back 500s linear infinite;
+-webkit-animation:move-clouds-back 500s linear infinite;
+animation:move-clouds-back 500s linear infinite;
 }
   /* end of stars */
 /* planet start */ 
