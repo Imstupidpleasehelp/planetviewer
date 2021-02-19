@@ -32,16 +32,20 @@ export const Menu = (props) => {
       }
     }
   };
-  const comeBack = {
+  const comeBackInner = {
     in: {
      
-      opacity: 1,
-      
+      scale: 1,
+      y: 420
      },
      start: {
-       opacity: .2,
-       
+       scale: 2.4,
+       y: 370
      },
+     exit: {
+       scale: 1
+
+     }
   }
   const pagetransition = {
     duration: 7.5,
@@ -63,7 +67,7 @@ duration: 2
     <motion.div initial="start"
     animate={"in"}
      exit={"zoomOut"}  
-    variants={inSystem ? enterSystem : comeBack}
+    variants={inSystem ? enterSystem : comeBackInner}
     transition={pagetransition}  
       className="container">
         
