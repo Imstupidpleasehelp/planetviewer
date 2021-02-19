@@ -25,7 +25,7 @@ export const Menu = (props) => {
       y: -20
     },
     zoomOut: {
-      scale: 2,
+      scale: 1.5,
       y: 370,
       transition: {
         duration: 2
@@ -36,11 +36,14 @@ export const Menu = (props) => {
     in: {
      
       scale: 1,
-      y: 420
+      y: 420,
+      transition: {
+        duration: 3.5
+      }
      },
      start: {
-       scale: 2.4,
-       y: 370
+       scale: .02,
+       y: 420
      },
      exit: {
        scale: 1

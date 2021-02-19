@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export const Mercury = () => {
   const routeTransition = {
     start: {
-      scale: .2
+      scale: .05
     },
 
     animate: {
