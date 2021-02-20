@@ -34,7 +34,7 @@ export const Saturn = () => {
         <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-          <PlanetView Name="Saturn" Population="Many" temperture="-178°C" /></div>
+          <PlanetView Name="Saturn" Population="Many" temperture="-178°C" fact="Saturn has over 82 moons" /></div>
          <div class="col-sm-8">
         <PlanetZoom background="Saturn" /></div>
       </div>

@@ -70,7 +70,8 @@ duration: 2
     <motion.div initial="start"
     animate={"in"}
      exit={"zoomOut"}  
-    variants={inSystem ? enterSystem : comeBack}
+    variants={comeBack}
+  /*variants={inSystem ? enterSystem : comeBack} */
     transition={pagetransition}  
       className="container">
         

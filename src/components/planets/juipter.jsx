@@ -34,7 +34,7 @@ export const Juipter = () => {
         <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-          <PlanetView Name="Juipter" Population="Many" temperture="-145°C" /></div>
+          <PlanetView Name="Juipter" Population="Many" temperture="-145°C" fact="Winds as high as 335mph" /></div>
          <div class="col-sm-8">
         <PlanetZoom background="juipter" /></div>
       </div>

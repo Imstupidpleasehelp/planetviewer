@@ -34,7 +34,7 @@ export const Mars = () => {
         <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-          <PlanetView Name="Mars" Population="1, (Elon musk)" temperture="-80°C" /></div>
+          <PlanetView Name="Mars" Population="1, (Elon musk)" temperture="-80°C" fact="May have supported life" /></div>
          <div class="col-sm-8">
         <PlanetZoom background="mars"></PlanetZoom></div>
       </div>

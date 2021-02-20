@@ -36,7 +36,7 @@ export const Mercury = () => {
         <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-          <PlanetView Name="Mercury" Population="0" temperture="477°C" /></div>
+          <PlanetView Name="Mercury" Population="0" temperture="477°C" fact="Shifts from -177°C to 477°C on an average day" /></div>
          <div class="col-sm-8">
        <PlanetZoom background="mercury"></PlanetZoom></div>
       </div>

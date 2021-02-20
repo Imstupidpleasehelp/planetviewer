@@ -33,7 +33,7 @@ export const Neptune = () => {
         <div className="col-sm-4"><NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-          <PlanetView Name="Neptune" Population="Many" temperture="-200°C" /></div>
+          <PlanetView Name="Neptune" Population="Many" temperture="-200°C" fact="A Neptune year last 165 Earth years" /></div>
          <div class="col-sm-8">
         <PlanetZoom background="Neptune" /></div>
       </div>

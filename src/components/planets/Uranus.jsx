@@ -34,7 +34,7 @@ export const Uranus = () => {
         <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-          <PlanetView Name="Uranus" Population="0" temperture="-224°C" /></div>
+          <PlanetView Name="Uranus" Population="0" temperture="-224°C" fact="Uranus was officially discovered by Sir William Herschel in 1781" /></div>
          <div class="col-sm-8">
         <PlanetZoom background="Uranus" /></div>
       </div>
