@@ -6,18 +6,16 @@ import { Stars } from "./stars";
 export const Loading = (props) => {
   const [inSystem, setIn] = props.functions;
   const routeTransition = {
-    hide: {
-      scale: 1,
+    start: {
+      scale: .05,
     },
 
     animate: {
-      x: 0,
-      transition: {
-        delay: 0.75,
-        duration: 0.75,
-        when: "beforeChildren",
-        staggerChildren: 0.5,
-      },
+     scale: 1,
+     y: 40,
+     transition: {
+       duration: 2.5
+     }
     },
 
     exit: {
@@ -31,7 +29,7 @@ export const Loading = (props) => {
   return (
     <motion.div // this is the div that will animate the entire route
       variants={routeTransition}
-      initial="hide"
+      initial="start"
       animate="animate"
       exit="exit"
     >
@@ -52,7 +50,7 @@ export const Loading = (props) => {
           </div>
           <div className="">
             <NavLink to="/" className="systemButton">
-              Alpha Centari System
+            Proxima System
             </NavLink>
           </div>
           <div className="">
