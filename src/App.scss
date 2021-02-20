@@ -15,13 +15,34 @@ body {
 .loadingScreen {
  
   display: inline-block;
-  transform: translate(calc(-50% + 50vw),  calc(-50% + 50vh));
-  filter: contrast(3);
+  transform: translate(calc(-50% + 50vw),  calc(-50% + 40vh));
+ 
+  
+}
+.systemButton {
+  padding: 20px;
   background: #191919;
   box-shadow: 0px 0px 15px 2px #7Cbdbd inset;
   border: 2px solid #3acaec;
   border-radius: 5px;
+  color: white;
+  margin: 10vh;
 }
+.systemButton:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,96,115,1) 83%, rgba(0,93,255,0.5928922594428396) 100%);
+  color: white;
+  font-weight: bolder;
+}
+/* navigation */ 
+.navMaster {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+/* nav end */ 
 .backgroundclass {
   background-color: black;
     position: fixed;

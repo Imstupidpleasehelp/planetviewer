@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 import { Stars } from './components/stars';
+import { Nav } from './components/nav';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
     <div className="backgroundclass">
             <Stars />
+            <Nav />
             </div>
     <App />
   </Router></React.StrictMode>,
