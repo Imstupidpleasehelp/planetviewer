@@ -30,14 +30,14 @@ export const Neptune = () => {
     animate="animate"
     exit="exit" className="planetWrapper container">
       <div className="row">
-        <div className="col-sm-4">
+        <div className="col-sm-4"><NavLink to="/sol">
+        <div className="back">Back</div>
+      </NavLink>
           <PlanetView Name="Neptune" Population="Many" temperture="-200°C" /></div>
          <div class="col-sm-8">
         <PlanetZoom background="Neptune" /></div>
       </div>
-      <NavLink to="/sol">
-        <div className="back">Back</div>
-      </NavLink>
+      
     </motion.div>
   );
 };

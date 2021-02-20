@@ -112,7 +112,7 @@ animation:move-clouds-back 500s linear infinite;
   position:absolute;
   border-radius:50%;
   overflow:hidden;
-  box-shadow: 0 0 60px -20px darkslateblue, -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+  
   
 }
 .planet .mask{
@@ -231,8 +231,12 @@ animation:move-clouds-back 500s linear infinite;
 /* planet end */ 
 /* planet info view */ 
 .planetView {
-  border: 2px solid white;
+  padding: 20px;
   text-align: center;
+  background: #191919;
+  box-shadow: 0px 0px 15px 2px #7Cbdbd inset;
+  border: 2px solid #3acaec;
+  border-radius: 5px;
 }
 .planetWrapper {
   text-align: center;
@@ -243,7 +247,13 @@ animation:move-clouds-back 500s linear infinite;
   margin-top: 15vh;
 }
 .back {
-  text-align: right;
+ 
+  background: #191919;
+  box-shadow: 0px 0px 15px 2px #7Cbdbd inset;
+  border: 2px solid #3acaec;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
 }
 
 

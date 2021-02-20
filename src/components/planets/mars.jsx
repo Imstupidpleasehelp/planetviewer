@@ -31,13 +31,14 @@ export const Mars = () => {
     exit="exit" className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
+        <NavLink to="/sol">
+        <div className="back">Back</div>
+      </NavLink>
           <PlanetView Name="Mars" Population="1, (Elon musk)" temperture="-80°C" /></div>
          <div class="col-sm-8">
         <PlanetZoom background="mars"></PlanetZoom></div>
       </div>
-      <NavLink to="/sol">
-        <div className="back">Back</div>
-      </NavLink>
+      
     </motion.div>
   );
 };

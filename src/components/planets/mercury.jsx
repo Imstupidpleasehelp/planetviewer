@@ -33,13 +33,14 @@ export const Mercury = () => {
     exit="exit"  className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
+        <NavLink to="/sol">
+        <div className="back">Back</div>
+      </NavLink>
           <PlanetView Name="Mercury" Population="0" temperture="477°C" /></div>
          <div class="col-sm-8">
        <PlanetZoom background="mercury"></PlanetZoom></div>
       </div>
-      <NavLink to="/sol">
-        <div className="back">Back</div>
-      </NavLink>
+     
     </motion.div>
   );
 };
