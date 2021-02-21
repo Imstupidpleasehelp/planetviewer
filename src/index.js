@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
     <div className="backgroundclass">
-            <Bar /><Stars />
+            <Stars />
             <Nav />
             
             </div>

@@ -44,6 +44,7 @@ export const Loading = (props) => {
               onClick={() => {
                 setIn(true);
               }}
+              onMouseOver={props.setBar('stuff')}
             >
               Sol System
             </NavLink>{" "}

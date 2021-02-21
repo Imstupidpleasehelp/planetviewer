@@ -15,12 +15,14 @@ import { Uranus } from "./components/planets/Uranus";
 import { Neptune } from "./components/planets/Neptune";
 import { Loading } from "./components/loading";
 import { Stars } from "./components/stars";
+import { Bar } from "./components/bar";
 function App() {
   const location = useLocation();
   const [inSystem, setIn] = useState(false);
   const [BarText, setBar] = useState("test")
   return (
     <div className="wrapper">
+      <Bar BarText={BarText} setBar={setBar} />
       <AnimatePresence exitBeforeEnter={true}>
         <Switch location={location} key={location.pathname}>
          
@@ -28,7 +30,7 @@ function App() {
             exact
             path="/"
             render={(props) => {
-              return <Loading {...props} functions={[inSystem, setIn]} />;
+              return <Loading {...props} functions={[inSystem, setIn]} setBar={setBar} />;
             }}
           />
           <Route

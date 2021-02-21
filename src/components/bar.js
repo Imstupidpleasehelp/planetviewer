@@ -2,8 +2,12 @@ import React from 'react'
 
 
 
-export const Bar = () => {
+export const Bar = (props) => {
     return(
-        <div className="bar">BAR</div>
+        <div>
+        <div className="barSpacer"></div>
+        <div className=" bar">{props.BarText}</div>
+        <div className="barSpacer"></div>
+        </div>
     )
 }
