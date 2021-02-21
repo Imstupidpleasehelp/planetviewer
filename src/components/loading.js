@@ -44,18 +44,18 @@ export const Loading = (props) => {
               onClick={() => {
                 setIn(true);
               }}
-              onMouseOver={props.setBar('stuff')}
+              onMouseOver={() => props.setBar('Enter System')} onMouseLeave={() => props.setBar(`...`)}
             >
               Sol System
             </NavLink>{" "}
           </div>
           <div className="">
-            <NavLink to="/" className="systemButton">
+            <NavLink to="/" className="systemButton"  onMouseOver={() => props.setBar('Error: Insufficient fuel')} onMouseLeave={() => props.setBar(' ...')}>
             Proxima System
             </NavLink>
           </div>
           <div className="">
-            <NavLink to="/" className="systemButton">
+            <NavLink to="/" className="systemButton" onMouseOver={() => props.setBar('Error: Quarantine Zone')} onMouseLeave={() => props.setBar('... ')}>
               Klendathu System
             </NavLink>
           </div>

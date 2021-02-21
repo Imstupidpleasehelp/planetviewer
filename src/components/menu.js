@@ -75,13 +75,13 @@ duration: 2
     transition={pagetransition}  
       className="container">
         
-      <div className="sun "></div>
+      <div className="sun " onMouseOver={() => props.setBar('Yellow Dwarf Star')} onMouseLeave={() => props.setBar(`...`)}></div>
       
    
 
      
 
-      <motion.div animate={enterOrbit} inital={"orbit"} in={"enterOrbit"} transition={orbitTransition}  className="orbitContainer mercuryPath" ><MiniPlanet name="mercury" className="orbitContainer mercuryMini " /></motion.div>
+      <motion.div animate={enterOrbit} inital={"orbit"} in={"enterOrbit"} transition={orbitTransition}   className="orbitContainer mercuryPath" ><MiniPlanet name="mercury" onMouseOver={() => props.setBar('Enter System')} onMouseLeave={() => props.setBar(`...`)} className="orbitContainer mercuryMini " /></motion.div>
       <div className="orbitContainer venusPath" ><MiniPlanet name="venus" className="orbitContainer venusMini " /></div>
       <div className="orbitContainer earthPath" ><MiniPlanet name="earth" className="orbitContainer earthMini " /></div>
       <div className="orbitContainer marsPath" ><MiniPlanet name="mars" className="orbitContainer marsMini " /></div>

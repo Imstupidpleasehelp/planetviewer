@@ -19,7 +19,7 @@ import { Bar } from "./components/bar";
 function App() {
   const location = useLocation();
   const [inSystem, setIn] = useState(false);
-  const [BarText, setBar] = useState("test")
+  const [BarText, setBar] = useState("Welcome Commander")
   return (
     <div className="wrapper">
       <Bar BarText={BarText} setBar={setBar} />
@@ -37,7 +37,7 @@ function App() {
             exact
             path="/sol"
             render={(props) => {
-              return <Menu {...props} functions={[inSystem, setIn]} />;
+              return <Menu {...props} functions={[inSystem, setIn]} setBar={setBar} />;
             }}
           />
 
