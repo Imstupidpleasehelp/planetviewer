@@ -3,7 +3,7 @@ import { PlanetView } from "../planetview";
 import { NavLink } from "react-router-dom";
 import {PlanetZoom} from './planetZoom'
 import { motion } from "framer-motion";
-export const Uranus = () => {
+export const Uranus = (props) => {
   const routeTransition = {
     start: {
       scale: .05
@@ -35,7 +35,8 @@ export const Uranus = () => {
         <div className="back">Back</div>
       </NavLink>
           <PlanetView Name="Uranus" Population="0" temperture="-224°C" fact="Uranus was officially discovered by Sir William Herschel in 1781" /></div>
-         <div class="col-sm-8">
+         <div class="col-sm-8" onMouseOver={() => props.setBar("Uninhabitable")}
+        onMouseLeave={() => props.setBar(`...`)}>
         <PlanetZoom background="Uranus" /></div>
       </div>
       

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import {PlanetZoom} from './planetZoom'
 import { motion } from "framer-motion";
 
-export const Mercury = () => {
+export const Mercury = (props) => {
   const routeTransition = {
     start: {
       scale: .05,
@@ -37,7 +37,8 @@ export const Mercury = () => {
         <div className="back">Back</div>
       </NavLink>
           <PlanetView Name="Mercury" Population="0" temperture="477°C" fact="Shifts from -177°C to 477°C on an average day" /></div>
-         <div class="col-sm-8">
+         <div class="col-sm-8" onMouseOver={() => props.setBar("Uninhabitable")}
+        onMouseLeave={() => props.setBar(`...`)}>
        <PlanetZoom background="mercury"></PlanetZoom></div>
       </div>
      

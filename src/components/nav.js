@@ -8,7 +8,7 @@ export const Nav = () => {
       <div className="row">
         <div className=" col-sm-4">
           <NavLink to="/" className="navButton">
-            Interstellar view
+            Interstellar Space
           </NavLink>
         </div>
         <div className="col-sm-4">

@@ -338,7 +338,7 @@ animation:move-clouds-back 500s linear infinite;
     animation: translateBackground 120s infinite linear;  
   background:url("./components/planetTextures/sun.jpg") repeat-x;
   background-size: 200% 100%;
- 
+ z-index: 99;
 	transition: transform 0.7s linear;
 }
 

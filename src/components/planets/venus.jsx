@@ -3,7 +3,7 @@ import { PlanetView } from "../planetview";
 import { NavLink } from "react-router-dom";
 import {PlanetZoom} from './planetZoom'
 import { motion } from "framer-motion";
-export const Venus = () => {
+export const Venus = (props) => {
   const routeTransition = {
     start: {
       scale: .05
@@ -36,7 +36,8 @@ export const Venus = () => {
         <div className="back">Back</div>
       </NavLink>
           <PlanetView Name="Venus" Population="0" temperture="467°C" fact="A day on Venus lasts longer than a year" /></div>
-         <div class="col-sm-8">
+         <div class="col-sm-8" onMouseOver={() => props.setBar("Uninhabitable")}
+        onMouseLeave={() => props.setBar(`...`)}>
         <PlanetZoom background="venus"></PlanetZoom></div>
       </div>
       

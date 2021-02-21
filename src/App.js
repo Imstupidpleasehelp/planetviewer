@@ -40,15 +40,63 @@ function App() {
               return <Menu {...props} functions={[inSystem, setIn]} setBar={setBar} />;
             }}
           />
-
-          <Route path="/mercury" component={Mercury} />
-          <Route path="/venus" component={Venus} />
-          <Route path="/earth" component={Earth} />
-          <Route path="/mars" component={Mars} />
-          <Route path="/juipter" component={Juipter} />
-          <Route path="/saturn" component={Saturn} />
-          <Route path="/uranus" component={Uranus} />
-          <Route path="/neptune" component={Neptune} />
+<Route
+            exact
+            path="/mercury"
+            render={(props) => {
+              return <Mercury {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
+        <Route
+            exact
+            path="/venus"
+            render={(props) => {
+              return <Venus {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
+         <Route
+            exact
+            path="/earth"
+            render={(props) => {
+              return <Earth {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
+          
+          <Route
+            exact
+            path="/mars"
+            render={(props) => {
+              return <Mars {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
+         <Route
+            exact
+            path="/juipter"
+            render={(props) => {
+              return <Juipter {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
+          <Route
+            exact
+            path="/saturn"
+            render={(props) => {
+              return <Saturn {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
+         <Route
+            exact
+            path="/uranus"
+            render={(props) => {
+              return <Uranus {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
+          <Route
+            exact
+            path="/neptune"
+            render={(props) => {
+              return <Neptune {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
         </Switch>
       </AnimatePresence>
     </div>

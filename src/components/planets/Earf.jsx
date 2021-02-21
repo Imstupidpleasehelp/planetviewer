@@ -3,7 +3,7 @@ import { PlanetView } from "../planetview";
 import { NavLink } from "react-router-dom";
 import { PlanetZoom } from "./planetZoom";
 import { motion } from "framer-motion";
-export const Earth = () => {
+export const Earth = (props) => {
   const routeTransition = {
     start: {
       scale: 0.05,
@@ -43,7 +43,8 @@ export const Earth = () => {
             fact="Only planet with a Chick-Fil-A"
           />
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-8" onMouseOver={() => props.setBar("Inhabitable")}
+        onMouseLeave={() => props.setBar(`...`)}>
           <div className="text-center">
             <div className="planet">
               <div className="wrap">
