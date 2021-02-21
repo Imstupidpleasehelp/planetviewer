@@ -18,11 +18,12 @@ import { Stars } from "./components/stars";
 function App() {
   const location = useLocation();
   const [inSystem, setIn] = useState(false);
+  const [BarText, setBar] = useState("test")
   return (
     <div className="wrapper">
       <AnimatePresence exitBeforeEnter={true}>
         <Switch location={location} key={location.pathname}>
-          
+         
           <Route
             exact
             path="/"

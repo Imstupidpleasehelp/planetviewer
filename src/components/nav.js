@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Bar } from "./bar";
 
 export const Nav = () => {
   return (
@@ -19,6 +20,7 @@ export const Nav = () => {
           </NavLink>
         </div>
       </div>
+      
     </div>
   );
 };

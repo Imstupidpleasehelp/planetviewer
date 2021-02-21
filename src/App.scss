@@ -62,6 +62,16 @@ body {
   background-color: red;
 }
 /* nav end */ 
+.bar {
+  color: white;
+  font-size: 30px;
+  position: fixed;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
 .backgroundclass {
   background-color: black;
     position: fixed;
