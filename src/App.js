@@ -19,7 +19,7 @@ import { Bar } from "./components/bar";
 function App() {
   const location = useLocation();
   const [inSystem, setIn] = useState(false);
-  const [BarText, setBar] = useState("Welcome Commander")
+  const [BarText, setBar] = useState("Welcome")
   return (
     <div className="wrapper">
       <Bar BarText={BarText} setBar={setBar} />

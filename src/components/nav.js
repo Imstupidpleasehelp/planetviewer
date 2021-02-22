@@ -15,9 +15,9 @@ export const Nav = () => {
 
         </div>
         <div className=" col-sm-4">
-          <NavLink to="/sol" className="navButton">
+         {/*} <NavLink to="/sol" className="navButton">
             System View
-          </NavLink>
+  </NavLink>  */}
         </div>
       </div>
       

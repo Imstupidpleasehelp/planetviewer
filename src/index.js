@@ -12,7 +12,7 @@ ReactDOM.render(
     <Router>
     <div className="backgroundclass">
             <Stars />
-            <Nav />
+            
             
             </div>
     <App />
