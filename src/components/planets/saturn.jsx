@@ -6,19 +6,21 @@ import { motion } from "framer-motion";
 export const Saturn = (props) => {
   const routeTransition = {
     start: {
-      scale: .05
+      scale: .05,
+      y: 400,
     },
 
     animate: {
       scale: 1,
+      y: 120,
       transition: {
         duration: 3
       }
     },
 
     exit: {
-      
-      scale: .05,
+      y: -500,
+      scale: .01,
       transition: {
         duration: 2
       }

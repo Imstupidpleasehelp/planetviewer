@@ -24,11 +24,12 @@ export const Menu = (props) => {
       y: -20,
     },
     zoomOut: {
-      scale: 1.5,
-      y: 420,
+      scale: 0.05,
+      y:-200,
       transition: {
-        duration: 2,
-      },
+        duration: 4
+      }
+      
     },
   };
   const comeBack = {
@@ -44,7 +45,7 @@ export const Menu = (props) => {
       y: 520,
     },
     exit: {
-      scale: 1,
+      scale: 0.02,
     },
   };
   const pagetransition = {
@@ -67,7 +68,7 @@ export const Menu = (props) => {
       initial="start"
       animate={"in"}
       exit={"zoomOut"}
-      variants={comeBack}
+      variants={enterSystem}
       /*variants={inSystem ? enterSystem : comeBack} */
       transition={pagetransition}
       className="container"

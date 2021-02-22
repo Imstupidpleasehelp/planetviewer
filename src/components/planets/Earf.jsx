@@ -6,22 +6,25 @@ import { motion } from "framer-motion";
 export const Earth = (props) => {
   const routeTransition = {
     start: {
-      scale: 0.05,
+      scale: .05,
+      y: 400,
     },
 
     animate: {
       scale: 1,
+      y: 120,
       transition: {
-        duration: 3,
-      },
+        duration: 3
+      }
     },
 
     exit: {
-      scale: 0.05,
+      y: -500,
+      scale: .01,
       transition: {
-        duration: 2,
-      },
-    },
+        duration: 2
+      }
+    }
   };
   return (
     <motion.div

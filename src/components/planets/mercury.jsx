@@ -8,18 +8,19 @@ export const Mercury = (props) => {
   const routeTransition = {
     start: {
       scale: .05,
-      y: 120,
+      y: 400,
     },
 
     animate: {
       scale: 1,
+      y: 120,
       transition: {
         duration: 3
       }
     },
 
     exit: {
-      
+      y: -500,
       scale: .01,
       transition: {
         duration: 2

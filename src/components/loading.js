@@ -50,12 +50,12 @@ export const Loading = (props) => {
             </NavLink>{" "}
           </div>
           <div className="">
-            <NavLink to="/" className="systemButton"  onMouseOver={() => props.setBar('Error: Insufficient fuel')} onMouseLeave={() => props.setBar(' ...')}>
+            <NavLink to="/" className="systemButton2"  onMouseOver={() => props.setBar('Error: Insufficient fuel')} onMouseLeave={() => props.setBar(' ...')}>
             Proxima System
             </NavLink>
           </div>
           <div className="">
-            <NavLink to="/" className="systemButton" onMouseOver={() => props.setBar('Error: Quarantine Zone')} onMouseLeave={() => props.setBar('... ')}>
+            <NavLink to="/" className="systemButton2" onMouseOver={() => props.setBar('Error: Quarantine Zone')} onMouseLeave={() => props.setBar('... ')}>
               Klendathu System
             </NavLink>
           </div>
