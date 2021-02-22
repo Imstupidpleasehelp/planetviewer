@@ -36,7 +36,7 @@ export const Saturn = (props) => {
         <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-          <PlanetView Name="Saturn" Population="Many" temperture="-178°C" fact="Saturn has over 82 moons" /></div>
+          <PlanetView Name="Saturn" Population="0" temperture="-178°C" fact="Saturn has over 82 moons" /></div>
          <div class="col-sm-8" onMouseOver={() => props.setBar("Uninhabitable")}
         onMouseLeave={() => props.setBar(`...`)}>
         <PlanetZoom background="Saturn" /></div>

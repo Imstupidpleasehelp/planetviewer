@@ -35,7 +35,7 @@ export const Neptune = (props) => {
         <div className="col-sm-4"><NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-          <PlanetView Name="Neptune" Population="Many" temperture="-200°C" fact="A Neptune year last 165 Earth years" /></div>
+          <PlanetView Name="Neptune" Population="0" temperture="-200°C" fact="A Neptune year last 165 Earth years" /></div>
          <div class="col-sm-8" onMouseOver={() => props.setBar("Uninhabitable")}
         onMouseLeave={() => props.setBar(`...`)}>
         <PlanetZoom background="Neptune" /></div>

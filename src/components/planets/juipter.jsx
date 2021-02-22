@@ -36,7 +36,7 @@ export const Juipter = (props) => {
         <NavLink to="/sol">
         <div className="back">Back</div>
       </NavLink>
-          <PlanetView  Name="Juipter" Population="Many" temperture="-145°C" fact="Winds as high as 335mph" /></div>
+          <PlanetView  Name="Juipter" Population="0" temperture="-145°C" fact="Winds as high as 335mph" /></div>
          <div class="col-sm-8"  onMouseOver={() => props.setBar("Uninhabitable")}
         onMouseLeave={() => props.setBar(`...`)}>
         <PlanetZoom background="juipter"  /></div>
