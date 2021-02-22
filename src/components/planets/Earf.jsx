@@ -14,7 +14,7 @@ export const Earth = (props) => {
       scale: 1,
       y: 120,
       transition: {
-        duration: 3
+        duration: 2
       }
     },
 
