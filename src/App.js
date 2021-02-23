@@ -20,6 +20,8 @@ function App() {
   const location = useLocation();
   const [inSystem, setIn] = useState(false);
   const [BarText, setBar] = useState("Select target to scan")
+  var click = new Audio('click.wav');
+  var error = new Audio('error.wav')
   return (
     <div className="wrapper">
       <Bar BarText={BarText} setBar={setBar} />
@@ -30,7 +32,7 @@ function App() {
             exact
             path="/"
             render={(props) => {
-              return <Loading {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+              return <Loading {...props} functions={[inSystem, setIn]} setBar={setBar} click={click} error={error} />;
             }}
           />
           <Route
