@@ -7,14 +7,14 @@ export const Bar = (props) => {
       <div className="row">
         <div className="col">
           {" "}
-          <NavLink to="/" className="navButton">
+          <NavLink to="/" className="navButton" onClick={() => props.click.play()}>
             Interstellar Space
           </NavLink>
         </div>
         <div className="col-lg-4 bar ">{props.BarText}</div>
         <div className="col">
           {" "}
-          <NavLink to="/" className="navButton2" onMouseOver={() => props.setBar("Error: Insufficient fuel")}
+          <NavLink to="/" className="navButton2" onClick={() => props.error.play()} onMouseOver={() => props.setBar("Error: Insufficient fuel")}
         onMouseLeave={() => props.setBar(`...`)}>
             Galatic View
           </NavLink>

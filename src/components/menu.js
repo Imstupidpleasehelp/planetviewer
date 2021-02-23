@@ -27,7 +27,7 @@ export const Menu = (props) => {
       scale: 0.05,
       y:-200,
       transition: {
-        duration: 4
+        duration: 3.5
       }
       
     },

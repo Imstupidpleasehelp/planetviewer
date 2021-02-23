@@ -24,7 +24,7 @@ function App() {
   var error = new Audio('error.wav')
   return (
     <div className="wrapper">
-      <Bar BarText={BarText} setBar={setBar} />
+      <Bar BarText={BarText} setBar={setBar} click={click} error={error} />
       <AnimatePresence exitBeforeEnter={true}>
         <Switch location={location} key={location.pathname}>
          
