@@ -97,7 +97,15 @@ function App() {
               return <Neptune {...props} functions={[inSystem, setIn]} setBar={setBar} />;
             }}
           />
+          {/* end of sol system  */}
            <Route
+            exact
+            path="/interstellar"
+            render={(props) => {
+              return <Interstellar {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
+          <Route
             exact
             path="/interstellar"
             render={(props) => {
