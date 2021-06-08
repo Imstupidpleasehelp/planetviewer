@@ -4,8 +4,6 @@ import { Menu } from "./components/menu";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { Earth } from "./components/planets/Earf";
-import ParticlesBg from "particles-bg";
-import { NavLink } from "react-router-dom";
 import { Mars } from "./components/planets/mars";
 import { Mercury } from "./components/planets/mercury";
 import { Venus } from "./components/planets/venus";
@@ -14,8 +12,8 @@ import { Saturn } from "./components/planets/saturn";
 import { Uranus } from "./components/planets/Uranus";
 import { Neptune } from "./components/planets/Neptune";
 import { Loading } from "./components/loading";
-import { Stars } from "./components/stars";
 import { Bar } from "./components/bar";
+import { Interstellar } from "./interstellar/interstellar";
 function App() {
   const location = useLocation();
   const [inSystem, setIn] = useState(false);
@@ -97,6 +95,13 @@ function App() {
             path="/neptune"
             render={(props) => {
               return <Neptune {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+            }}
+          />
+           <Route
+            exact
+            path="/interstellar"
+            render={(props) => {
+              return <Interstellar {...props} functions={[inSystem, setIn]} setBar={setBar} />;
             }}
           />
         </Switch>

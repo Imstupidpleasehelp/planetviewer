@@ -1,1 +1,1 @@
-Unfinished, Planet viewing app
+Work in progress
