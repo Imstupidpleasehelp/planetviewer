@@ -34,7 +34,7 @@ export const Mercury = (props) => {
     exit="exit"  className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
-        <NavLink to="/sol">
+        <NavLink to="/Sol">
         <div className="back">Back</div>
       </NavLink>
           <PlanetView Name="Mercury" Population="0" temperture="477°C" fact="Shifts from -177°C to 477°C on an average day" /></div>

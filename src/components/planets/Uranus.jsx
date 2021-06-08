@@ -33,7 +33,7 @@ export const Uranus = (props) => {
     exit="exit" className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
-        <NavLink to="/sol">
+        <NavLink to="/Sol">
         <div className="back">Back</div>
       </NavLink>
           <PlanetView Name="Uranus" Population="0" temperture="-224°C" fact="Uranus was officially discovered by Sir William Herschel in 1781" /></div>

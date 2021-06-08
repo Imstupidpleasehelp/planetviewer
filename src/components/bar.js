@@ -14,10 +14,7 @@ export const Bar = (props) => {
         <div className="col-lg-4 bar ">{props.BarText}</div>
         <div className="col">
           {" "}
-          <NavLink to="/" className="navButton2" onClick={() => props.error.play()} onMouseOver={() => props.setBar("Error: Insufficient fuel")}
-        onMouseLeave={() => props.setBar(`...`)}>
-            Galatic View
-          </NavLink>
+          
         </div>
       </div>
     </div>

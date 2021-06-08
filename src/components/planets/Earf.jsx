@@ -36,7 +36,7 @@ export const Earth = (props) => {
     >
       <div className="row">
         <div className="col-sm-4">
-          <NavLink to="/sol">
+          <NavLink to="/Sol">
             <div className="back">Back</div>
           </NavLink>
           <PlanetView

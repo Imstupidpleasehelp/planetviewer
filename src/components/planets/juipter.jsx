@@ -33,7 +33,7 @@ export const Juipter = (props) => {
     exit="exit" className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
-        <NavLink to="/sol">
+        <NavLink to="/Sol">
         <div className="back">Back</div>
       </NavLink>
           <PlanetView  Name="Juipter" Population="0" temperture="-145°C" fact="Winds as high as 335mph" /></div>

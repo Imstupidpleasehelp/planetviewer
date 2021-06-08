@@ -32,7 +32,7 @@ export const Neptune = (props) => {
     animate="animate"
     exit="exit" className="planetWrapper container">
       <div className="row">
-        <div className="col-sm-4"><NavLink to="/sol">
+        <div className="col-sm-4"><NavLink to="/Sol">
         <div className="back">Back</div>
       </NavLink>
           <PlanetView Name="Neptune" Population="0" temperture="-200°C" fact="A Neptune year last 165 Earth years" /></div>

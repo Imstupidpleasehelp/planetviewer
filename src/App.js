@@ -35,7 +35,7 @@ function App() {
           />
           <Route
             exact
-            path="/sol"
+            path="/Sol"
             render={(props) => {
               return <Menu {...props} functions={[inSystem, setIn]} setBar={setBar} />;
             }}

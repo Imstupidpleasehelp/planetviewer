@@ -33,7 +33,7 @@ export const Mars = (props) => {
     exit="exit" className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
-        <NavLink to="/sol">
+        <NavLink to="/Sol">
         <div className="back">Back</div>
       </NavLink>
           <PlanetView Name="Mars" Population="1, (Elon musk)" temperture="-80°C" fact="May have supported life" /></div>

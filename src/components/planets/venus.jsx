@@ -34,7 +34,7 @@ export const Venus = (props) => {
       <div className="row">
         
         <div className="col-sm-4">
-        <NavLink to="/sol">
+        <NavLink to="/Sol">
         <div className="back">Back</div>
       </NavLink>
           <PlanetView Name="Venus" Population="0" temperture="467°C" fact="A day on Venus lasts longer than a year" /></div>

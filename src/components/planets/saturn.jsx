@@ -33,7 +33,7 @@ export const Saturn = (props) => {
     exit="exit" className="planetWrapper container">
       <div className="row">
         <div className="col-sm-4">
-        <NavLink to="/sol">
+        <NavLink to="/Sol">
         <div className="back">Back</div>
       </NavLink>
           <PlanetView Name="Saturn" Population="0" temperture="-178°C" fact="Saturn has over 82 moons" /></div>
