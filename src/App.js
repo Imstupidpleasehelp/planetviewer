@@ -13,7 +13,7 @@ import { Uranus } from "./components/planets/Uranus";
 import { Neptune } from "./components/planets/Neptune";
 import { Loading } from "./components/loading";
 import { Bar } from "./components/bar";
-import { Interstellar } from "./interstellar/interstellar";
+import { Interstellar } from "./galatic-view/interstellar";
 function App() {
   const location = useLocation();
   const [inSystem, setIn] = useState(false);

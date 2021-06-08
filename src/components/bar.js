@@ -7,7 +7,7 @@ export const Bar = (props) => {
       <div className="row">
         <div className="col">
           {" "}
-          <NavLink to="/" className="navButton" onClick={() => props.click.play()}>
+          <NavLink to="/interstellar" className="navButton" onClick={() => props.click.play()}>
             Interstellar Space
           </NavLink>
         </div>
