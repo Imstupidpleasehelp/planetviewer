@@ -14,6 +14,7 @@ import { Neptune } from "./components/planets/Neptune";
 import { Loading } from "./components/loading";
 import { Bar } from "./components/bar";
 import { Interstellar } from "./galatic-view/interstellar";
+import { SolSystem } from "./components/solsystem";
 function App() {
   const location = useLocation();
   const [inSystem, setIn] = useState(false);
@@ -37,7 +38,7 @@ function App() {
             exact
             path="/Sol"
             render={(props) => {
-              return <Menu {...props} functions={[inSystem, setIn]} setBar={setBar} />;
+              return <SolSystem {...props} functions={[inSystem, setIn]} setBar={setBar} />;
             }}
           />
 <Route
@@ -107,7 +108,7 @@ function App() {
           />
           <Route
             exact
-            path="/interstellar"
+            path="/star/:id"
             render={(props) => {
               return <Interstellar {...props} functions={[inSystem, setIn]} setBar={setBar} />;
             }}
