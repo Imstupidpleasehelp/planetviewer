@@ -1,7 +1,7 @@
-
+import "./sol-system.scss"
 import { gsap } from "gsap";
 import {useEffect} from 'react'
-
+import { MiniPlanet } from "../components/miniplanet";
 
 export const SolSystem = (props) => {
     useEffect(() => {
@@ -12,11 +12,12 @@ props.setBar("Sol System")
             
             <div
         className="sun"
-        onMouseOver={() => props.setBar("Yellow Dwarf Star")}
+       // onMouseOver={() => props.setBar("Yellow Dwarf Star")}
        
       ></div>
-
-
+ <MiniPlanet name="mercury" className=" mercuryMini " />
+ <MiniPlanet name="venus" className=" venusMini " />
+ <MiniPlanet name="earth" className=" earthMini " />
         </div>
     )
 }
