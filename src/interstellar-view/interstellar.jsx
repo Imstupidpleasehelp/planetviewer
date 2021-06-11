@@ -12,8 +12,8 @@ export const Interstellar = () => {
   return (
     <div className="interstellar-space">
      
-     <h1> wweee</h1>
-      
+        <Star name="Sol" starType="sol-system"></Star>
+      <Star name="steve" starType="red-supergiant"></Star>
     </div>
   );
 };

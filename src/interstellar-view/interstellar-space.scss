@@ -1,28 +1,10 @@
 .interstellar-space {
-    position: relative;
+    
     min-height: 100vh;
     min-width: 100vw;
+    z-index: -1;
 }
-.sol-system {
-    text-align: center;
-  
-}
+
 .system {
     background-color: green;
 }
-.sun {
-  
-  
-    background-size: cover;
-    box-shadow: 1px 1px 105px firebrick; 
-    box-shadow: 1px 1px 85px goldenrod; 
-   
-    --radius: 7rem;
- 
-      border-radius: 50%;
-      animation: translateBackground 120s infinite linear;  
-    background:url("../planetTextures/sun.jpg") repeat-x;
-    background-size: 200% 100%;
-   z-index: 99;
-      transition: transform 0.7s linear;
-  }
