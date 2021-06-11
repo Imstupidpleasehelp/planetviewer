@@ -4,10 +4,8 @@
     min-width: 100vw;
 }
 .sol-system {
-    
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+  
 }
 .system {
     background-color: green;
@@ -18,7 +16,7 @@
     background-size: cover;
     box-shadow: 1px 1px 105px firebrick; 
     box-shadow: 1px 1px 85px goldenrod; 
-    position: absolute;
+   
     --radius: 7rem;
  
       border-radius: 50%;

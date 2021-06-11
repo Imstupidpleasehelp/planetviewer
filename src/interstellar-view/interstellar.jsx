@@ -7,13 +7,13 @@ export const Interstellar = () => {
     stuff();
   });
   function stuff() {
-    gsap.to(".yellow-dwarf", { rotation: 27, x: 1000, duration: 15 });
+    //gsap.to(".yellow-dwarf", { rotation: 27, x: 1000, duration: 15 });
   }
   return (
     <div className="interstellar-space">
-      <div className="sol-system">
-        <Star name="Sol" starType="yellow-dwarf"></Star>
-      </div>
+     
+        <Star name="Sol"  className="sol-system" starType="yellow-dwarf"></Star>
+      
       <Star name="yes" starType="yellow-dwarf"></Star>
     </div>
   );

@@ -1,22 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from "react-router-dom";
-import { Stars } from './components/stars';
-import { Nav } from './components/nav';
-import { Bar } from './components/bar';
+
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-    <div className="backgroundclass">
-            <Stars />
-            
-            
-            </div>
     <App />
-  </Router></React.StrictMode>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
