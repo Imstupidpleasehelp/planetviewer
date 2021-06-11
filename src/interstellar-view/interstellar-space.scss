@@ -18,6 +18,9 @@
   background-size: 200% 100%;
   transition: transform 0.7s linear;
 }
+$random-number: random(10) + 10;
 .random-placement {
-  background-color: red;
+ height: $random-number;
+ width: $random-number;
+ background-color: red;
 }

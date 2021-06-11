@@ -4,17 +4,26 @@ import { gsap } from "gsap";
 import { useEffect } from "react";
 export const Interstellar = () => {
   useEffect(() => {
-    stuff();
+   
   });
-  function stuff() {
+  //function stuff() {
     //gsap.to(".yellow-dwarf", { rotation: 27, x: 1000, duration: 15 });
-  }
+  //}
+  function makeid(length) {
+    let r = Math.random().toString(36).substring(7);
+    console.log(r)
+   }
+   
+
+ const makeStars = () => {
+
+ }
   return (
     <div className="interstellar-space">
-      <div className="random-placement">
+      
      <Star name="Sol" starType="sol-system"></Star>
-     
-       <Star name="steve" starType="yellow-dwarf"></Star>
+     <div className="random-placement">
+       
      </div>
       
     </div>
