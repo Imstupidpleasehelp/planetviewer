@@ -5,3 +5,4 @@ things to do.
 3. good navigation ui
 4. generate systems for the stars 
 5. orbit animations
+6. page transitions

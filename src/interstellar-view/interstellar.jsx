@@ -1,5 +1,5 @@
-import "./interstellar-space.scss";
-import {Star} from './stars/star';
+import "./interstellar-space.less";
+import { Star } from "./stars/star";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 export const Interstellar = () => {
@@ -11,9 +11,9 @@ export const Interstellar = () => {
   }
   return (
     <div className="interstellar-space">
-     
-        <Star name="Sol" starType="sol-system"></Star>
-      <Star name="steve" starType="red-supergiant"></Star>
+      
+     <Star name="Sol" starType="sol-system"></Star>
+      <Star name="steve" starType="yellow-dwarf"></Star>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import "./sol-system.scss"
+import "./sol-system.css"
 import { gsap } from "gsap";
 import {useEffect} from 'react'
 import { MiniPlanet } from "../../components/miniplanet";
