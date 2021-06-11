@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-export const Stars = () => {
+export const StarsBackGround = () => {
     return(
         <div>
        <div className="stars"></div>

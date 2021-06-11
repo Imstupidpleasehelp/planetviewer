@@ -1,3 +1,3 @@
-export const Star = () => {
+export const otherSystem = () => {
     
 }

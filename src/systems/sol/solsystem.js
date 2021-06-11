@@ -1,11 +1,11 @@
 import "./sol-system.scss"
 import { gsap } from "gsap";
 import {useEffect} from 'react'
-import { MiniPlanet } from "../components/miniplanet";
+import { MiniPlanet } from "../../components/miniplanet";
 
-export const SolSystem = (props) => {
+export const SolSystem = () => {
     useEffect(() => {
-        props.setBar("Sol System")
+        
         Orbit();
     })
     const Orbit = () => {
@@ -16,12 +16,10 @@ export const SolSystem = (props) => {
             
             <div
         className="sun"
-       // onMouseOver={() => props.setBar("Yellow Dwarf Star")}
+       
        
       ></div>
-      <div //onMouseOver={() => props.setBar("Barren World")}
-      //onMouseLeave={() => props.setBar('Sol System')}
-        >
+      <div>
  <MiniPlanet name="mercury"  className=" mercuryMini " /></div>
  <MiniPlanet name="venus" className=" venusMini " />
  <MiniPlanet name="earth" className=" earthMini " />

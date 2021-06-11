@@ -15,7 +15,7 @@
     height: calc(2 * var(--radius));
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
-    background:url("./planetTextures/sun.jpg") repeat-x;
+    background:url("../../planetTextures/sun.jpg") repeat-x;
     background-size: 200% 100%;
    z-index: 99;
       transition: transform 0.7s linear;
@@ -32,7 +32,7 @@
    border-radius:50%;
   
    /* animation: translateBackground 75s infinite linear, ;   */
-    background:url("./planetTextures/earth.jpg") repeat-x;
+    background:url("../../planetTextures/earth.jpg") repeat-x;
     background-size: 100% 100%;
   
   }
@@ -42,7 +42,7 @@
     height:2em;
     border-radius:50%;
    
-     background:url("./planetTextures/mars.jpeg") repeat-x;
+     background:url("../../planetTextures/mars.jpeg") repeat-x;
      background-size: 100% 100%;
    }
    .mercuryMini {
@@ -51,7 +51,7 @@
     height:1.5em;
     border-radius:50%;
     z-index: 9;
-     background:url("./planetTextures/mercury.jpg") repeat-x;
+     background:url("../../planetTextures/mercury.jpg") repeat-x;
      background-size: 100% 100%;
    }
    .venusMini {
@@ -59,7 +59,7 @@
     height:2em;
     border-radius:50%;
     z-index: 8;
-     background:url("./planetTextures/venus.jpg") repeat-x;
+     background:url("../../planetTextures/venus.jpg") repeat-x;
      background-size: 100% 100%;
    }
    .juipterMini {
@@ -67,7 +67,7 @@
     height:6em;
     border-radius:50%;
      
-     background:url("./planetTextures/juipter.jpg") repeat-x;
+     background:url("../../planetTextures/juipter.jpg") repeat-x;
      background-size: 100% 100%;
    }
    .saturnMini {
@@ -75,22 +75,17 @@
     height:7.5em;
     border-radius:50%;
      
-     background:url("./planetTextures/saturnstatic.png") repeat-x ;
+     background:url("../../planetTextures/saturnstatic.png") repeat-x ;
      background-size: 100% 100%;
    }
-   .rings {
-    background:url("./planetTextures/rongs.png") ;
-    background-size: 100% 100%;
-    z-index: 99; 
-    
-   }
+ 
    .uranusMini {
     width:4.5em;
     height:4.5em;
     border-radius:50%;
     rotate:(45deg);
      
-     background:url("./planetTextures/uranus.jpg") repeat-x;
+     background:url("../../planetTextures/uranus.jpg") repeat-x;
      background-size: 100% 100%;
    }
    .neptuneMini {
@@ -98,7 +93,7 @@
     height:4.5em;
     border-radius:50%;
     
-     background:url("./planetTextures/neptune.jpg") repeat-x;
+     background:url("../../planetTextures/neptune.jpg") repeat-x;
      background-size: 100% 100%;
    }
   /* end of miniplanets */ 
