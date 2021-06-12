@@ -1,7 +1,9 @@
+
+import { NavLink } from "react-router-dom";
 export const Navigation = () => {
 return (
     <div>
-    <button>zoom out</button>
+    <NavLink to="/"><button>zoom out</button></NavLink>
     <button>Zoom in</button></div>
 )
 }

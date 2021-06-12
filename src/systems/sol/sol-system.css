@@ -59,7 +59,7 @@
     height:1.5em;
     border-radius:50%;
     z-index: 9;
-    animation: translateBackground 75s infinite linear;
+    animation: translateBackground 55s infinite linear;
      background:url("../../planetTextures/mercury.jpg") repeat-x;
      background-size: 100% 100%;
    }
@@ -67,7 +67,7 @@
     width:2em;
     height:2em;
     border-radius:50%;
-    animation: translateBackground 75s infinite linear;
+    animation: translateBackground 65s infinite linear;
     z-index: 8;
      background:url("../../planetTextures/venus.jpg") repeat-x;
      background-size: 100% 100%;
@@ -76,7 +76,7 @@
     width:6em;
     height:6em;
     border-radius:50%;
-    animation: translateBackground 75s infinite linear;
+    animation: translateBackground 125s infinite linear;
      background:url("../../planetTextures/juipter.jpg") repeat-x;
      background-size: 100% 100%;
    }
@@ -94,7 +94,7 @@
     height:4.5em;
     border-radius:50%;
     rotate:(45deg);
-    animation: translateBackground 75s infinite linear;
+    animation: translateBackground 105s infinite linear;
      background:url("../../planetTextures/uranus.jpg") repeat-x;
      background-size: 100% 100%;
    }
@@ -102,7 +102,7 @@
     width:4.5em;
     height:4.5em;
     border-radius:50%;
-    animation: translateBackground 75s infinite linear;
+    animation: translateBackground 115s infinite linear;
      background:url("../../planetTextures/neptune.jpg") repeat-x;
      background-size: 100% 100%;
    }
