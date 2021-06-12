@@ -115,17 +115,9 @@
    z-index: 99;
       transition: transform 0.7s linear;
 }
-/* slots */
-.one {
-    
-  top: 70%;
-  left: 80%;
-  }
 
 
-.star-label {
-    text-align: center;
-}
+
 .sol-system {
     
     top: 50%;

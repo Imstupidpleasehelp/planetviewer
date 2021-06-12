@@ -24,6 +24,9 @@ export const Interstellar = () => {
     "red-dwarf",
     "brown-dwarf",
   ];
+  let posList = [
+    "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"
+  ]
 function RandomNum() {
  return Math.floor(Math.random() * 5 + 3);
 }
@@ -35,7 +38,7 @@ function RandomNum() {
           <div className="starWrapper">
             <Star
               name={makeid}
-              starType={`${starList[Math.floor(Math.random() * 6 + 1)]} one`}
+              starType={`${starList[Math.floor(Math.random() * 6 + 1)]} ${posList[Math.floor(Math.random() * 9 + 1)]}`}
             ></Star>
             <h2>Star: {makeid()}</h2>
            {makeStars((num - 1))}

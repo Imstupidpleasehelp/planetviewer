@@ -1,7 +1,7 @@
 .interstellar-space {
   min-height: 100vh;
   min-width: 100vw;
-  position: relative;
+  position: absolute;
 }
 .sol-system {
   position: absolute;
@@ -19,6 +19,57 @@
   background-size: 200% 100%;
   transition: transform 0.7s linear;
 }
+.one {
+  position: absolute;
+  left: 80%;
+  top: 5%;
+}
+.two {
+  position: absolute;
+  left: 40%;
+  top: 15%;
+}
+.three {
+  position: absolute;
+  left: 15%;
+  top: 55%;
+}
+.four {
+  position: absolute;
+  left: 25%;
+  top: 60%;
+}
+.five {
+  position: absolute;
+  right: 25%;
+  top: 60%;
+}
+.six {
+  position: absolute;
+  right: 75%;
+  top: 20%;
+}
+.seven {
+  position: absolute;
+  right: 25%;
+  bottom: 60%;
+}
+.eight {
+  position: absolute;
+  left: 125%;
+  top: 60%;
+}
+.nine {
+  position: absolute;
+ right: 125%;
+  bottom: 10%;
+}
+.ten {
+  position: absolute;
+  right: 15%;
+  bottom: 80%;
+}
+
 $random-number: random(10) + 10;
 .random-placement {
  height: $random-number;
