@@ -24,12 +24,13 @@ export const Interstellar = () => {
     "red-dwarf",
     "brown-dwarf",
   ];
-
-  const makeStars = () => {
-    var num = Math.floor(Math.random() * 7 + 2);
-    var count = 0;
-    if (count < num) {
-      window.setTimeout(function () {
+function RandomNum() {
+ return Math.floor(Math.random() * 5 + 3);
+}
+  const makeStars = (num  = 5) => {
+    
+    
+   if (num > 0) {
         return (
           <div className="starWrapper">
             <Star
@@ -37,15 +38,20 @@ export const Interstellar = () => {
               starType={starList[Math.floor(Math.random() * 6 + 1)]}
             ></Star>
             <h2>Star: {makeid()}</h2>
+           {makeStars((num - 1))}
           </div>
+          
         );
-      }, 1000);
-    }
-  };
+        
+   }
+      };
+
+    
+  
   return (
     <div className="interstellar-space">
       <Star name="Sol" starType="sol-system"></Star>
-      <div className="random-placement">{makeStars()}</div>
+      <div className="random-placement">{makeStars(RandomNum())}</div>
     </div>
   );
 };
