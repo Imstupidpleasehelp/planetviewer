@@ -35,7 +35,7 @@ function RandomNum() {
           <div className="starWrapper">
             <Star
               name={makeid}
-              starType={starList[Math.floor(Math.random() * 6 + 1)]}
+              starType={`${starList[Math.floor(Math.random() * 6 + 1)]} one`}
             ></Star>
             <h2>Star: {makeid()}</h2>
            {makeStars((num - 1))}
