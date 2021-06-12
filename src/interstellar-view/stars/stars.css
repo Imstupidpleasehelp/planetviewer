@@ -3,12 +3,14 @@
     height: 30px;
     color: white;
 }
-
+.star-label {
+    color: white;
+}
 /* red giant, red supergiant, blue giant, white dwarf, yellow dwarf, red dwarf, brown dwarf */
 .yellow-dwarf {
-    background-color: yellow;
-    box-shadow: 1px 1px 105px firebrick;
-    box-shadow: 1px 1px 85px goldenrod;
+    
+    box-shadow: 1px 1px 75px gold;
+    box-shadow: 1px 1px 55px goldenrod;
     background-color: red;
     --radius: 7rem;
     border-radius: 50%;
@@ -20,9 +22,10 @@
 .blue-giant {
     transform: translate(-50%, -50%);
     background-size: cover;
-    box-shadow: 1px 1px 105px firebrick; 
-    box-shadow: 1px 1px 85px goldenrod; 
-   
+    box-shadow: 1px 1px 105px blue; 
+    box-shadow: 1px 1px 85px blueviolet; 
+   margin-top: 100px;
+   margin-left: 150px;
     --radius: 7rem;
  width: 60px;
  height: 60px;
@@ -36,12 +39,13 @@
 .white-dwarf {
     transform: translate(-50%, -50%);
     background-size: cover;
-    box-shadow: 1px 1px 105px firebrick; 
-    box-shadow: 1px 1px 85px goldenrod; 
+    box-shadow: 1px 1px 55px white; 
+    box-shadow: 1px 1px 25px whitesmoke; 
    width: 20px;
    height: 20px;
     --radius: 7rem;
- 
+ margin-bottom: 160px;
+ margin-left: 30px;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../../starTextures/white-dwarf.jpg") repeat-x;
@@ -53,12 +57,13 @@
 .brown-dwarf {
     transform: translate(-50%, -50%);
     background-size: cover;
-    box-shadow: 1px 1px 105px firebrick; 
-    box-shadow: 1px 1px 85px goldenrod; 
+    box-shadow: 1px 1px 55px brown; 
+    box-shadow: 1px 1px 35px goldenrod; 
    width: 20px;
    height: 20px;
     --radius: 7rem;
- 
+ margin-left: 125px;
+ margin-bottom: 100px;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../../starTextures/brown-dwarf.jpg") repeat-x;
@@ -70,11 +75,12 @@
     transform: translate(-50%, -50%);
     background-size: cover;
     box-shadow: 1px 1px 105px firebrick; 
-    box-shadow: 1px 1px 85px goldenrod; 
+    box-shadow: 1px 1px 85px firebrick; 
    width: 60px;
    height: 60px;
     --radius: 7rem;
- 
+    margin-left: 150px;
+    margin-bottom: -50px;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../../starTextures/red-supergiant.jpeg") repeat-x;
@@ -85,12 +91,13 @@
 .red-supergiant {
     transform: translate(-50%, -50%);
     background-size: cover;
-    box-shadow: 1px 1px 105px firebrick; 
-    box-shadow: 1px 1px 85px goldenrod; 
+    box-shadow: 3px 3px 125px firebrick; 
+    box-shadow: 1px 1px 85px red; 
    width: 80px;
    height: 80px;
     --radius: 7rem;
- 
+    margin-right: 155px;
+    margin-top: 100px;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../../starTextures/red-supergiant.jpeg") repeat-x;
@@ -103,11 +110,11 @@
     height: 20px;
     transform: translate(-50%, -50%);
     background-size: cover;
-    box-shadow: 1px 1px 105px firebrick; 
-    box-shadow: 1px 1px 85px goldenrod; 
-   
+    box-shadow: 1px 1px 55px firebrick; 
+    box-shadow: 1px 1px 35px red; 
+   margin-left: 140px;
     --radius: 7rem;
- 
+ margin-top: 50px;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../../starTextures/red-supergiant.jpeg") repeat-x;

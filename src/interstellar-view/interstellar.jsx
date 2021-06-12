@@ -40,7 +40,7 @@ function RandomNum() {
               name={makeid}
               starType={`${starList[Math.floor(Math.random() * 6 + 1)]} ${posList[Math.floor(Math.random() * 9 + 1)]}`}
             ></Star>
-            <h2>Star: {makeid()}</h2>
+            
            {makeStars((num - 1))}
           </div>
           
