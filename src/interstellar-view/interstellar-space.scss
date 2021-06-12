@@ -22,5 +22,7 @@ $random-number: random(10) + 10;
 .random-placement {
  height: $random-number;
  width: $random-number;
- background-color: red;
+}
+.starWrapper {
+  color: white;
 }

@@ -7,14 +7,34 @@
 .yellow-dwarf {
     background-color: yellow;
 }
+.blue-giant {
+    background-color: blue;
+}
+.white-dwarf {
+    background-color: white;
+}
+.red-dwarf {
+    background-color: red;
+
+}
+.brown-dwarf {
+    background-color: brown;
+}
+.red-giant {
+    background-color: red;
+}
+.red-supergiant {
+    background-color:red;
+}
+.red-dwarf {
+    background-color: red;
+}
 .starWrapper{
 width: 300px;
 color: white;
 z-index: 1;
 }
-.red-supergiant {
-    background-color:red;
-}
+
 .star-label {
     text-align: center;
 }
