@@ -18,26 +18,102 @@
     transition: transform 0.7s linear;
 }
 .blue-giant {
-    background-color: blue;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    box-shadow: 1px 1px 105px firebrick; 
+    box-shadow: 1px 1px 85px goldenrod; 
+   
+    --radius: 7rem;
+ width: 60px;
+ height: 60px;
+      border-radius: 50%;
+      animation: translateBackground 120s infinite linear;  
+    background:url("../../starTextures/blue-giant.jpg") repeat-x;
+    background-size: 200% 100%;
+   z-index: 99;
+      transition: transform 0.7s linear;
 }
 .white-dwarf {
-    background-color: white;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    box-shadow: 1px 1px 105px firebrick; 
+    box-shadow: 1px 1px 85px goldenrod; 
+   width: 20px;
+   height: 20px;
+    --radius: 7rem;
+ 
+      border-radius: 50%;
+      animation: translateBackground 120s infinite linear;  
+    background:url("../../starTextures/white-dwarf.jpg") repeat-x;
+    background-size: 200% 100%;
+   z-index: 99;
+      transition: transform 0.7s linear;
 }
-.red-dwarf {
-    background-color: red;
 
-}
 .brown-dwarf {
-    background-color: brown;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    box-shadow: 1px 1px 105px firebrick; 
+    box-shadow: 1px 1px 85px goldenrod; 
+   width: 20px;
+   height: 20px;
+    --radius: 7rem;
+ 
+      border-radius: 50%;
+      animation: translateBackground 120s infinite linear;  
+    background:url("../../starTextures/brown-dwarf.jpg") repeat-x;
+    background-size: 200% 100%;
+   z-index: 99;
+      transition: transform 0.7s linear;
 }
 .red-giant {
-    background-color: red;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    box-shadow: 1px 1px 105px firebrick; 
+    box-shadow: 1px 1px 85px goldenrod; 
+   width: 60px;
+   height: 60px;
+    --radius: 7rem;
+ 
+      border-radius: 50%;
+      animation: translateBackground 120s infinite linear;  
+    background:url("../../starTextures/red-supergiant.jpeg") repeat-x;
+    background-size: 200% 100%;
+   z-index: 99;
+      transition: transform 0.7s linear;
 }
 .red-supergiant {
-    background-color:red;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    box-shadow: 1px 1px 105px firebrick; 
+    box-shadow: 1px 1px 85px goldenrod; 
+   width: 80px;
+   height: 80px;
+    --radius: 7rem;
+ 
+      border-radius: 50%;
+      animation: translateBackground 120s infinite linear;  
+    background:url("../../starTextures/red-supergiant.jpeg") repeat-x;
+    background-size: 200% 100%;
+   z-index: 99;
+      transition: transform 0.7s linear;
 }
 .red-dwarf {
-    background-color: red;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    box-shadow: 1px 1px 105px firebrick; 
+    box-shadow: 1px 1px 85px goldenrod; 
+   
+    --radius: 7rem;
+ 
+      border-radius: 50%;
+      animation: translateBackground 120s infinite linear;  
+    background:url("../../starTextures/red-supergiant.jpeg") repeat-x;
+    background-size: 200% 100%;
+   z-index: 99;
+      transition: transform 0.7s linear;
 }
 /* slots */
 .one {
