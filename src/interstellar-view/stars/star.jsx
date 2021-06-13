@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 export const Star = (props) => {
     return (
         <NavLink to={props.name}>
-        <div className={``}>
+        <h1 className="star-label">{props.name}</h1><div className={``}>
 
 
 <div className={`starBall ${props.starType}`}>
-<p className="star-label">{props.name}</p>
+
 </div>
 
         </div></NavLink>

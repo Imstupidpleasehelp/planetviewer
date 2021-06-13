@@ -10,7 +10,7 @@ ReactDOM.render(
     <Router>
       
     <App />
-    <div className="backgroundclass"><StarsBackGround /></div>
+    <div className="backgroundclass"><StarsBackGround></StarsBackGround></div>
     
     </Router>
   </React.StrictMode>,

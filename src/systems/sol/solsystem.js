@@ -1,5 +1,5 @@
 import "./sol-system.css"
-import { gsap } from "gsap";
+import { gsap, Power0 } from "gsap";
 import {useEffect} from 'react'
 import { MiniPlanet } from "../../components/miniplanet";
 
@@ -9,7 +9,7 @@ export const SolSystem = () => {
         Orbit();
     })
     const Orbit = () => {
-        gsap.to(".sol-system-master", {rotation: 360, x: 100, y: 100, duration: 5})
+        gsap.to(".orbit-container", 3, {rotation: 360,   repeat: -1})
     }
     return (
         <div className="sol-system-master">
@@ -18,16 +18,19 @@ export const SolSystem = () => {
         className="sun"
        
        
-      ></div>
-      <div>
- <MiniPlanet name="mercury"  className=" mercuryMini " /></div>
- <MiniPlanet name="venus" className=" venusMini " />
- <MiniPlanet name="earth" className=" earthMini " />
- <MiniPlanet name="mars" className=" marsMini " />
- <MiniPlanet name="juipter" className=" juipterMini " />
- <MiniPlanet name="saturn" className=" saturnMini " />
- <MiniPlanet name="uranus" className=" uranusMini " />
- <MiniPlanet name="neptune" className="neptuneMini " />
+      >
+
+      </div>
+      
+          <div className="orbit-container">
+ <MiniPlanet name="mercury"  className="miniplanet mercuryMini " /></div>
+ <MiniPlanet name="venus" className="miniplanet  venusMini " />
+ <MiniPlanet name="earth" className="miniplanet  earthMini " />
+ <MiniPlanet name="mars" className="miniplanet  marsMini " />
+ <MiniPlanet name="juipter" className="miniplanet  juipterMini " />
+ <MiniPlanet name="saturn" className="miniplanet  saturnMini " />
+ <MiniPlanet name="uranus" className="miniplanet  uranusMini " />
+ <MiniPlanet name="neptune" className="miniplanet neptuneMini " />
         </div>
     )
 }
