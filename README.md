@@ -6,3 +6,4 @@ things to do.
 4. generate systems for the stars 
 5. orbit animations
 6. page transitions
+7. use browser storage to store generated systems 
