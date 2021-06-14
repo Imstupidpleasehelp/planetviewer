@@ -107,5 +107,12 @@
      background-size: 100% 100%;
    }
   /* end of miniplanets */ 
-
+.orbit-container {
+  position: absolute;
+  --radius: 7rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
   

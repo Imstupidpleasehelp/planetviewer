@@ -8,7 +8,7 @@ import {Navigation} from './components/navigation'
 function App() {
   return (
     <div className="App">
-      <Navigation /> <Switch >
+      {/*<Navigation /> */} <Switch >
        
       <Route exact path="/" component={Interstellar} />
         <Route exact path="/sol" component={SolSystem} />
