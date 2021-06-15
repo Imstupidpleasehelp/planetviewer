@@ -42,7 +42,8 @@ function RandomNum() {
         return (
           <div className="starWrapper">
             <Star
-              name={makeid}
+              name={`${makeid()}`}
+             
               starType={`${starList[Math.floor(Math.random() * 6 + 1)]} ${posList[Math.floor(Math.random() * 9 + 1)]}`}
             ></Star>
            

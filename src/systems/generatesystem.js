@@ -1,3 +1,3 @@
-export const GenerateSystem = () => {
-    return(<div>a</div>)
+export const GenerateSystem = (props) => {
+    return(<div>System</div>)
 }
