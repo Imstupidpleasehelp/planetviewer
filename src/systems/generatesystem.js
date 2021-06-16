@@ -1,3 +1,5 @@
+import  "./generatesystem.css"
 export const GenerateSystem = (props) => {
-    return(<div>System</div>)
+    return(<div className={props.starType}>System 
+    <p>{props.name}</p></div>)
 }
