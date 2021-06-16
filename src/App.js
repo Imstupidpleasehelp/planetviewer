@@ -13,7 +13,7 @@ function App() {
        
       <Route exact path="/" component={Interstellar} />
         <Route exact path="/sol" component={SolSystem} />
-        <Route path="/star/:id" component={GenerateSystem} />
+        <Route path="/:id" component={GenerateSystem} />
       </Switch>
     </div>
   );

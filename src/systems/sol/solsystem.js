@@ -9,7 +9,7 @@ export const SolSystem = () => {
         Orbit();
     })
     const Orbit = () => {
-        gsap.to(".orbit-container", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 1})
+        gsap.to(".orbit-container", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
     }
     return (
         <div className="sol-system-master">

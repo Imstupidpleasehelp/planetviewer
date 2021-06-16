@@ -114,7 +114,7 @@
     background-size: cover;
     box-shadow: 1px 1px 25px firebrick; 
     box-shadow: 1px 1px 20px red; 
-   margin: 120px;
+   margin: 160px;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../../starTextures/red-supergiant.jpeg") repeat-x;
