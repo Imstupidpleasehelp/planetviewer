@@ -5,6 +5,9 @@
 }
 .star-label {
     color: white;
+    margin-bottom: 10vh;
+    font-size: 4vh;
+    text-align: center;
 }
 /* red giant, red supergiant, blue giant, white dwarf, yellow dwarf, red dwarf, brown dwarf */
 .yellow-dwarf {
@@ -143,6 +146,11 @@
     background-size: 200% 100%;
    z-index: 99;
       transition: transform 0.7s linear;
+}
+.sol-label {
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 @keyframes translateBackground{
     0%{

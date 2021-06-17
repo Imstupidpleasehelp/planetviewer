@@ -2,6 +2,7 @@ import "./interstellar-space.scss";
 import { Star } from "./stars/star";
 import { gsap } from "gsap";
 import { useEffect, useState } from "react";
+import { GenerateSystem } from "../systems/generatesystem";
 export const Interstellar = () => {
   useEffect(() => {
     
@@ -43,7 +44,7 @@ function RandomNum() {
           <div className="starWrapper">
             <Star
               name={`${makeid()}`}
-             
+            label={``}
               starType={`${starList[Math.floor(Math.random() * 6 + 1)]} ${posList[Math.floor(Math.random() * 9 + 1)]}`}
             ></Star>
            
@@ -59,7 +60,8 @@ function RandomNum() {
   
   return (
     <div className="interstellar-space">
-      <Star name="Sol" starType="sol-system"></Star>
+      
+      <Star name="Sol" label="sol-label" starType="sol-system"  />
       <div className="random-placement">{makeStars(RandomNum())}</div>
       <button onClick={() => stuff()}>Test</button>
     </div>

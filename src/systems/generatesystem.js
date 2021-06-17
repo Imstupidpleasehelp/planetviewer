@@ -1,5 +1,6 @@
 import  "./generatesystem.css"
 import {useEffect} from 'react' 
+import { SystemStar } from "../interstellar-view/stars/star"
 export const GenerateSystem = (props) => {
     useEffect(() => {
 console.log(props)
