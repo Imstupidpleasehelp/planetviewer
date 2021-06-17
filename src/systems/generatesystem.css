@@ -1,5 +1,5 @@
 .generatedSystem {
-   position: absolute;
+   position: relative;
 }
 .yellow-dwarf1 {
    height: 50%; /* Set your own height: percents, ems, whatever! */
@@ -7,6 +7,7 @@
    overflow: auto; /* Recommended in case content is larger than the container */
    margin: auto; /* Center the item vertically & horizontally */
    position: absolute; /* Break it out of the regular flow */
+   top: 50vh; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
     box-shadow: 1px 1px 45px gold;
     box-shadow: 1px 1px 35px goldenrod;
     background-color: red;
@@ -25,6 +26,7 @@
    overflow: auto; /* Recommended in case content is larger than the container */
    margin: auto; /* Center the item vertically & horizontally */
    position: absolute; /* Break it out of the regular flow */
+   top: 50vh; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
     background-size: cover;
     box-shadow: 1px 1px 105px blue; 
     box-shadow: 1px 1px 85px blueviolet; 
@@ -44,6 +46,7 @@
    width: 50%; /* Set your own width: percents, ems, whatever! */
    overflow: auto; /* Recommended in case content is larger than the container */
    margin: auto; /* Center the item vertically & horizontally */
+   top: 50vh; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
    position: absolute; /* Break it out of the regular flow */
     background-size: cover;
     box-shadow: 1px 1px 55px white; 
@@ -64,6 +67,7 @@
    overflow: auto; /* Recommended in case content is larger than the container */
    margin: auto; /* Center the item vertically & horizontally */
    position: absolute; /* Break it out of the regular flow */
+   top: 50vh; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
     background-size: cover;
     box-shadow: 1px 1px 55px brown; 
     box-shadow: 1px 1px 35px goldenrod; 
@@ -83,7 +87,7 @@
    overflow: auto; /* Recommended in case content is larger than the container */
    margin: auto; /* Center the item vertically & horizontally */
    position: absolute; /* Break it out of the regular flow */
- 
+   top: 50vh; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
     box-shadow: 1px 1px 105px firebrick; 
     box-shadow: 1px 1px 85px firebrick; 
    width: 65px;
@@ -124,6 +128,7 @@
     overflow: auto; /* Recommended in case content is larger than the container */
     margin: auto; /* Center the item vertically & horizontally */
     position: absolute; /* Break it out of the regular flow */
+    top: 50vh; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
     background-size: cover;
     box-shadow: 1px 1px 25px firebrick; 
     box-shadow: 1px 1px 20px red; 
