@@ -1,112 +1,103 @@
 .sun {
-  
-  
-    background-size: cover;
-    box-shadow: 1px 1px 105px firebrick; 
-    box-shadow: 1px 1px 85px goldenrod; 
-   
-    
-  
-    position: absolute;
-    --radius: 7rem;
-    top: calc(50% - var(--radius));
-    left: calc(50% - var(--radius));
-    width: calc(2 * var(--radius));
-    height: calc(2 * var(--radius));
-      border-radius: 50%;
-      animation: translateBackground 120s infinite linear;  
-    background:url("../../planetTextures/sun.jpg") repeat-x;
-    background-size: 200% 100%;
-   z-index: 99;
-      transition: transform 0.7s linear;
+  background-size: cover;
+  box-shadow: 1px 1px 105px firebrick;
+  box-shadow: 1px 1px 85px goldenrod;
+
+  position: absolute;
+  --radius: 7rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../../planetTextures/sun.jpg") repeat-x;
+  background-size: 200% 100%;
+  z-index: 99;
+  transition: transform 0.7s linear;
+}
+@keyframes translateBackground {
+  0% {
+    background-position-x: 0;
   }
-  @keyframes translateBackground{
-    0%{
-      background-position-x:0;
-    }
-    100%{
-      background-position-x:-600px;
-    }
+  100% {
+    background-position-x: -600px;
   }
-  .miniPlanet {
-    max-width: 6rem;
-    
-  }
-  
-  
-  .earthMini {
-    width:3em;
-   height:3em;
-   border-radius:50%;
-  
-   animation: translateBackground 75s infinite linear;
-    background:url("../../planetTextures/earth.jpg") repeat-x;
-    background-size: 100% 100%;
-  
-  }
-  .marsMini {
-    
-    width:2em;
-    height:2em;
-    border-radius:50%;
-    animation: translateBackground 75s infinite linear;
-     background:url("../../planetTextures/mars.jpeg") repeat-x;
-     background-size: 100% 100%;
-   }
-   .mercuryMini {
-    
-    width:1.5em;
-    height:1.5em;
-    border-radius:50%;
-    z-index: 9;
-    animation: translateBackground 55s infinite linear;
-     background:url("../../planetTextures/mercury.jpg") repeat-x;
-     background-size: 100% 100%;
-   }
-   .venusMini {
-    width:2em;
-    height:2em;
-    border-radius:50%;
-    animation: translateBackground 65s infinite linear;
-    z-index: 8;
-     background:url("../../planetTextures/venus.jpg") repeat-x;
-     background-size: 100% 100%;
-   }
-   .juipterMini {
-    width:6em;
-    height:6em;
-    border-radius:50%;
-    animation: translateBackground 125s infinite linear;
-     background:url("../../planetTextures/juipter.jpg") repeat-x;
-     background-size: 100% 100%;
-   }
-   .saturnMini {
-    width:8.5em;
-    height:7.5em;
-    border-radius:50%;
-    
-     background:url("../../planetTextures/saturnstatic.png") repeat-x ;
-     background-size: 100% 100%;
-   }
- 
-   .uranusMini {
-    width:4.5em;
-    height:4.5em;
-    border-radius:50%;
-    rotate:(45deg);
-    animation: translateBackground 105s infinite linear;
-     background:url("../../planetTextures/uranus.jpg") repeat-x;
-     background-size: 100% 100%;
-   }
-   .neptuneMini {
-    width:4.5em;
-    height:4.5em;
-    border-radius:50%;
-    animation: translateBackground 115s infinite linear;
-     background:url("../../planetTextures/neptune.jpg") repeat-x;
-     background-size: 100% 100%;
-   }
-  /* end of miniplanets */ 
+}
+.miniPlanet {
+  max-width: 6rem;
+}
+
+.earthMini {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+
+  animation: translateBackground 75s infinite linear;
+  background: url("../../planetTextures/earth.jpg") repeat-x;
+  background-size: 100% 100%;
+}
+.marsMini {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  animation: translateBackground 75s infinite linear;
+  background: url("../../planetTextures/mars.jpeg") repeat-x;
+  background-size: 100% 100%;
+}
+.mercuryMini {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  z-index: 9;
+  animation: translateBackground 55s infinite linear;
+  background: url("../../planetTextures/mercury.jpg") repeat-x;
+  background-size: 100% 100%;
+}
+.venusMini {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  animation: translateBackground 65s infinite linear;
+  z-index: 8;
+  background: url("../../planetTextures/venus.jpg") repeat-x;
+  background-size: 100% 100%;
+}
+.juipterMini {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  animation: translateBackground 125s infinite linear;
+  background: url("../../planetTextures/juipter.jpg") repeat-x;
+  background-size: 100% 100%;
+}
+.saturnMini {
+  width: 8.5em;
+  height: 7.5em;
+  border-radius: 50%;
+
+  background: url("../../planetTextures/saturnstatic.png") repeat-x;
+  background-size: 100% 100%;
+}
+
+.uranusMini {
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 50%;
+  rotate: (45deg);
+  animation: translateBackground 105s infinite linear;
+  background: url("../../planetTextures/uranus.jpg") repeat-x;
+  background-size: 100% 100%;
+}
+.neptuneMini {
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 50%;
+  animation: translateBackground 115s infinite linear;
+  background: url("../../planetTextures/neptune.jpg") repeat-x;
+  background-size: 100% 100%;
+}
+/* end of miniplanets */
 .orbit-container {
   position: absolute;
   --radius: 7rem;
@@ -115,4 +106,59 @@
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
 }
-  
+.orbit-container2 {
+  position: absolute;
+  --radius: 9rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.orbit-container3 {
+  position: absolute;
+  --radius: 13rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.orbit-container4 {
+  position: absolute;
+  --radius: 16rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.orbit-container5 {
+  position: absolute;
+  --radius: 22rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  }
+  .orbit-container6 {
+    position: absolute;
+    --radius: 29rem;
+    top: calc(50% - var(--radius));
+    left: calc(50% - var(--radius));
+    width: calc(2 * var(--radius));
+    height: calc(2 * var(--radius));
+    }
+    .orbit-container7 {
+      position: absolute;
+      --radius: 38rem;
+      top: calc(50% - var(--radius));
+      left: calc(50% - var(--radius));
+      width: calc(2 * var(--radius));
+      height: calc(2 * var(--radius));
+      }
+      .orbit-container8 {
+        position: absolute;
+        --radius: 47rem;
+        top: calc(50% - var(--radius));
+        left: calc(50% - var(--radius));
+        width: calc(2 * var(--radius));
+        height: calc(2 * var(--radius));
+        }

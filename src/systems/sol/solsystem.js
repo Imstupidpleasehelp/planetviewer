@@ -1,5 +1,5 @@
 import "./sol-system.css"
-import { gsap, Power0 } from "gsap";
+import { gsap} from "gsap";
 import {useEffect} from 'react'
 import { MiniPlanet } from "../../components/miniplanet";
 
@@ -10,6 +10,13 @@ export const SolSystem = () => {
     })
     const Orbit = () => {
         gsap.to(".orbit-container", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+        gsap.to(".orbit-container2", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+        gsap.to(".orbit-container3", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+        gsap.to(".orbit-container4", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+        gsap.to(".orbit-container5", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+        gsap.to(".orbit-container6", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+        gsap.to(".orbit-container7", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+        gsap.to(".orbit-container8", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
     }
     return (
         <div className="sol-system-master">
@@ -24,13 +31,20 @@ export const SolSystem = () => {
       
           <div className="orbit-container">
  <MiniPlanet name="mercury"  className="miniplanet mercuryMini " /></div>
- <MiniPlanet name="venus" className="miniplanet  venusMini " />
- <MiniPlanet name="earth" className="miniplanet  earthMini " />
- <MiniPlanet name="mars" className="miniplanet  marsMini " />
- <MiniPlanet name="juipter" className="miniplanet  juipterMini " />
- <MiniPlanet name="saturn" className="miniplanet  saturnMini " />
- <MiniPlanet name="uranus" className="miniplanet  uranusMini " />
- <MiniPlanet name="neptune" className="miniplanet neptuneMini " />
+ <div className="orbit-container2">
+ <MiniPlanet name="venus" className="miniplanet  venusMini " /></div>
+ <div className="orbit-container3">
+ <MiniPlanet name="earth" className="miniplanet  earthMini " /></div>
+ <div className="orbit-container4">
+ <MiniPlanet name="mars" className="miniplanet  marsMini " /></div>
+ <div className="orbit-container5">
+ <MiniPlanet name="juipter" className="miniplanet  juipterMini " /></div>
+ <div className="orbit-container6">
+ <MiniPlanet name="saturn" className="miniplanet  saturnMini " /></div>
+ <div className="orbit-container7">
+ <MiniPlanet name="uranus" className="miniplanet  uranusMini " /></div>
+ <div className="orbit-container8">
+ <MiniPlanet name="neptune" className="miniplanet neptuneMini " /></div>
         </div>
     )
 }

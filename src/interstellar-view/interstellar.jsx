@@ -2,12 +2,17 @@ import "./interstellar-space.scss";
 import { Star } from "./stars/star";
 import { gsap } from "gsap";
 import { useEffect, useState } from "react";
-import { GenerateSystem } from "../systems/generatesystem";
 export const Interstellar = () => {
+  const [exoStars, setExoStars] = useState( 
+  localStorage.getItem('exoStars') === 'true'
+)
   useEffect(() => {
+    //if (localStorage.getItem('exoStars') === 'true') {
+      setExoStars(makeStars(RandomNum()))
+      //localStorage.setItem('exoStars', exoStars);
+    //}
     
-   
-  });
+  }, []);
  
 
   // animations 
@@ -62,7 +67,7 @@ function RandomNum() {
     <div className="interstellar-space">
       
       <Star name="Sol" label="sol-label" starType="sol-system"  />
-      <div className="random-placement">{makeStars(RandomNum())}</div>
+      <div className="random-placement">{exoStars}</div>
       <button onClick={() => stuff()}>Test</button>
     </div>
   );
