@@ -26,12 +26,12 @@
    top: 50%;
    transform: translate(-50%, -50%);
     background-size: cover;
-    box-shadow: 1px 1px 105px blue; 
-    box-shadow: 1px 1px 85px blueviolet; 
+    box-shadow: 1px 1px 205px blue; 
+    box-shadow: 1px 1px 155px blueviolet; 
   
     
- width: 70px;
- height: 70px;
+ width: 25em;
+ height: 25em;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../starTextures/blue-giant.jpg") repeat-x;

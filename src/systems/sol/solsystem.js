@@ -30,21 +30,21 @@ export const SolSystem = () => {
       </div>
       
           <div className="orbit-container">
- <MiniPlanet name="mercury"  className="miniplanet mercuryMini " /></div>
+ <MiniPlanet name="mercury"  className=" mercuryMini " /></div>
  <div className="orbit-container2">
- <MiniPlanet name="venus" className="miniplanet  venusMini " /></div>
+ <MiniPlanet name="venus" className="venusMini " /></div>
  <div className="orbit-container3">
- <MiniPlanet name="earth" className="miniplanet  earthMini " /></div>
+ <MiniPlanet name="earth" className=" earthMini " /></div>
  <div className="orbit-container4">
- <MiniPlanet name="mars" className="miniplanet  marsMini " /></div>
+ <MiniPlanet name="mars" className="  marsMini " /></div>
  <div className="orbit-container5">
- <MiniPlanet name="juipter" className="miniplanet  juipterMini " /></div>
+ <MiniPlanet name="juipter" className=" juipterMini " /></div>
  <div className="orbit-container6">
- <MiniPlanet name="saturn" className="miniplanet  saturnMini " /></div>
+ <MiniPlanet name="saturn" className=" saturnMini " /></div>
  <div className="orbit-container7">
- <MiniPlanet name="uranus" className="miniplanet  uranusMini " /></div>
+ <MiniPlanet name="uranus" className=" uranusMini " /></div>
  <div className="orbit-container8">
- <MiniPlanet name="neptune" className="miniplanet neptuneMini " /></div>
+ <MiniPlanet name="neptune" className=" neptuneMini " /></div>
         </div>
     )
 }
