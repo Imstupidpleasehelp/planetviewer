@@ -47,8 +47,8 @@
     background-size: cover;
     box-shadow: 1px 1px 55px white; 
     box-shadow: 1px 1px 25px whitesmoke; 
-   width: 30px;
-   height: 30px;
+   width: 21em;
+   height: 21em;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../starTextures/white-dwarf.jpg") repeat-x;

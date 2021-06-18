@@ -2,14 +2,23 @@ import "./generatesystem.css";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import {MiniPlanet} from '../components/miniplanet'
+import { gsap } from "gsap";
 function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
 
 export const GenerateSystem = (props) => {
   useEffect(() => {
-    console.log(starName);
+    EnterSystem();
+   
   });
+  var tl = gsap.timeline({paused: true});
+  
+  function EnterSystem() {
+    gsap.from(".generatedSystem", { scaleX: .1, scaleY: .1, transformOrigin:"center", duration: 3 })
+    gsap.to(".generatedSystem", { scaleX: 1, scaleY: 1, transformOrigin:"center", duration: 3 });
+   
+    }
   const { name } = useParams();
 
   const query = useQuery();
@@ -62,7 +71,7 @@ function RandomNum() {
     
   return (
     <div className="generatedSystem">
-        <Link to="/">Back to space</Link>
+        <Link to="/"  >Back to space</Link>
         <h1>{starName}, {splitCss[0].toUpperCase()} STAR</h1>
       <div className={splitCss[0] + "1"}></div>{" "}
     </div>

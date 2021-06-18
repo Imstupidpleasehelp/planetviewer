@@ -20,12 +20,14 @@ export const Interstellar = () => {
     const newStars = makeStars();
     saveStarsToLocalStorage(newStars)
     setExoStars(newStars)
+    EnterSystem();
   }, [])
  
 
   // animations 
-  function stuff() {
-  gsap.to(".yellow-dwarf", { rotation: 27, x: 1000, duration: 15 });
+  
+  function EnterSystem() {
+ // gsap.to(".interstellar-space", { scaleX: 2, scaleY: 2, transformOrigin:"center", duration: 3 });
   }
   // auto generation stuff 
   function makeid() {
@@ -57,7 +59,6 @@ function RandomNum() {
           <div className="starWrapper">
             <Star
               name={`${makeid()}`}
-            label={``}
               starType={`${starList[Math.floor(Math.random() * 6 + 1)]} ${posList[Math.floor(Math.random() * 9 + 1)]}`}
             ></Star>
            
@@ -74,9 +75,9 @@ function RandomNum() {
   return (
     <div className="interstellar-space">
       
-      <Star name="Sol" label="sol-label" starType="sol-system"  />
+      <Star name="Sol"  starType="sol-system"  />
       <div className="random-placement">{exoStars}</div>
-      <button onClick={() => stuff()}>Test</button>
+     <button onClick={EnterSystem()}>aaa</button>
     </div>
   );
 };
