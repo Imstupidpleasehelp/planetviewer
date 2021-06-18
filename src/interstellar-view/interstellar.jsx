@@ -3,16 +3,24 @@ import { Star } from "./stars/star";
 import { gsap } from "gsap";
 import { useEffect, useState } from "react";
 export const Interstellar = () => {
-  const [exoStars, setExoStars] = useState( 
-  localStorage.getItem('exoStars') === 'true'
-)
+  const [exoStars, setExoStars] = useState( )
+  const getStarsFromLocalStorage = () => {
+    localStorage.getItem('exoStars')
+  }
+  const saveStarsToLocalStorage = () => {
+    localStorage.setItem('exoStars', exoStars)
+  }
   useEffect(() => {
-    //if (localStorage.getItem('exoStars') === 'true') {
-      setExoStars(makeStars(RandomNum()))
-      //localStorage.setItem('exoStars', exoStars);
-    //}
-    
-  }, []);
+    const savedStars = getStarsFromLocalStorage();
+    if (savedStars) {
+      setExoStars(savedStars);
+      return;
+    }
+  
+    const newStars = makeStars();
+    saveStarsToLocalStorage(newStars)
+    setExoStars(newStars)
+  }, [])
  
 
   // animations 
