@@ -1,35 +1,43 @@
 import "./interstellar-space.scss";
 import { Star } from "./stars/star";
 import { gsap } from "gsap";
+
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 export const Interstellar = () => {
-  const [exoStars, setExoStars] = useState( )
+  const [exoStars, setExoStars] = useState();
   const getStarsFromLocalStorage = () => {
-    localStorage.getItem('exoStars')
-  }
+    localStorage.getItem("exoStars");
+  };
   const saveStarsToLocalStorage = () => {
-    localStorage.setItem('exoStars', exoStars)
-  }
+    localStorage.setItem("exoStars", exoStars);
+  };
   useEffect(() => {
     const savedStars = getStarsFromLocalStorage();
     if (savedStars) {
       setExoStars(savedStars);
       return;
     }
-  
-    const newStars = makeStars();
-    saveStarsToLocalStorage(newStars)
-    setExoStars(newStars)
-    EnterSystem();
-  }, [])
- 
 
-  // animations 
-  
+    const newStars = makeStars();
+    saveStarsToLocalStorage(newStars);
+    setExoStars(newStars);
+    EnterSystem();
+  }, []);
+
+  // animations
+  const viewStar = {
+    exit: {
+      scale: 0.01,
+      transition: {
+        duration: 3,
+      },
+    },
+  };
   function EnterSystem() {
- // gsap.to(".interstellar-space", { scaleX: 2, scaleY: 2, transformOrigin:"center", duration: 3 });
+    // gsap.to(".interstellar-space", { scaleX: 2, scaleY: 2, transformOrigin:"center", duration: 3 });
   }
-  // auto generation stuff 
+  // auto generation stuff
   function makeid() {
     let r = Math.random().toString(36).substring(7);
 
@@ -46,39 +54,43 @@ export const Interstellar = () => {
     "brown-dwarf",
   ];
   let posList = [
-    "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"
-  ]
-function RandomNum() {
- return Math.floor(Math.random() * 5 + 3);
-}
-  const makeStars = (num  = 5) => {
-    
-    
-   if (num > 0) {
-        return (
-          <div className="starWrapper">
-            <Star
-              name={`${makeid()}`}
-              starType={`${starList[Math.floor(Math.random() * 6 + 1)]} ${posList[Math.floor(Math.random() * 9 + 1)]}`}
-            ></Star>
-           
-           {makeStars((num - 1))}
-          </div>
-          
-        );
-        
-   }
-      };
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+    "ten",
+  ];
+  function RandomNum() {
+    return Math.floor(Math.random() * 5 + 3);
+  }
+  const makeStars = (num = 5) => {
+    if (num > 0) {
+      return (
+        <div className="starWrapper">
+          <Star
+            name={`${makeid()}`}
+            starType={`${starList[Math.floor(Math.random() * 6 + 1)]} ${
+              posList[Math.floor(Math.random() * 9 + 1)]
+            }`}
+          ></Star>
 
-    
-  
+          {makeStars(num - 1)}
+        </div>
+      );
+    }
+  };
+
   return (
-    <div className="interstellar-space">
-      
-      <Star name="Sol"  starType="sol-system"  />
+    <motion.div variants={viewStar} exit="exit" className="interstellar-space">
+      <Star name="Sol" starType="sol-system" />
       <div className="random-placement">{exoStars}</div>
-     <button onClick={EnterSystem()}>aaa</button>
-    </div>
+      <button onClick={EnterSystem()}>aaa</button>
+    </motion.div>
   );
 };
 

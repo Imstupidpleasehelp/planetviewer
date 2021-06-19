@@ -2,6 +2,8 @@ import "./generatesystem.css";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import {MiniPlanet} from '../components/miniplanet'
+
+import { motion } from "framer-motion";
 import { gsap } from "gsap";
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -10,10 +12,35 @@ function useQuery() {
 export const GenerateSystem = (props) => {
   useEffect(() => {
     EnterSystem();
-   
+   return  () => {
+ExitSystem();
+   }
   });
+  //animations 
+  const showMeHud = {
+    start: {
+      scale: .1
+    },
+    enter: {
+      scale: 1,
+      transition: {
+        duration: 5
+      }
+    },
+    exit: {
+      scale: 0.01,
+      transition: {
+        duration: 3,
+      },
+    },
+  };
   var tl = gsap.timeline({paused: true});
-  
+  function ExitSystem() {
+    gsap.to(".generatedSystem", { scaleX: .1, scaleY: .1, transformOrigin:"center", duration: 3 });
+    setTimeout(() => {
+      props.history.push('/')
+    })
+  }
   function EnterSystem() {
     gsap.from(".generatedSystem", { scaleX: .1, scaleY: .1, transformOrigin:"center", duration: 3 })
     gsap.to(".generatedSystem", { scaleX: 1, scaleY: 1, transformOrigin:"center", duration: 3 });
@@ -72,7 +99,7 @@ function RandomNum() {
   return (
     <div className="generatedSystem">
         <Link to="/"  >Back to space</Link>
-        <h1>{starName}, {splitCss[0].toUpperCase()} STAR</h1>
+       <h1>{starName}, {splitCss[0].toUpperCase()} STAR</h1>
       <div className={splitCss[0] + "1"}></div>{" "}
     </div>
   );
