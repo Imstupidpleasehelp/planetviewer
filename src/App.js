@@ -11,7 +11,7 @@ function App() {
   const location = useLocation();
   return (
     <AnimatePresence className="App">
-      <Navigation /> {" "}
+     {/*} <Navigation /> {" "} */}
       <Switch location={location} key={location.pathname}>
         <Route exact path="/" component={Interstellar} />
         <Route exact path="/sol" component={SolSystem} />

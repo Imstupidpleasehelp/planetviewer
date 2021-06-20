@@ -6,23 +6,16 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 export const Interstellar = () => {
   const [exoStars, setExoStars] = useState();
-  const getStarsFromLocalStorage = () => {
-    localStorage.getItem("exoStars");
-  };
-  const saveStarsToLocalStorage = () => {
-    localStorage.setItem("exoStars", exoStars);
-  };
+  
   useEffect(() => {
-    const savedStars = getStarsFromLocalStorage();
-    if (savedStars) {
-      setExoStars(savedStars);
-      return;
-    }
+   //var cookies = document.cookie 
+   // if (cookies.length === 0) {
+      setExoStars(makeStars(RandomNum()));
+    
+   // }
+   
 
-    const newStars = makeStars();
-    saveStarsToLocalStorage(newStars);
-    setExoStars(newStars);
-    EnterSystem();
+    // save the results of the first set of this 
   }, []);
 
   // animations
@@ -102,7 +95,7 @@ export const Interstellar = () => {
     <motion.div variants={viewStar} exit="exit" className="interstellar-space">
       <Star name="Sol" starType="sol-system" />
       <div className="random-placement">{exoStars}</div>
-      <button onClick={EnterSystem()}>aaa</button>
+      
     </motion.div>
   );
 };

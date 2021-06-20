@@ -1,7 +1,7 @@
 .generatedSystem {
    position: relative;
    min-height: 100vh;
-   
+   min-width: 100vw;
 }
 .yellow-dwarf1 {
    position: absolute;
@@ -131,3 +131,23 @@
 }
 
 /* exoplanets */
+.barren-world {
+   background-color: red;
+   size: 2rem;
+}
+.rocky-world {
+   background-color: brown;
+   size: 2rem;
+}
+.frozen-world {
+   background-color: white;
+   size: 2rem;
+}
+.Gas-giant {
+   background-color: green;
+   size: 2rem;
+}
+.ocean-world {
+   background-color: blue;
+   size: 2rem;
+}
