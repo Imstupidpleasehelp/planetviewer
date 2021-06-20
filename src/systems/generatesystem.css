@@ -12,8 +12,8 @@
     box-shadow: 1px 1px 35px goldenrod;
     background-color: red;
     --radius: 7rem;
-    width: 35px;
-    height: 35px;
+    width: 12em;
+    height: 12em;
     border-radius: 50%;
     animation: translateBackground 120s infinite linear;
     background: url("../planetTextures/sun.jpg") repeat-x;
@@ -47,8 +47,8 @@
     background-size: cover;
     box-shadow: 1px 1px 55px white; 
     box-shadow: 1px 1px 25px whitesmoke; 
-   width: 21em;
-   height: 21em;
+   width: 12em;
+   height: 12em;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../starTextures/white-dwarf.jpg") repeat-x;
@@ -65,8 +65,8 @@
     background-size: cover;
     box-shadow: 1px 1px 55px brown; 
     box-shadow: 1px 1px 35px goldenrod; 
-   width: 30px;
-   height: 30px;
+   width: 12em;
+   height: 12em;
     --radius: 7rem;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
@@ -82,8 +82,8 @@
    transform: translate(-50%, -50%);
     box-shadow: 1px 1px 105px firebrick; 
     box-shadow: 1px 1px 85px firebrick; 
-   width: 65px;
-   height: 65px;
+   width: 20em;
+   height: 20em;
     --radius: 7rem;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
@@ -120,7 +120,8 @@
     background-size: cover;
     box-shadow: 1px 1px 25px firebrick; 
     box-shadow: 1px 1px 20px red; 
- 
+ width: 12em;
+ height: 12em;
       border-radius: 50%;
       animation: translateBackground 120s infinite linear;  
     background:url("../starTextures/red-supergiant.jpeg") repeat-x;
