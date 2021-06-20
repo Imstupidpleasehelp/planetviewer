@@ -17,6 +17,14 @@ ExitSystem();
    }
   });
   //animations 
+  const backToInterstellar = {
+    leaveSystem: {
+      scale: 0.01,
+      transition: {
+        duration: 3,
+      },
+    },
+  };
   const showMeHud = {
     start: {
       scale: .1
@@ -97,10 +105,10 @@ function RandomNum() {
 
     
   return (
-    <div className="generatedSystem">
+    <motion.div variants={backToInterstellar} exit='leaveSystem' className="generatedSystem">
         <Link to="/"  >Back to space</Link>
        <h1>{starName}, {splitCss[0].toUpperCase()} STAR</h1>
       <div className={splitCss[0] + "1"}></div>{" "}
-    </div>
+    </motion.div>
   );
 };

@@ -26,12 +26,25 @@ export const Interstellar = () => {
   }, []);
 
   // animations
+  /* Depends on the animation but if you are using transform then yea, 
+  change transform-origin on mousedown or click. You might thrash layout though by 
+  checking w/h so maybe store the w/h using resize observer first, then calculate 
+  the new transform-origin w the mouse offset relative to the element
+  check if user has already been here? 
+   */
+  
   const viewStar = {
     exit: {
       scale: 0.01,
       transition: {
         duration: 3,
       },
+       in: {
+      scale: 0.01,
+      transition: {
+        duration: 2
+      }
+    }
     },
   };
   function EnterSystem() {
