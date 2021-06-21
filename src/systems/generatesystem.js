@@ -111,7 +111,7 @@ export const GenerateSystem = (props) => {
     "Desert-world",
     "Gas-giant",
     "Earth-like-world",
-    "Earth-like-world",
+   
     "Earth-like-world",
     "Toxic-world",
     "Frozen-world",
@@ -152,6 +152,7 @@ export const GenerateSystem = (props) => {
   const makePlanets = (num = 5) => {
     if (num > 0) {
       return (
+        <div className="planetWrap">
         <MiniPlanet
           name={`${makeid()}`}
           label={``}
@@ -160,11 +161,12 @@ export const GenerateSystem = (props) => {
           }`}
         >
           {" "}
-          {makePlanets(num - 1)}
-        </MiniPlanet>
+          
+        </MiniPlanet>{makePlanets(num - 1)}</div>
       );
     }
   };
+  
 
   return (
     <motion.div
@@ -173,12 +175,9 @@ export const GenerateSystem = (props) => {
       className="generatedSystem"
     >
       <Link to="/">Back to space</Link>
-      <h1>
-        {starName}, {splitCss[0].toUpperCase()} STAR
-      </h1>
-      {starName}
+     <div className={splitCss[0] + "1"}></div>{" "}
       <div className="random-placement">{planets}</div>
-      <div className={splitCss[0] + "1"}></div>{" "}
+      
     </motion.div>
   );
 };
