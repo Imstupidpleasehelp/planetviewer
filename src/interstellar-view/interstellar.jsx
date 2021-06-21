@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 export const Interstellar = () => {
   const [exoStars, setExoStars] = useState();
-  
+  const [count, setCount] = useState(0)
   useEffect(() => {
    //var cookies = document.cookie 
    // if (cookies.length === 0) {
@@ -75,7 +75,7 @@ export const Interstellar = () => {
     return Math.floor(Math.random() * 5 + 3);
   }
   const makeStars = (num = 5) => {
-    if (num > 0) {
+    if (num > 0 ) {
       return (
         <div className="starWrapper">
           <Star
@@ -84,7 +84,6 @@ export const Interstellar = () => {
               posList[Math.floor(Math.random() * 9 + 1)]
             }`}
           ></Star>
-
           {makeStars(num - 1)}
         </div>
       );

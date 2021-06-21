@@ -155,7 +155,7 @@ export const GenerateSystem = (props) => {
         <MiniPlanet
           name={`${makeid()}`}
           label={``}
-          className={`${planetTypes[Math.floor(Math.random() * 57 + 1)]} ${
+          className={`${planetTypes[Math.floor(Math.random() * 56 + 1)]} ${
             posList[Math.floor(Math.random() * 8 + 1)]
           }`}
         >
@@ -177,7 +177,7 @@ export const GenerateSystem = (props) => {
         {starName}, {splitCss[0].toUpperCase()} STAR
       </h1>
       {starName}
-      {planets}
+      <div className="random-placement">{planets}</div>
       <div className={splitCss[0] + "1"}></div>{" "}
     </motion.div>
   );

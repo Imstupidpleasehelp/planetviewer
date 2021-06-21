@@ -131,23 +131,33 @@
 }
 
 /* exoplanets */
-.barren-world {
+.Barren-world {
    background-color: red;
-   size: 2rem;
+   width: 100px;
+  height: 100px;
 }
-.rocky-world {
+.Rocky-world {
    background-color: brown;
-   size: 2rem;
+   width: 100px;
+   height: 100px;
 }
-.frozen-world {
+.Frozen-world {
    background-color: white;
-   size: 2rem;
+   width: 100px;
+   height: 100px;
 }
 .Gas-giant {
    background-color: green;
-   size: 2rem;
+   width: 100px;
+  height: 100px;
 }
-.ocean-world {
+.Ocean-world {
    background-color: blue;
-   size: 2rem;
+  width: 100px;
+  height: 100px;
+}
+.Desert-world {
+   background-color: brown;
+   width: 100px;
+  height: 100px;
 }
