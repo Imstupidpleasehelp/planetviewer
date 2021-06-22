@@ -13,8 +13,8 @@ export const GenerateSystem = (props) => {
   const [planets, setPlanets] = useState();
   useEffect(() => {
     EnterSystem();
-    setPlanets(makePlanets(RandomNum()));
-Orbit();
+    MakeTheSystem();
+
     return () => {
       ExitSystem();
     };
@@ -168,8 +168,13 @@ Orbit();
     }
     
   };
+ async function MakeTheSystem( ) {
+   setPlanets(makePlanets(RandomNum()));
   
-const Orbit = () => {
+  
+  }
+function Orbit() {
+  
     gsap.to(".a1", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
     gsap.to(".a2", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
     gsap.to(".a3", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
@@ -178,7 +183,11 @@ const Orbit = () => {
     gsap.to(".a6", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
     gsap.to(".a7", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
     gsap.to(".a8", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
-  }
+    }
+
+
+
+    
   return (
     <motion.div
       variants={backToInterstellar}

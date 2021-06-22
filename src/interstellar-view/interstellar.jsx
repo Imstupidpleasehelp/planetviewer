@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 export const Interstellar = () => {
  
   const [exoStars, setExoStars] = useState();
-  const [count, setCount] = useState(0)
   useEffect(() => {
    //var cookies = document.cookie 
    // if (cookies.length === 0) {

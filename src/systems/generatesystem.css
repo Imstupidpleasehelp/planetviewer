@@ -35,7 +35,7 @@
   animation: translateBackground 120s infinite linear;
   background: url("../starTextures/blue-giant.jpg") repeat-x;
   background-size: 200% 100%;
-  z-index: 99;
+
   transition: transform 0.7s linear;
 }
 .white-dwarf1 {
@@ -52,7 +52,7 @@
   animation: translateBackground 120s infinite linear;
   background: url("../starTextures/white-dwarf.jpg") repeat-x;
   background-size: 200% 100%;
-  z-index: 99;
+
   transition: transform 0.7s linear;
 }
 
@@ -71,7 +71,7 @@
   animation: translateBackground 120s infinite linear;
   background: url("../starTextures/brown-dwarf.jpg") repeat-x;
   background-size: 200% 100%;
-  z-index: 99;
+
   transition: transform 0.7s linear;
 }
 .red-giant1 {
@@ -88,7 +88,7 @@
   animation: translateBackground 120s infinite linear;
   background: url("../starTextures/red-supergiant.jpeg") repeat-x;
   background-size: 200% 100%;
-  z-index: 99;
+
   transition: transform 0.7s linear;
 }
 .red-supergiant1 {
@@ -106,7 +106,7 @@
   animation: translateBackground 120s infinite linear;
   background: url("../starTextures/red-supergiant.jpeg") repeat-x;
   background-size: 200% 100%;
-  z-index: 99;
+
   transition: transform 0.7s linear;
 }
 .red-dwarf1 {
@@ -125,48 +125,84 @@
   animation: translateBackground 120s infinite linear;
   background: url("../starTextures/red-supergiant.jpeg") repeat-x;
   background-size: 200% 100%;
-  z-index: 99;
+
   transition: transform 0.7s linear;
 }
 
 /* exoplanets */
 .Barren-world {
   background-color: red;
-  width: 100px;
-  height: 100px;
+  width: 1.7em;
+  height: 1.7em;
+  z-index: 1;
+  border-radius: 50%;
+
+  animation: translateBackground 120s infinite linear;
+  background: url("../systems/exoplanettextures/barren.jpg") repeat-x;
+  background-size: 200% 100%;
 }
 .Rocky-world {
   background-color: brown;
-  width: 100px;
-  height: 100px;
+  width: 1.7em;
+  height: 1.7em;
+  z-index: 1;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../systems/exoplanettextures/rocky.jpg") repeat-x;
+  background-size: 200% 100%;
 }
 .Frozen-world {
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 1.7em;
+  height: 1.7em;
+  z-index: 1;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../systems/exoplanettextures/frozen.png") repeat-x;
+  background-size: 200% 100%;
 }
 .Gas-giant {
   background-color: green;
-  width: 100px;
-  height: 100px;
+  width: 4em;
+  height: 4em;
+  z-index: 1;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../systems/exoplanettextures/gas.png") repeat-x;
+  background-size: 200% 100%;
 }
 .Ocean-world {
   background-color: blue;
-  width: 100px;
-  height: 100px;
+  width: 2em;
+  height: 2em;
+  z-index: 1;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../systems/exoplanettextures/ocean.jpg") repeat-x;
+  background-size: 200% 100%;
 }
 .Desert-world {
   background-color: brown;
-  width: 100px;
-  height: 100px;
+  width: 2em;
+  height: 2em;
+  z-index: 1;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../systems/exoplanettextures/desert.jpg") repeat-x;
+  background-size: 200% 100%;
 }
 .Molten-world {
   background-color: red;
-  width: 100px;
-  height: 100px;
+  width: 2em;
+  height: 2em;
+  z-index: 1;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../systems/exoplanettextures/lava.jpg") repeat-x;
+  background-size: 200% 100%;
 }
 /* orbits */
-.a {
+.a1 {
   position: absolute;
   --radius: 7rem;
   top: calc(50% - var(--radius));
