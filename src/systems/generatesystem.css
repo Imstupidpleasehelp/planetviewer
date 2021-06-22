@@ -1,168 +1,232 @@
 .generatedSystem {
-   position: relative;
-   min-height: 100vh;
-   min-width: 100vw;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 .yellow-dwarf1 {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-    box-shadow: 1px 1px 45px gold;
-    box-shadow: 1px 1px 35px goldenrod;
-    background-color: red;
-    --radius: 7rem;
-    width: 12em;
-    height: 12em;
-    border-radius: 50%;
-    animation: translateBackground 120s infinite linear;
-    background: url("../planetTextures/sun.jpg") repeat-x;
-    background-size: 200% 100%;
-    transition: transform 0.7s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 45px gold;
+  box-shadow: 1px 1px 35px goldenrod;
+  background-color: red;
+  --radius: 7rem;
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../planetTextures/sun.jpg") repeat-x;
+  background-size: 200% 100%;
+  transition: transform 0.7s linear;
 }
 .blue-giant1 {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-    background-size: cover;
-    box-shadow: 1px 1px 205px blue; 
-    box-shadow: 1px 1px 155px blueviolet; 
-  
-    
- width: 25em;
- height: 25em;
-      border-radius: 50%;
-      animation: translateBackground 120s infinite linear;  
-    background:url("../starTextures/blue-giant.jpg") repeat-x;
-    background-size: 200% 100%;
-   z-index: 99;
-      transition: transform 0.7s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  box-shadow: 1px 1px 205px blue;
+  box-shadow: 1px 1px 155px blueviolet;
+
+  width: 25em;
+  height: 25em;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../starTextures/blue-giant.jpg") repeat-x;
+  background-size: 200% 100%;
+  z-index: 99;
+  transition: transform 0.7s linear;
 }
 .white-dwarf1 {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-    background-size: cover;
-    box-shadow: 1px 1px 55px white; 
-    box-shadow: 1px 1px 25px whitesmoke; 
-   width: 12em;
-   height: 12em;
-      border-radius: 50%;
-      animation: translateBackground 120s infinite linear;  
-    background:url("../starTextures/white-dwarf.jpg") repeat-x;
-    background-size: 200% 100%;
-   z-index: 99;
-      transition: transform 0.7s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  box-shadow: 1px 1px 55px white;
+  box-shadow: 1px 1px 25px whitesmoke;
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../starTextures/white-dwarf.jpg") repeat-x;
+  background-size: 200% 100%;
+  z-index: 99;
+  transition: transform 0.7s linear;
 }
 
 .brown-dwarf1 {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-    background-size: cover;
-    box-shadow: 1px 1px 55px brown; 
-    box-shadow: 1px 1px 35px goldenrod; 
-   width: 12em;
-   height: 12em;
-    --radius: 7rem;
-      border-radius: 50%;
-      animation: translateBackground 120s infinite linear;  
-    background:url("../starTextures/brown-dwarf.jpg") repeat-x;
-    background-size: 200% 100%;
-   z-index: 99;
-      transition: transform 0.7s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  box-shadow: 1px 1px 55px brown;
+  box-shadow: 1px 1px 35px goldenrod;
+  width: 12em;
+  height: 12em;
+  --radius: 7rem;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../starTextures/brown-dwarf.jpg") repeat-x;
+  background-size: 200% 100%;
+  z-index: 99;
+  transition: transform 0.7s linear;
 }
 .red-giant1 {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-    box-shadow: 1px 1px 105px firebrick; 
-    box-shadow: 1px 1px 85px firebrick; 
-   width: 20em;
-   height: 20em;
-    --radius: 7rem;
-      border-radius: 50%;
-      animation: translateBackground 120s infinite linear;  
-    background:url("../starTextures/red-supergiant.jpeg") repeat-x;
-    background-size: 200% 100%;
-   z-index: 99;
-      transition: transform 0.7s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 105px firebrick;
+  box-shadow: 1px 1px 85px firebrick;
+  width: 20em;
+  height: 20em;
+  --radius: 7rem;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../starTextures/red-supergiant.jpeg") repeat-x;
+  background-size: 200% 100%;
+  z-index: 99;
+  transition: transform 0.7s linear;
 }
 .red-supergiant1 {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-    background-size: cover;
-    box-shadow: 8px 8px 225px firebrick; 
-    box-shadow: 5px 5px 145px red; 
-   width: 25em;
-  
-   height: 25em;
-      border-radius: 50%;
-      animation: translateBackground 120s infinite linear;  
-    background:url("../starTextures/red-supergiant.jpeg") repeat-x;
-    background-size: 200% 100%;
-   z-index: 99;
-      transition: transform 0.7s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  box-shadow: 8px 8px 225px firebrick;
+  box-shadow: 5px 5px 145px red;
+  width: 25em;
+
+  height: 25em;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../starTextures/red-supergiant.jpeg") repeat-x;
+  background-size: 200% 100%;
+  z-index: 99;
+  transition: transform 0.7s linear;
 }
 .red-dwarf1 {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-size: cover;
-    box-shadow: 1px 1px 25px firebrick; 
-    box-shadow: 1px 1px 20px red; 
- width: 12em;
- height: 12em;
-      border-radius: 50%;
-      animation: translateBackground 120s infinite linear;  
-    background:url("../starTextures/red-supergiant.jpeg") repeat-x;
-    background-size: 200% 100%;
-   z-index: 99;
-      transition: transform 0.7s linear;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  box-shadow: 1px 1px 25px firebrick;
+  box-shadow: 1px 1px 20px red;
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  animation: translateBackground 120s infinite linear;
+  background: url("../starTextures/red-supergiant.jpeg") repeat-x;
+  background-size: 200% 100%;
+  z-index: 99;
+  transition: transform 0.7s linear;
 }
 
 /* exoplanets */
 .Barren-world {
-   background-color: red;
-   width: 100px;
+  background-color: red;
+  width: 100px;
   height: 100px;
 }
 .Rocky-world {
-   background-color: brown;
-   width: 100px;
-   height: 100px;
+  background-color: brown;
+  width: 100px;
+  height: 100px;
 }
 .Frozen-world {
-   background-color: white;
-   width: 100px;
-   height: 100px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
 }
 .Gas-giant {
-   background-color: green;
-   width: 100px;
+  background-color: green;
+  width: 100px;
   height: 100px;
 }
 .Ocean-world {
-   background-color: blue;
+  background-color: blue;
   width: 100px;
   height: 100px;
 }
 .Desert-world {
-   background-color: brown;
-   width: 100px;
+  background-color: brown;
+  width: 100px;
   height: 100px;
 }
 .Molten-world {
-   background-color: red;
-   width: 100px;
+  background-color: red;
+  width: 100px;
   height: 100px;
+}
+/* orbits */
+.a {
+  position: absolute;
+  --radius: 7rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.a2 {
+  position: absolute;
+  --radius: 9rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.a3 {
+  position: absolute;
+  --radius: 13rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.a4 {
+  position: absolute;
+  --radius: 16rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.a5 {
+  position: absolute;
+  --radius: 22rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.a6 {
+  position: absolute;
+  --radius: 29rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.a7 {
+  position: absolute;
+  --radius: 38rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+.a8 {
+  position: absolute;
+  --radius: 47rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
 }

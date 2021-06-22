@@ -14,7 +14,7 @@ export const GenerateSystem = (props) => {
   useEffect(() => {
     EnterSystem();
     setPlanets(makePlanets(RandomNum()));
-
+Orbit();
     return () => {
       ExitSystem();
     };
@@ -28,6 +28,7 @@ export const GenerateSystem = (props) => {
       },
     },
   };
+  
   const showMeHud = {
     start: {
       scale: 0.1,
@@ -145,29 +146,39 @@ export const GenerateSystem = (props) => {
     "Molten-world",
     "Molten-world",
   ];
-  let posList = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let posList = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9'];
   function RandomNum() {
     return Math.floor(Math.random() * 5 + 3);
   }
   const makePlanets = (num = 5) => {
     if (num > 0) {
       return (
-        <div className="planetWrap">
+        <div className={`planetWrap ${posList[Math.floor(Math.random() * 8 + 1)]}`}>
         <MiniPlanet
           name={`${makeid()}`}
           label={``}
-          className={`${planetTypes[Math.floor(Math.random() * 56 + 1)]} ${
-            posList[Math.floor(Math.random() * 8 + 1)]
+          className={`${planetTypes[Math.floor(Math.random() * 56 + 1)]} 
           }`}
         >
           {" "}
           
         </MiniPlanet>{makePlanets(num - 1)}</div>
       );
+      
     }
+    
   };
   
-
+const Orbit = () => {
+    gsap.to(".a1", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+    gsap.to(".a2", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+    gsap.to(".a3", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+    gsap.to(".a4", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+    gsap.to(".a5", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+    gsap.to(".a6", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+    gsap.to(".a7", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+    gsap.to(".a8", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+  }
   return (
     <motion.div
       variants={backToInterstellar}
