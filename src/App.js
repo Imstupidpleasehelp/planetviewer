@@ -1,5 +1,5 @@
 import "./App.css";
-
+import React, {Component} from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { Interstellar } from "./interstellar-view/interstellar";
 import { SolSystem } from "./systems/sol/solsystem";

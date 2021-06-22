@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 export const Interstellar = () => {
+ 
   const [exoStars, setExoStars] = useState();
   const [count, setCount] = useState(0)
   useEffect(() => {
