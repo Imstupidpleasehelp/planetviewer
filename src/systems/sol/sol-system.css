@@ -4,7 +4,7 @@
   box-shadow: 1px 1px 85px goldenrod;
 
   position: absolute;
-  --radius: 7rem;
+  --radius: 6rem;
   top: calc(50% - var(--radius));
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
@@ -98,9 +98,10 @@
   background-size: 100% 100%;
 }
 /* end of miniplanets */
+
 .orbit-container {
   position: absolute;
-  --radius: 7rem;
+  --radius: 6rem;
   top: calc(50% - var(--radius));
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
@@ -108,7 +109,7 @@
 }
 .orbit-container2 {
   position: absolute;
-  --radius: 9rem;
+  --radius: 8rem;
   top: calc(50% - var(--radius));
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
@@ -116,7 +117,7 @@
 }
 .orbit-container3 {
   position: absolute;
-  --radius: 13rem;
+  --radius: 11rem;
   top: calc(50% - var(--radius));
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
@@ -124,7 +125,7 @@
 }
 .orbit-container4 {
   position: absolute;
-  --radius: 16rem;
+  --radius: 13rem;
   top: calc(50% - var(--radius));
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
@@ -132,7 +133,7 @@
 }
 .orbit-container5 {
   position: absolute;
-  --radius: 22rem;
+  --radius: 19rem;
   top: calc(50% - var(--radius));
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
@@ -140,7 +141,7 @@
   }
   .orbit-container6 {
     position: absolute;
-    --radius: 29rem;
+    --radius: 26rem;
     top: calc(50% - var(--radius));
     left: calc(50% - var(--radius));
     width: calc(2 * var(--radius));
@@ -148,7 +149,7 @@
     }
     .orbit-container7 {
       position: absolute;
-      --radius: 38rem;
+      --radius: 30rem;
       top: calc(50% - var(--radius));
       left: calc(50% - var(--radius));
       width: calc(2 * var(--radius));
@@ -156,7 +157,7 @@
       }
       .orbit-container8 {
         position: absolute;
-        --radius: 47rem;
+        --radius: 35rem;
         top: calc(50% - var(--radius));
         left: calc(50% - var(--radius));
         width: calc(2 * var(--radius));

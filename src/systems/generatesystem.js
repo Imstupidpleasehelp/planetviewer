@@ -154,7 +154,7 @@ export const GenerateSystem = (props) => {
           className={`planetWrap ${posList[Math.floor(Math.random() * 8 + 1)]}`}
         >
           <MiniPlanet
-            name={`planets/${makeid()}`}
+            name={`${makeid()}`}
             label={``}
             className={`${planetTypes[Math.floor(Math.random() * 56 + 1)]} 
           }`}

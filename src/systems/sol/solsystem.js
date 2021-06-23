@@ -5,18 +5,17 @@ import { MiniPlanet } from "../../components/miniplanet";
 
 export const SolSystem = () => {
     useEffect(() => {
-        
         Orbit();
     })
     const Orbit = () => {
-        gsap.to(".orbit-container", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
-        gsap.to(".orbit-container2", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
-        gsap.to(".orbit-container3", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
-        gsap.to(".orbit-container4", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
-        gsap.to(".orbit-container5", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
-        gsap.to(".orbit-container6", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
-        gsap.to(".orbit-container7", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
-        gsap.to(".orbit-container8", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 15})
+        gsap.to(".orbit-container", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 11})
+        gsap.to(".orbit-container2", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 16})
+        gsap.to(".orbit-container3", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 23})
+        gsap.to(".orbit-container4", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 32})
+        gsap.to(".orbit-container5", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 45})
+        gsap.to(".orbit-container6", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 55})
+        gsap.to(".orbit-container7", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 57})
+        gsap.to(".orbit-container8", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 60})
     }
     return (
         <div className="sol-system-master">

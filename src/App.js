@@ -14,14 +14,27 @@ function App() {
     <AnimatePresence className="App">
       <Navigation /> {" "}
       <Switch location={location} key={location.pathname}>
-        <Route exact path="/" component={Interstellar} />
-        <Route exact path="/sol" component={SolSystem} />
+      <Route
+          exact
+          path="/"
+          render={(props) => <Interstellar {...props} />}
+        />
+        <Route
+          exact
+          path="/sol"
+          render={(props) => <SolSystem {...props} />}
+        />
         <Route
           exact
           path="/:id"
           render={(props) => <GenerateSystem {...props} />}
         />
-        <Route exact path="/planets/:id" component={GeneratePlanet} />
+        <Route
+          exact
+          path="/planets/:id"
+          render={(props) => <GeneratePlanet {...props} />}
+        />
+        
       </Switch>
     </AnimatePresence>
   );
@@ -30,7 +43,7 @@ function App() {
 export default App;
 
 export const Navigation = () => {
-  const [Scan, setScan] = useState('')
+  const [Scan, setScan] = useState('test')
   return (
     <div className="container-fluid navbar">
       <div className="row">
@@ -38,7 +51,7 @@ export const Navigation = () => {
           <div className="">left</div>
         </NavLink>
         <NavLink to="/" className="col-sm-4">
-          <div className="">middle</div>
+          <div className="">{Scan}</div>
         </NavLink>{" "}
         <NavLink to="/" className="col-sm-4">
           <div className="">right</div>
