@@ -13,12 +13,73 @@ export const GenerateSystem = (props) => {
   const [planets, setPlanets] = useState();
   useEffect(() => {
     setPlanets(makePlanets(RandomNum()));
+  }, []);
+  
+  useEffect(() => {
+    
     if (planets) {
       EnterSystem();
       Orbit();
     }
   
-  }, []);
+  }, [planets]);
+  // orbits 
+  function Orbit() {
+    gsap.to(".a1", {
+      rotation: -360,
+      ease: "linear",
+      repeat: Infinity,
+      duration: 15,
+    });
+    gsap.to(".a2", {
+      rotation: -360,
+      ease: "linear",
+      repeat: Infinity,
+      duration: 15,
+    });
+    gsap.to(".a3", {
+      rotation: -360,
+      ease: "linear",
+      repeat: Infinity,
+      duration: 15,
+    });
+    gsap.to(".a4", {
+      rotation: -360,
+      ease: "linear",
+      repeat: Infinity,
+      duration: 15,
+    });
+    gsap.to(".a5", {
+      rotation: -360,
+      ease: "linear",
+      repeat: Infinity,
+      duration: 15,
+    });
+    gsap.to(".a6", {
+      rotation: -360,
+      ease: "linear",
+      repeat: Infinity,
+      duration: 15,
+    });
+    gsap.to(".a7", {
+      rotation: -360,
+      ease: "linear",
+      repeat: Infinity,
+      duration: 15,
+    });
+    gsap.to(".a8", {
+      rotation: -360,
+      ease: "linear",
+      repeat: Infinity,
+      duration: 15,
+    });
+    gsap.to(".a9", {
+      rotation: -360,
+      ease: "linear",
+      repeat: Infinity,
+      duration: 15,
+    });
+  }
   //animations
   const backToInterstellar = {
     leaveSystem: {
@@ -99,17 +160,12 @@ export const GenerateSystem = (props) => {
     "Desert-world",
     "Gas-giant",
     "Desert-world",
-    "Gas-giant",
     "Desert-world",
-    "Gas-giant",
     "Desert-world",
-    "Gas-giant",
+    
     "Desert-world",
-    "Gas-giant",
     "Desert-world",
-    "Gas-giant",
     "Desert-world",
-    "Gas-giant",
     "Earth-like-world",
 
     "Earth-like-world",
@@ -171,56 +227,7 @@ export const GenerateSystem = (props) => {
   
     
   
-  function Orbit() {
-    gsap.to(".a1", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: 15,
-    });
-    gsap.to(".a2", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: 15,
-    });
-    gsap.to(".a3", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: 15,
-    });
-    gsap.to(".a4", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: 15,
-    });
-    gsap.to(".a5", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: 15,
-    });
-    gsap.to(".a6", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: 15,
-    });
-    gsap.to(".a7", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: 15,
-    });
-    gsap.to(".a8", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: 15,
-    });
-  }
+  
 
   return (
     <motion.div

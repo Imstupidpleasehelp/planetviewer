@@ -1,5 +1,5 @@
-import "./App.css";
-import {useState} from 'react'
+import "./App.scss";
+import { useState } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { Interstellar } from "./interstellar-view/interstellar";
 import { SolSystem } from "./systems/sol/solsystem";
@@ -12,18 +12,10 @@ function App() {
   const location = useLocation();
   return (
     <AnimatePresence className="App">
-      <Navigation /> {" "}
+      <Navigation />{" "}
       <Switch location={location} key={location.pathname}>
-      <Route
-          exact
-          path="/"
-          render={(props) => <Interstellar {...props} />}
-        />
-        <Route
-          exact
-          path="/sol"
-          render={(props) => <SolSystem {...props} />}
-        />
+        <Route exact path="/" render={(props) => <Interstellar {...props} />} />
+        <Route exact path="/sol" render={(props) => <SolSystem {...props} />} />
         <Route
           exact
           path="/:id"
@@ -42,25 +34,29 @@ function App() {
 export default App;
 
 export const Navigation = () => {
-  const [Scan, setScan] = useState('test')
-  const [open, setOpen] = useState('navbar-open')
+  const [Scan, setScan] = useState("test");
+  const [open, setOpen] = useState("navbar-open");
   const openNav = () => {
-    setOpen('navbar-open')
-  }
+    setOpen("navbar-open");
+  };
   const closeNav = () => {
-    setOpen('navbar-closed')
-  }
+    setOpen("navbar-closed");
+  };
   return (
     <div className={`container-fluid`}>
-      {open === 'navbar-open' ? <button onClick={() => closeNav()}>make small</button> : 
-      <button onClick={() => openNav()}>Make big</button>}
-    <div className={` navbar ${open}`}>
-       <div className="nav-item">
-         Infomation
-       </div>
-          <div className="scan-bar">{Scan}</div>
-        
-       </div>
+      <div className="button-container">
+        {open === "navbar-open" ? (
+          <button onClick={() => closeNav()} className="">make small</button>
+        ) : (
+          <button onClick={() => openNav()} className="">
+            Make big
+          </button>
+        )}
+      </div>
+      <div className={` navbar ${open}`}>
+        <div className="nav-item"><NavLink to="/">Intersellar Space</NavLink></div>
+        <div className="scan-bar">{Scan}</div>
+      </div>
     </div>
   );
 };
