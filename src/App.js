@@ -8,7 +8,6 @@ import { GeneratePlanet } from "./systems/generatePlanet";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { NavLink } from "react-router-dom";
-import { Gsap } from "./systems/gsap";
 function App() {
   const location = useLocation();
   return (
@@ -35,7 +34,6 @@ function App() {
           path="/planets/:id"
           render={(props) => <GeneratePlanet {...props} />}
         />
-        <Route path="/gsap" component={Gsap} />
       </Switch>
     </AnimatePresence>
   );
@@ -45,19 +43,24 @@ export default App;
 
 export const Navigation = () => {
   const [Scan, setScan] = useState('test')
+  const [open, setOpen] = useState('navbar-open')
+  const openNav = () => {
+    setOpen('navbar-open')
+  }
+  const closeNav = () => {
+    setOpen('navbar-closed')
+  }
   return (
-    <div className="container-fluid navbar">
-      <div className="row">
-        <NavLink to="/" className="col-sm-4">
-          <div className="">Home</div>
-        </NavLink>
-        <NavLink to="/" className="col-sm-4">
-          <div className="">{Scan}</div>
-        </NavLink>{" "}
-        <NavLink to="/Sol" className="col-sm-4">
-          <div className="">right</div>
-        </NavLink>
-      </div>
+    <div className={`container-fluid`}>
+      {open === 'navbar-open' ? <button onClick={() => closeNav()}>make small</button> : 
+      <button onClick={() => openNav()}>Make big</button>}
+    <div className={` navbar ${open}`}>
+       <div className="nav-item">
+         Infomation
+       </div>
+          <div className="scan-bar">{Scan}</div>
+        
+       </div>
     </div>
   );
 };

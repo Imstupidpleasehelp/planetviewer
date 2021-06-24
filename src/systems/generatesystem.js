@@ -18,7 +18,7 @@ export const GenerateSystem = (props) => {
       Orbit();
     }
   
-  }, [planets]);
+  }, []);
   //animations
   const backToInterstellar = {
     leaveSystem: {
