@@ -48,12 +48,12 @@ export const Navigation = () => {
     <div className="container-fluid navbar">
       <div className="row">
         <NavLink to="/" className="col-sm-4">
-          <div className="">left</div>
+          <div className="">Home</div>
         </NavLink>
         <NavLink to="/" className="col-sm-4">
           <div className="">{Scan}</div>
         </NavLink>{" "}
-        <NavLink to="/" className="col-sm-4">
+        <NavLink to="/Sol" className="col-sm-4">
           <div className="">right</div>
         </NavLink>
       </div>

@@ -13,7 +13,7 @@
   animation: translateBackground 120s infinite linear;
   background: url("../../planetTextures/sun.jpg") repeat-x;
   background-size: 200% 100%;
-  z-index: 99;
+  
   transition: transform 0.7s linear;
 }
 @keyframes translateBackground {
@@ -106,6 +106,7 @@
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
+  z-index: 8
 }
 .orbit-container2 {
   position: absolute;
@@ -114,6 +115,7 @@
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
+  z-index: 7
 }
 .orbit-container3 {
   position: absolute;
@@ -122,6 +124,7 @@
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
+  z-index: 6
 }
 .orbit-container4 {
   position: absolute;
@@ -130,6 +133,7 @@
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
+  z-index: 5
 }
 .orbit-container5 {
   position: absolute;
@@ -138,6 +142,7 @@
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
+  z-index: 4
   }
   .orbit-container6 {
     position: absolute;
@@ -146,6 +151,7 @@
     left: calc(50% - var(--radius));
     width: calc(2 * var(--radius));
     height: calc(2 * var(--radius));
+    z-index: 3
     }
     .orbit-container7 {
       position: absolute;
@@ -154,6 +160,7 @@
       left: calc(50% - var(--radius));
       width: calc(2 * var(--radius));
       height: calc(2 * var(--radius));
+      z-index: 2
       }
       .orbit-container8 {
         position: absolute;
@@ -162,4 +169,5 @@
         left: calc(50% - var(--radius));
         width: calc(2 * var(--radius));
         height: calc(2 * var(--radius));
+        z-index: 1;
         }
