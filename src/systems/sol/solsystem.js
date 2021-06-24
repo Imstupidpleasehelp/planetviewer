@@ -8,7 +8,7 @@ export const SolSystem = () => {
         Orbit();
     })
     const Orbit = () => {
-        gsap.to(".orbit-container", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 11})
+        gsap.fromTo('.orbitcontainer', {scale:0, transformOrigin:'50% 50%'}, {duration:0.8, scale:1.5, ease:'back.out(3)', stagger:0.15, overwrite:'auto'}, 'orbs')
         gsap.to(".orbit-container2", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 16})
         gsap.to(".orbit-container3", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 23})
         gsap.to(".orbit-container4", {rotation: -360, ease: "linear",  repeat: Infinity, duration: 32})

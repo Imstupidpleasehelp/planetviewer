@@ -8,6 +8,7 @@ import { GeneratePlanet } from "./systems/generatePlanet";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { NavLink } from "react-router-dom";
+import { Gsap } from "./systems/gsap";
 function App() {
   const location = useLocation();
   return (
@@ -34,7 +35,7 @@ function App() {
           path="/planets/:id"
           render={(props) => <GeneratePlanet {...props} />}
         />
-        
+        <Route path="/gsap" component={Gsap} />
       </Switch>
     </AnimatePresence>
   );

@@ -12,11 +12,13 @@ function useQuery() {
 export const GenerateSystem = (props) => {
   const [planets, setPlanets] = useState();
   useEffect(() => {
-    EnterSystem();
-    MakeTheSystem();
-(planets ? Orbit() : console.log('a'))
+    setPlanets(makePlanets(RandomNum()));
+    if (planets) {
+      EnterSystem();
+      Orbit();
+    }
   
-  }, []);
+  }, [planets]);
   //animations
   const backToInterstellar = {
     leaveSystem: {
@@ -166,10 +168,9 @@ export const GenerateSystem = (props) => {
       );
     }
   };
-  async function MakeTheSystem() {
-    setPlanets(makePlanets(RandomNum()));
   
-  }
+    
+  
   function Orbit() {
     gsap.to(".a1", {
       rotation: -360,
@@ -227,7 +228,7 @@ export const GenerateSystem = (props) => {
       exit="leaveSystem"
       className="generatedSystem"
     >
-      <Link to="/">Back to space</Link>
+      
       <div className={splitCss[0] + "1"}></div>{" "}
       <div className="random-placement">{planets}</div>
     </motion.div>
