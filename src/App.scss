@@ -17,6 +17,9 @@ body {
     height: 100%;
     z-index: -99;
   }
+  .navbar {
+    text-align: center;
+  }
   .navbar-open {
     text-align: center;
     margin: 0;
@@ -27,6 +30,12 @@ body {
     height: 100%;
     overflow: auto;
     z-index: 99;
+  }
+  .nav-item {
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    padding: 100px;
   }
 .navbar-closed {
   text-align: center;

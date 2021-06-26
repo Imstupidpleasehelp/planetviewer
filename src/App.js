@@ -34,7 +34,7 @@ function App() {
 export default App;
 
 export const Navigation = () => {
-  const [Scan, setScan] = useState("test");
+  const [Scan, setScan] = useState("");
   const [open, setOpen] = useState("navbar-closed");
   const openNav = () => {
     setOpen("navbar-open");
@@ -53,7 +53,7 @@ export const Navigation = () => {
           </button>
         )}
       </div>
-      <div className={` navbar ${open}`}>
+      <div className={`navbar ${open}`}>
         <div className="nav-item"><NavLink to="/">Intersellar Space</NavLink></div>
         <div className="scan-bar">{Scan}</div>
       </div>
