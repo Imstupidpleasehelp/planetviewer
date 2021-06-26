@@ -29,55 +29,55 @@ export const GenerateSystem = (props) => {
       rotation: -360,
       ease: "linear",
       repeat: Infinity,
-      duration: 15,
+      duration: gsap.utils.random(20, 60),
     });
     gsap.to(".a2", {
       rotation: -360,
       ease: "linear",
       repeat: Infinity,
-      duration: 15,
+      duration: gsap.utils.random(20, 60),
     });
     gsap.to(".a3", {
       rotation: -360,
       ease: "linear",
       repeat: Infinity,
-      duration: 15,
+      duration: gsap.utils.random(20, 60),
     });
     gsap.to(".a4", {
       rotation: -360,
       ease: "linear",
       repeat: Infinity,
-      duration: 15,
+      duration: gsap.utils.random(20, 60),
     });
     gsap.to(".a5", {
       rotation: -360,
       ease: "linear",
       repeat: Infinity,
-      duration: 15,
+      duration: gsap.utils.random(20, 60),
     });
     gsap.to(".a6", {
       rotation: -360,
       ease: "linear",
       repeat: Infinity,
-      duration: 15,
+      duration: gsap.utils.random(20, 60),
     });
     gsap.to(".a7", {
       rotation: -360,
       ease: "linear",
       repeat: Infinity,
-      duration: 15,
+      duration: gsap.utils.random(20, 60),
     });
     gsap.to(".a8", {
       rotation: -360,
       ease: "linear",
       repeat: Infinity,
-      duration: 15,
+      duration: gsap.utils.random(20, 60),
     });
     gsap.to(".a9", {
       rotation: -360,
       ease: "linear",
       repeat: Infinity,
-      duration: 15,
+      duration: gsap.utils.random(20, 60),
     });
   }
   //animations

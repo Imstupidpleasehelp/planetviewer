@@ -35,7 +35,7 @@ export default App;
 
 export const Navigation = () => {
   const [Scan, setScan] = useState("test");
-  const [open, setOpen] = useState("navbar-open");
+  const [open, setOpen] = useState("navbar-closed");
   const openNav = () => {
     setOpen("navbar-open");
   };
