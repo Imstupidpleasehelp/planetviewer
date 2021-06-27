@@ -3,6 +3,18 @@
   min-width: 100vw;
   position: absolute;
 }
+.top-warp {
+  height: 50vh;
+  width: 100vw;
+  background-color: purple;
+  z-index: 99;
+}
+.bottom-warp {
+  height: 50vh;
+  width: 100vw;
+  background-color: purple;
+  z-index: 99;
+}
 .star-label {
   color: white;
 }

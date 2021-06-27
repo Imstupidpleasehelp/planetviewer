@@ -11,7 +11,7 @@ export const Interstellar = () => {
    //var cookies = document.cookie 
    // if (cookies.length === 0) {
       setExoStars(makeStars(RandomNum()));
-    
+    EnterSystem();
    // }
    
 
@@ -41,7 +41,10 @@ export const Interstellar = () => {
     },
   };
   function EnterSystem() {
-    // gsap.to(".interstellar-space", { scaleX: 2, scaleY: 2, transformOrigin:"center", duration: 3 });
+     gsap.to(".top-warp", { y: -1000, duration: 2.7 });
+     gsap.to(".bottom-warp", { y:1000, duration: 2.7 });
+
+   
   }
   // auto generation stuff
   function makeid() {
@@ -92,9 +95,10 @@ export const Interstellar = () => {
 
   return (
     <motion.div variants={viewStar} exit="exit" className="interstellar-space">
+      <div className="top-warp warp"></div>
       <Star name="Sol" starType="sol-system" />
       <div className="random-placement">{exoStars}</div>
-      
+      <div className="bottom-warp warp"></div>
     </motion.div>
   );
 };
