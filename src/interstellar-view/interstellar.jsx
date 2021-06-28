@@ -41,8 +41,8 @@ export const Interstellar = () => {
     },
   };
   function EnterSystem() {
-     gsap.to(".top-warp", { y: -1000, duration: 2.7 });
-     gsap.to(".bottom-warp", { y:1000, duration: 2.7 });
+     //gsap.to(".top-warp", { y: -1000, duration: 2.7 });
+     //gsap.to(".bottom-warp", { y:1000, duration: 2.7 });
 
    
   }
@@ -95,10 +95,10 @@ export const Interstellar = () => {
 
   return (
     <motion.div variants={viewStar} exit="exit" className="interstellar-space">
-      <div className="top-warp warp"></div>
+     {/*} <div className="top-warp warp"></div> */}
       <Star name="Sol" starType="sol-system" />
       <div className="random-placement">{exoStars}</div>
-      <div className="bottom-warp warp"></div>
+      {/*<div className="bottom-warp warp"></div> */}
     </motion.div>
   );
 };

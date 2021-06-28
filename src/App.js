@@ -46,9 +46,9 @@ export const Navigation = () => {
     <div className={`container-fluid`}>
       <div className="button-container">
         {open === "navbar-open" ? (
-          <button onClick={() => closeNav()} className="button">make small</button>
+          <button onClick={() => closeNav()} className="button btn-success">make small</button>
         ) : (
-          <button onClick={() => openNav()} className="button">
+          <button onClick={() => openNav()} className="button btn-success">
             Make big
           </button>
         )}
