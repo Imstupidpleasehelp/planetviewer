@@ -1,9 +1,9 @@
 .generatedSystem {
-  position: absolute;
   min-height: 100vh;
   min-width: 100vw;
-  z-index: -1;
+  overflow: visible;
 }
+
 .yellow-dwarf1 {
   position: absolute;
   left: 50%;

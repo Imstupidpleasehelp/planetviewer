@@ -90,24 +90,7 @@ export const GenerateSystem = (props) => {
     },
   };
 
-  const showMeHud = {
-    start: {
-      scale: 0.1,
-    },
-    enter: {
-      scale: 1,
-      transition: {
-        duration: 5,
-      },
-    },
-    exit: {
-      scale: 0.01,
-      transition: {
-        duration: 3,
-      },
-    },
-  };
-
+ 
   function ExitSystem() {
     gsap.to(".generatedSystem", {
       scaleX: 0.1,

@@ -1,7 +1,6 @@
 .interstellar-space {
   min-height: 100vh;
   min-width: 100vw;
-  position: absolute;
 }
 .top-warp {
   height: 50vh;
@@ -34,6 +33,7 @@
   background-size: 200% 100%;
   transition: transform 0.7s linear;
 }
+// star positions on the front page
 .one {
   position: absolute;
   left: 80%;
