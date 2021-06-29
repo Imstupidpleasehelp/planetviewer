@@ -34,7 +34,7 @@ function App() {
 export default App;
 
 export const Navigation = () => {
-  const [Scan, setScan] = useState("");
+  const [Scan, setScan] = useState("Scanner");
   const [open, setOpen] = useState("navbar-open");
   const openNav = () => {
     setOpen("navbar-open");
@@ -43,29 +43,28 @@ export const Navigation = () => {
     setOpen("navbar-closed");
   };
   return (
-
-     <nav class={`navbar navbar-expand-lg navbar-light bg-light ${open}`}>
-  <div className='text-center'>
-  <div className="button-container">
+    <div className="navbar-wrapper">
+      <div className="button-container">
         {open === "navbar-open" ? (
-          <button onClick={() => closeNav()} className="button btn-success">make small</button>
+          <button onClick={() => closeNav()} className="button btn-success">
+            make small
+          </button>
         ) : (
           <button onClick={() => openNav()} className="button btn-success">
             Make big
           </button>
         )}
-      </div>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item ">
-        <NavLink to="/">Interstellar Space</NavLink>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      
-      </li>
-    </ul>
-  
-  </div>
-</nav>
+      </div>{" "}
+      <nav class={`navbar   ${open}`}>
+        <div className="nav-left">BOX</div>
+        <div className="text-center nav-center">
+          <div className="nav-item">
+            <NavLink to="/">Interstellar Space</NavLink>
+          </div>
+        </div>
+        <div className="nav-right">BOX</div>
+        <div className="nav-bottom">{Scan}</div>
+      </nav>
+    </div>
   );
 };

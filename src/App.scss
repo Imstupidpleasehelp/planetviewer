@@ -1,43 +1,72 @@
 body {
   background-color: black !important;
   color: white;
- 
-  position: absolute;
+
+  position: fixed;
   overflow: hidden;
   width: 100%;
   height: 100%;
-  
 }
+
 .backgroundclass {
   background-color: black;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -99;
-  }
-  .navbar {
-    text-align: center;
-  }
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+}
+.navbar-wrapper {
+  z-index: 99;
+  position: relative;
+}
+.navbar {
+  text-align: center;
+  z-index: 98;
+}
 
-  .nav-item {
-    text-align: center;
-    color: white;
-    border: 1px solid white;
-    
-  }
+.nav-item {
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+}
+.nav-left {
+  left: 0;
+  top: 0;
+  border: 3px solid steelblue;
+  width: 25%;
+}
+.nav-center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.nav-right {
+  text-align: right;
+  top: 0;
+  right: 0;
+  width: 25%;
+  border: 3px solid steelblue;
+}
+.nav-bottom {
+  bottom: 0;
+  text-align: center;
+  position: fixed;
+  margin: auto;
+}
 .navbar-closed {
   text-align: center;
-    margin: 0;
-    padding: 0;
-    width: 0;
-    background-color: darkslateblue;
-    position: fixed;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    z-index: 99;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  background-color: darkslateblue;
+  position: fixed;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 99;
 }
 /* buttons */
 
@@ -51,70 +80,108 @@ body {
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
 }
-  /* stars */ 
+/* stars */
 
-  @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
   }
-  @-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+  to {
+    background-position: -10000px 5000px;
   }
-  @-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
   }
-  @-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+  to {
+    background-position: -10000px 5000px;
   }
-  
-  @keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
   }
-  @-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  to {
+    background-position: -10000px 5000px;
   }
-  @-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
   }
-  @-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
+  to {
+    background-position: -10000px 5000px;
   }
-  
-  .stars, .twinkling, .clouds {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
   z-index: -1;
-  }
-  
-  .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center ;
-  z-index:0;
-  }
-  
-  .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index:1;
-  
-  -moz-animation:move-twink-back 500s linear infinite;
-  -ms-animation:move-twink-back 500s linear infinite;
-  -o-animation:move-twink-back 500s linear infinite;
-  -webkit-animation:move-twink-back 500s linear infinite;
-  animation:move-twink-back 500s linear infinite;
-  }
-  /* end of star background */ 
+}
+
+.stars {
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    top center;
+  z-index: 1;
+
+  -moz-animation: move-twink-back 500s linear infinite;
+  -ms-animation: move-twink-back 500s linear infinite;
+  -o-animation: move-twink-back 500s linear infinite;
+  -webkit-animation: move-twink-back 500s linear infinite;
+  animation: move-twink-back 500s linear infinite;
+}
+/* end of star background */
