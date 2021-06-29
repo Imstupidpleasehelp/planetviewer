@@ -20,19 +20,7 @@ body {
   .navbar {
     text-align: center;
   }
-  .navbar-open {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    width: 300px;
-    background-color: darkslateblue;
-   
-    height: 100%;
-    overflow: auto;
-    z-index: 99;
-  }
+
   .nav-item {
     text-align: center;
     color: white;
