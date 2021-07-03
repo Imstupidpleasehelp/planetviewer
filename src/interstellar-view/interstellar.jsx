@@ -5,17 +5,16 @@ import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 export const Interstellar = () => {
- 
   const [exoStars, setExoStars] = useState();
   useEffect(() => {
-   //var cookies = document.cookie 
-   // if (cookies.length === 0) {
-      setExoStars(makeStars(RandomNum()));
+    //var cookies = document.cookie
+    // if (cookies.length === 0) {
+    setExoStars(makeStars(RandomNum()));
     EnterSystem();
-   // }
-   
+    perfectOrbit();
+    // }
 
-    // save the results of the first set of this 
+    // save the results of the first set of this
   }, []);
 
   // animations
@@ -25,26 +24,40 @@ export const Interstellar = () => {
   the new transform-origin w the mouse offset relative to the element
   check if user has already been here? 
    */
-  
+  const perfectOrbit = () => {
+    gsap.set(".wrapper", {
+      xPercent: 0,
+      yPercent: -50,
+      x: 0,
+      y: 0,
+      transformOrigin: "20vw center",
+    });
+
+    gsap.to(".wrapper", {
+      rotation: 360,
+      ease: "none",
+      repeat: -1,
+      duration: 3,
+    });
+    gsap.to(".planet", { rotation: -360, ease: "none", repeat: -1, duration: 3 });
+  };
   const viewStar = {
     exit: {
       scale: 0.01,
       transition: {
         duration: 3,
       },
-       in: {
-      scale: 0.01,
-      transition: {
-        duration: 2
-      }
-    }
+      in: {
+        scale: 0.01,
+        transition: {
+          duration: 2,
+        },
+      },
     },
   };
   function EnterSystem() {
-     //gsap.to(".top-warp", { y: -1000, duration: 2.7 });
-     //gsap.to(".bottom-warp", { y:1000, duration: 2.7 });
-
-   
+    //gsap.to(".top-warp", { y: -1000, duration: 2.7 });
+    //gsap.to(".bottom-warp", { y:1000, duration: 2.7 });
   }
   // auto generation stuff
   function makeid() {
@@ -78,7 +91,7 @@ export const Interstellar = () => {
     return Math.floor(Math.random() * 5 + 3);
   }
   const makeStars = (num = 5) => {
-    if (num > 0 ) {
+    if (num > 0) {
       return (
         <div className="starWrapper">
           <Star
@@ -95,9 +108,17 @@ export const Interstellar = () => {
 
   return (
     <motion.div variants={viewStar} exit="exit" className="interstellar-space">
-     {/*} <div className="top-warp warp"></div> */}
+      {/*} <div className="top-warp warp"></div> */}
       <Star name="Sol" starType="sol-system" />
-      <div className="random-placement">{exoStars}</div>
+      <div className="random-placement">
+        {exoStars}
+        <div className="wrapper">
+          <div className="planet">
+            <h1>Planet</h1>
+          </div>
+        </div>
+      </div>
+
       {/*<div className="bottom-warp warp"></div> */}
     </motion.div>
   );

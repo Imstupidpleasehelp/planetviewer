@@ -98,7 +98,12 @@
   background-size: 100% 100%;
 }
 /* end of miniplanets */
-
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(0%, -50%);
+}
 .orbit-container {
   position: absolute;
   --radius: 6rem;

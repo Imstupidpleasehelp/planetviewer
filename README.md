@@ -5,6 +5,6 @@ things to do.
 6. page transitions
 7. use browser storage to store generated systems or something similar i guess
 9. Allow generated planets to inherit their classname 
-
+8. fix planet links overflowing their container
 
 10. maybe add stars that are close to the sun as hardcoded stars
