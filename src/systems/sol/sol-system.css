@@ -13,7 +13,7 @@
   animation: translateBackground 120s infinite linear;
   background: url("../../planetTextures/sun.jpg") repeat-x;
   background-size: 200% 100%;
-  
+
   transition: transform 0.7s linear;
 }
 @keyframes translateBackground {
@@ -53,7 +53,6 @@
   animation: translateBackground 55s infinite linear;
   background: url("../../planetTextures/mercury.jpg") repeat-x;
   background-size: 100% 100%;
-  
 }
 .venusMini {
   width: 2em;
@@ -104,15 +103,7 @@
   top: 50%;
   left: 50%;
 }
-.orbit-container {
-  position: absolute;
-  --radius: 6rem;
-  top: calc(50% - var(--radius));
-  left: calc(50% - var(--radius));
-  width: calc(2 * var(--radius));
-  height: calc(2 * var(--radius));
-  z-index: 8
-}
+
 .orbit-container2 {
   position: absolute;
   --radius: 8rem;
@@ -120,7 +111,7 @@
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
-  z-index: 7
+  z-index: 7;
 }
 .orbit-container3 {
   position: absolute;
@@ -129,7 +120,7 @@
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
-  z-index: 6
+  z-index: 6;
 }
 .orbit-container4 {
   position: absolute;
@@ -138,7 +129,7 @@
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
-  z-index: 5
+  z-index: 5;
 }
 .orbit-container5 {
   position: absolute;
@@ -147,32 +138,50 @@
   left: calc(50% - var(--radius));
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
-  z-index: 4
+  z-index: 4;
+}
+.orbit-container6 {
+  position: absolute;
+  --radius: 26rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  z-index: 3;
+}
+.orbit-container7 {
+  position: absolute;
+  --radius: 30rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  z-index: 2;
+}
+.orbit-container8 {
+  position: absolute;
+  --radius: 35rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  z-index: 1;
+}
+.orbit-container {
+  position: absolute;
+  --radius: 6rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  z-index: 8;
+  animation: circular 4s linear infinite;
+}
+@keyframes circular {
+  from {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
   }
-  .orbit-container6 {
-    position: absolute;
-    --radius: 26rem;
-    top: calc(50% - var(--radius));
-    left: calc(50% - var(--radius));
-    width: calc(2 * var(--radius));
-    height: calc(2 * var(--radius));
-    z-index: 3
-    }
-    .orbit-container7 {
-      position: absolute;
-      --radius: 30rem;
-      top: calc(50% - var(--radius));
-      left: calc(50% - var(--radius));
-      width: calc(2 * var(--radius));
-      height: calc(2 * var(--radius));
-      z-index: 2
-      }
-      .orbit-container8 {
-        position: absolute;
-        --radius: 35rem;
-        top: calc(50% - var(--radius));
-        left: calc(50% - var(--radius));
-        width: calc(2 * var(--radius));
-        height: calc(2 * var(--radius));
-        z-index: 1;
-        }
+  to {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}

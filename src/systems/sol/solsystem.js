@@ -9,31 +9,26 @@ export const SolSystem = () => {
   });
 
   const Orbit = () => {
-    gsap.set(".wrapper", {
-      xPercent: 0,
-      yPercent: -50,
-      x: 0,
-      y: 0,
-      transformOrigin: "20vw center",
-    });
-
-    gsap.to(".wrapper", {
-      rotation: 360,
-      ease: "none",
-      repeat: -1,
-      duration: 13,
-    });
-    gsap.to(".planet", {
-      rotation: -360,
-      ease: "none",
-      repeat: -1,
-      duration: 13,
-    });
+    
+    gsap.set(".wrapper2", {
+        xPercent: 0,
+        yPercent: -50,
+        x: 0,
+        y: 0,
+        transformOrigin: "20vw center",
+      });
+  
+      gsap.to(".wrapper2", {
+        rotation: 360,
+        ease: "none",
+        repeat: -1,
+        duration: 13,
+      });
     gsap.to(".orbit-container2", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: 16,
+        rotation: -360,
+        ease: "none",
+        repeat: -1,
+        duration: 13,
     });
     gsap.to(".orbit-container3", {
       rotation: -360,
@@ -77,10 +72,13 @@ export const SolSystem = () => {
       <div className="sun"></div>
 
       <div className="wrapper">
-        <div className="planet"><MiniPlanet name="mercury" className="mercuryMini" />Mercury</div>
-        <div className="planet"><MiniPlanet name="venus" className="venusMini" />Venus</div>
+        <div className="orbit-container"><MiniPlanet name="mercury" className="mercuryMini" />Mercury</div>
+        
       </div>
-      
+      <div className="wrapper2">
+      <div className="orbit-container2">
+        <MiniPlanet name="venus" className=" venusMini " />
+      </div></div>
       <div className="orbit-container3">
         <MiniPlanet name="earth" className=" earthMini " />
       </div>
