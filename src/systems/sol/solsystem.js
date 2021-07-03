@@ -71,10 +71,9 @@ export const SolSystem = () => {
     <div className="sol-system-master">
       <div className="sun"></div>
 
-      <div className="wrapper">
-        <div className="orbit-container"><MiniPlanet name="mercury" className="mercuryMini" />Mercury</div>
+      
+       <MiniPlanet name="mercury" className="mercuryMini orbit-container" />Mercury
         
-      </div>
       <div className="wrapper2">
       <div className="orbit-container2">
         <MiniPlanet name="venus" className=" venusMini " />
