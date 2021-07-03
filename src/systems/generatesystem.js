@@ -25,12 +25,10 @@ export const GenerateSystem = (props) => {
   }, [planets]);
   // orbits 
   function Orbit() {
-    gsap.to(".a1", {
-      rotation: -360,
-      ease: "linear",
-      repeat: Infinity,
-      duration: gsap.utils.random(20, 60),
-    });
+    gsap.set(".wrapper", {xPercent: 0, yPercent: -50, x: 0, y: 0, transformOrigin: "20vw center"});
+
+gsap.to(".wrapper", {rotation: 360, ease: "none", repeat: -1, duration: 3});
+gsap.to(".box", {rotation: -360, ease: "none", repeat: -1, duration: 3});
     gsap.to(".a2", {
       rotation: -360,
       ease: "linear",
@@ -221,6 +219,9 @@ export const GenerateSystem = (props) => {
       
       <div className={splitCss[0] + "1"}></div>{" "}
       <div className="random-placement">{planets}</div>
+      <div class="wrapper">
+  <div class="box">BOX</div>
+</div>
     </motion.div>
   );
 };

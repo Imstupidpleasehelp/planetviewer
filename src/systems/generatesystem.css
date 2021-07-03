@@ -284,3 +284,17 @@ margin-left: 100px;
   z-index: 1
 }
 
+.box {
+  background-color: blue;
+  width: 100px;
+  height: 70px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(0%, -50%);
+}
