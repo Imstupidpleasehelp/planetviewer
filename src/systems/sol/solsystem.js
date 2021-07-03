@@ -23,7 +23,7 @@ export const SolSystem = () => {
       repeat: -1,
       duration: 13,
     });
-    gsap.to(".mercuryMini", {
+    gsap.to(".planet", {
       rotation: -360,
       ease: "none",
       repeat: -1,
@@ -77,12 +77,10 @@ export const SolSystem = () => {
       <div className="sun"></div>
 
       <div className="wrapper">
-        <MiniPlanet name="mercury" className="mercuryMini" />
-        Mercury
+        <div className="planet"><MiniPlanet name="mercury" className="mercuryMini" />Mercury</div>
+        <div className="planet"><MiniPlanet name="venus" className="venusMini" />Venus</div>
       </div>
-      <div className="orbit-container2">
-        <MiniPlanet name="venus" className="venusMini " />
-      </div>
+      
       <div className="orbit-container3">
         <MiniPlanet name="earth" className=" earthMini " />
       </div>
