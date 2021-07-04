@@ -6,7 +6,7 @@ export const MiniPlanet = (props) => {
     <NavLink to={`planets/${props.name}`} >
      <div className="miniPlanet">
 
-      <div className={`${props.className}`}></div>
+      
 
     </div></NavLink>
      

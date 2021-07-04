@@ -37,9 +37,9 @@ export const Interstellar = () => {
       rotation: 360,
       ease: "none",
       repeat: -1,
-      duration: 3,
+      duration: 13,
     });
-    gsap.to(".planet", { rotation: -360, ease: "none", repeat: -1, duration: 3 });
+    gsap.to(".planet", { rotation: -360, ease: "none", repeat: -1, duration: 13 });
   };
   const viewStar = {
     exit: {

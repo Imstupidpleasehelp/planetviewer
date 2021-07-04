@@ -103,7 +103,15 @@
   top: 50%;
   left: 50%;
 }
-
+.orbit-container {
+  position: absolute;
+  --radius: 8rem;
+  top: calc(50% - var(--radius));
+  left: calc(50% - var(--radius));
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  z-index: 7;
+}
 .orbit-container2 {
   position: absolute;
   --radius: 8rem;
@@ -175,8 +183,8 @@
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
   z-index: 8;
-  animation: circular 4s linear infinite;
 }
+
 @keyframes circular {
   from {
     transform: rotate(0deg) translateX(200px) rotate(0deg);
