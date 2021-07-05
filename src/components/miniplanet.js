@@ -3,12 +3,11 @@ import { NavLink } from "react-router-dom";
 
 export const MiniPlanet = (props) => {
   return (
-    <NavLink to={`planets/${props.name}`} >
-     <div className="miniPlanet">
+    <div className={`miniPlanet ${props.className}`}><NavLink to={`planets/${props.name}`} >
+     
 
-      
-
-    </div></NavLink>
+</NavLink>
+    </div>
      
   );
 };
