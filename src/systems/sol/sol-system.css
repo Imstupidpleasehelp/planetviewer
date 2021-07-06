@@ -53,7 +53,9 @@
   animation: translateBackground 55s infinite linear;
   background: url("../../planetTextures/mercury.jpg") repeat-x;
   background-size: 100% 100%;
-   animation: circular 4s linear infinite;
+   animation: circular 10s linear infinite;
+
+ 
 }
 .venusMini {
   width: 2em;
@@ -104,7 +106,7 @@
   top: 50%;
   left: 50%;
 }
-.orbit-container {
+.orbit-container1 {
   position: absolute;
   --radius: 8rem;
   top: calc(50% - var(--radius));
@@ -112,6 +114,7 @@
   width: calc(2 * var(--radius));
   height: calc(2 * var(--radius));
   z-index: 7;
+  
 }
 .orbit-container2 {
   position: absolute;
